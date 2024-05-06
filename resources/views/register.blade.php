@@ -1,8 +1,7 @@
-<div>
-    <!-- Walk as if you are kissing the Earth with your feet. - Thich Nhat Hanh -->
-</div>
+
 <x-layout>
-    <div>
+    <div class="text-lime-500 font-bold text-6xl text-center">
+        <h1>Hola</h1>
         
     </div>
 </x-layout>
