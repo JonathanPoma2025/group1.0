@@ -10,6 +10,6 @@ Route::get('/signup', function () {
     return view('register');
 });
 
-Route::get('/singin', function () {
+Route::get('/signin', function () {
     return view('login');
 });
