@@ -1,6 +1,7 @@
 <?php
 
 namespace Database\Factories;
+use App\Models\Maintenance;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -9,6 +10,14 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class DetailMaintenanceFactory extends Factory
 {
+
+    public function maintenances()
+    {
+        return once(function (){
+            return Maintenance::pluck('id');
+        });
+    }
+
     /**
      * Define the model's default state.
      *
@@ -17,7 +26,8 @@ class DetailMaintenanceFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'detail' => fake()->word(),
+            'maintenance_id' => $this->maintenances()->random(),
         ];
     }
 }
