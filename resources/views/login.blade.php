@@ -1,20 +1,16 @@
 <x-layout>
-<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title class= "text-center">Iniciar sesión</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title class="text-center">Iniciar sesión</title>
   <style>
     .custom-width {
-      width: 40rem;
+      width: 30rem;
     }
   </style>
 </head>
-<body class="bg-gray-100 flex justify-center items-center h-screen">
+    <body class="bg-gray-100 flex justify-center items-center h-screen">
 
-  <div class="flex flex-col items-center">
-    <div class="bg-white p-8 rounded-lg shadow-md custom-width w-full mb-4">
+    <div class="flex flex-col items-center">
+    <div class="bg-gray-200 p-8 rounded-lg shadow-md custom-width w-full mb-4">
       <h1 class="text-2xl font-bold mb-4">Iniciar sesión</h1>
       <div class="mb-4">
         <label for="email" class="block text-gray-700">Dirección de correo:</label>
@@ -24,17 +20,15 @@
         <label for="password" class="block text-gray-700">Contraseña:</label>
         <input type="password" id="password" name="password" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
       </div>
-      <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200 focus:ring-opacity-50">Iniciar sesión</button>
+      <button class="bg-gray-300 text-black">Iniciar sesión</button>
     </div>
 
-    <div class="bg-white p-4 rounded-lg shadow-md custom-width w-full text-center text-gray-600">
+    <div class="bg-gray-200 p-4 rounded-lg shadow-md custom-width w-full text-center text-gray-600">
       <p>¿No tienes cuenta?</p>
-      <button class="text-blue-500 hover:underline focus:outline-none">Registrarse</button>
+      <button class="button-gray-400 text-black">Registrarse</button>
     </div>
   </div>
 
 </body>
 </html>
-    
-    
 </x-layout>
