@@ -26,6 +26,7 @@
     <div class="bg-gray-200 p-4 rounded-lg shadow-md custom-width w-full text-center text-gray-600">
       <p>¿No tienes cuenta?</p>
       <button class="button-gray-400 text-black">Registrarse</button>
+      
     </div>
   </div>
 
