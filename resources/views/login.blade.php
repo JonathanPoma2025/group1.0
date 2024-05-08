@@ -3,26 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iniciar sesión</title>
+  <title class= "text-center">Iniciar sesión</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .custom-width {
+      width: 40rem;
+    }
+  </style>
 </head>
 <body class="bg-gray-100 flex justify-center items-center h-screen">
 
   <div class="flex flex-col items-center">
-    <div class="bg-white p-8 rounded-lg shadow-md w-full mb-20">
+    <div class="bg-white p-8 rounded-lg shadow-md custom-width w-full mb-4">
       <h1 class="text-2xl font-bold mb-4">Iniciar sesión</h1>
-      <div class="mb-10">
-        <label for="email" class=" text-gray-700">Dirección de correo eléctronico:</label>
-        <input type="email" id="email" name="email" class="form-input mt-1 block w-full border-gray-500 rounded-md shadow-sm">
+      <div class="mb-4">
+        <label for="email" class="block text-gray-700">Dirección de correo:</label>
+        <input type="email" id="email" name="email" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
       </div>
-      <div class="mb-20">
-        <label for="password" class="text-gray-700">Contraseña:</label>
-        <input type="password" id="password" name="password" class="form-input mt-1 block w-full border-gray-500 rounded-md shadow-sm">
+      <div class="mb-6">
+        <label for="password" class="block text-gray-700">Contraseña:</label>
+        <input type="password" id="password" name="password" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
       </div>
-      <button class="bg-gray-200 text-black text-center py-2 px-4 rounded">Iniciar sesión</button>
+      <button class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-200 focus:ring-opacity-50">Iniciar sesión</button>
     </div>
 
-    <div class="bg-white p-4 rounded-lg shadow-md max-w-md w-full text-center text-gray-600">
+    <div class="bg-white p-4 rounded-lg shadow-md custom-width w-full text-center text-gray-600">
       <p>¿No tienes cuenta?</p>
       <button class="text-blue-500 hover:underline focus:outline-none">Registrarse</button>
     </div>
