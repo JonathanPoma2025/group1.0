@@ -8,7 +8,7 @@
   </style>
 </head>
 
-<body class="bg-gray-100 flex justify-center items-center h-screen shadow-2xl">
+<body class="bg-gray-100 flex justify-center items-center h-screen shadow-3xl">
 
     <div class="flex flex-col items-center">
     <div class="bg-gray-200 p-8 rounded-lg shadow-md custom-width w-full mb-4 ">
@@ -21,6 +21,21 @@
 
         <div class="mb-6">
         <label for="password" class="block text-gray-700">Apellido:</label>
+        <input type="password" id="password" name="password" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+        </div>
+
+        <div class="mb-6">
+        <label for="password" class="block text-gray-700">Fecha de nacimiento:</label>
+        <input type="password" id="password" name="password" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+        </div>
+
+        <div class="mb-6">
+        <label for="password" class="block text-gray-700">Dirección de correo electrónico:</label>
+        <input type="password" id="password" name="password" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+        </div>
+
+        <div class="mb-6">
+        <label for="password" class="block text-gray-700">Contraseña:</label>
         <input type="password" id="password" name="password" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
         </div>
 
