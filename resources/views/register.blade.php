@@ -15,23 +15,23 @@
       <h1 class="text-2xl font-bold mb-4 text-center">Registrarse</h1>
 
       <div class="mb-4">
-        <label for="email" class="block text-gray-700">Nombre:</label>
-        <input type="email" id="email" name="email" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+        <label for="text" class="block text-gray-700">Nombre:</label>
+        <input type="text" id="text" name="Nombre" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
       </div>
 
         <div class="mb-6">
-        <label for="password" class="block text-gray-700">Apellido:</label>
-        <input type="password" id="password" name="password" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+        <label for="text" class="block text-gray-700">Apellido:</label>
+        <input type="text" id="text" name="Apellido" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
         </div>
 
         <div class="mb-6">
-        <label for="password" class="block text-gray-700">Fecha de nacimiento:</label>
-        <input type="password" id="password" name="password" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+        <label for="date" class="block text-gray-700">Fecha de nacimiento:</label>
+        <input type="date" id="date" name="date" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
         </div>
 
         <div class="mb-6">
-        <label for="password" class="block text-gray-700">Dirección de correo electrónico:</label>
-        <input type="password" id="password" name="password" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+        <label for="email" class="block text-gray-700">Dirección de correo electrónico:</label>
+        <input type="email" id="email" name="email" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
         </div>
 
         <div class="mb-6">
