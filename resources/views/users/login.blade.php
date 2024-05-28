@@ -13,7 +13,7 @@
 
             <div class="bg-gray-200 p-4 rounded-lg shadow-md custom-width w-2/4 text-center text-gray-600">
                 <p>¿No tienes cuenta?</p>
-                <button class="bg-gray-300 text-black rounded-full p-1 px-4" type="submit">Registrarse</button>
+                <button class="bg-gray-300 text-black rounded-full p-1 px-4">Registrarse</button>
             </div>
 
     </div>

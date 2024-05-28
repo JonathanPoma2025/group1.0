@@ -13,6 +13,11 @@
       </div>
 
         <div class="mb-6">
+        <label for="password" class="block text-gray-700">Apellido:</label>
+        <input type="text" id="password" name="password" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+        </div>
+
+        <div class="mb-6">
         <label for="password" class="block text-gray-700">Fecha de nacimiento:</label>
         <input type="date" id="password" name="password" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
         </div>
@@ -28,7 +33,7 @@
         </div>
 
         <div class="text-center">
-            <button class="bg-gray-300 text-black rounded-full p-1 px-4" type="submit">Registrarse</button>
+            <button class="bg-gray-300 text-black rounded-full p-1 px-4">Registrarse</button>
         </div>
     </div>
 
