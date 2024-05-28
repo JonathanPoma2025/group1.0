@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/signup', function () {
-    return view('register');
+    return view('users.register');
 });
 
 Route::get('/signin', function () {
