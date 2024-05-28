@@ -15,7 +15,7 @@
                 <input type="password" id="password" name="password"
                     class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
                 </div">
-                <button class="bg-gray-300 text-black rounded-full p-1 px-4">Iniciar sesión</button>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   <button class="bg-gray-300 text-black rounded-full p-1 px-4">Iniciar sesión</button>
             </div>
             </div>
 
