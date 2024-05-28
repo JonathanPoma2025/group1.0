@@ -1,7 +1,7 @@
 <x-layout>
 
     <div class="bg-gray-100 flex flex-col justify-center items-center h-screen">
-        <div class="bg-gray-200 p-8 rounded-lg shadow-lg w-5/6 md:w-2/4 mb-4 ">
+        <div class="bg-gray-200 p-8 rounded-lg shadow-lg md:w-2/4 mb-4 ">
             <h1 class="text-2xl font-bold mb-4 text-center">Iniciar sesión</h1>
 
             <x-input type="email" id="email" name="email" type="email">Correo electrónico:</x-input>
