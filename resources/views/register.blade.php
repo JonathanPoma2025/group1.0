@@ -19,12 +19,12 @@
 
         <div class="mb-6">
         <label for="password" class="block text-gray-700">Fecha de nacimiento:</label>
-        <input type="text" id="password" name="password" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+        <input type="date" id="password" name="password" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
         </div>
 
         <div class="mb-6">
         <label for="password" class="block text-gray-700">Dirección de correo electrónico:</label>
-        <input type="password" id="password" name="password" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
+        <input type="text" id="password" name="password" class="form-input mt-1 block w-full border-gray-300 rounded-md shadow-sm">
         </div>
 
         <div class="mb-6">
@@ -38,11 +38,8 @@
     </div>
 
     <div class="bg-gray-200 p-4 rounded-lg shadow-md custom-width w-full text-center text-gray-600">
-      <p>¿No tienes cuenta?</p>
-      <button class="bg-gray-300 text-black rounded-full p-1 px-4" type="submit" onclick="{{ redirect('login') }}">Register</label></button>
-
-    </div>
-
+      <p>¿Ya tienes cuenta?</p>
+      <button class="bg-gray-300 text-black rounded-full p-1 px-4">Iniciar sesión</button>
     </div>
   </div>
 
