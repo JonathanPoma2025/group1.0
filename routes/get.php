@@ -13,7 +13,3 @@ Route::get('/signup', function () {
 Route::get('/signin', function () {
     return view('login');
 });
-
-Route::get('/signup', function (){
-    return view('registercoustomer');
-});
