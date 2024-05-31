@@ -1,7 +1,10 @@
 <?php
 
-use App\Http\Controller\UserController;
+namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+
+
 
 Route::post('/login', [UserController::class, 'login']);
 

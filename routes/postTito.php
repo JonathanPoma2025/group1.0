@@ -1,6 +1,7 @@
 <?php
 
-use App\Http\Controllers\UserController;
+use App\Http\Controllers\RepairshopController;
+use App\Models\Repairshop;
 use Illuminate\Support\Facades\Route;
 
-Route::post('register', [UserController::class, 'create']);
+Route::post('register', [RepairshopController::class, 'create']);
