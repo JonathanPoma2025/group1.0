@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -26,7 +27,7 @@ class UserController extends Controller
             'email' => 'Tu correo electronico es invalido. Intente una vez mas',
             'password' => 'Tu contraseña es invalida. Intente una vez nas',
         ]);
-        
+
     }
 
     public function login(Request $request) {
@@ -34,6 +35,8 @@ class UserController extends Controller
             'email' => 'required|email|exist:users,email',
             'password' => 'required|min:8|max:12',
         ]);
+
+        $credentials = $request->only('email', 'password');
 
         if(Auth::attempt($credentials)) {
             return redirect('')->with('success');
@@ -44,6 +47,6 @@ class UserController extends Controller
     public function update(User $user) {
         //verificar $user->validate()
         //actualizar
-        //cambio datos 
+        //cambio datos
     }
 }

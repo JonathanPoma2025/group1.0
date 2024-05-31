@@ -6,7 +6,7 @@
     <div class="bg-gray-100 flex flex-col justify-center items-center h-screen">
         <div class="bg-gray-200 p-8 rounded-lg shadow-lg md:w-2/4 mb-4 ">
 
-            <img src="{{ asset("images/carIcon.jpg")}}" alt="" class="">
+            <img src="{{ asset("imagenes/caricon.png")}}" alt="" class="">
 
             <h1 class="text-2xl font-bold mb-4 text-center">Registra tu taller</h1>
 

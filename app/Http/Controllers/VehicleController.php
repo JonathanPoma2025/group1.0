@@ -32,10 +32,18 @@ class VehicleCotroller extends Controller
         //validate
         //
     }
-
     public function delete() {
 
+        #$vehicle->features()->detach();
+
+        #$vehicle->delete();
+
+        return redirect('/');
     }
+
+    
+
+    
 }
 
 
