@@ -1,6 +1,6 @@
 <x-layout>
     <div class="flex flex-col items-center justify-center">
-        <div class="bg-gray-200 rounded-[24px] pl-12 pt-4 pb-10 mb-6 shadow-2xl w-5/6">
+        <div class="bg-gray-200 rounded-[24px]  pt-4 pl-10 pr-10 pb-10 mb-6 shadow-2xl w-5/6">
             <p class="text-2xl font-bold">Taller 1</p>
             <p class="mt-4">Mecánico</p>
             <p class="font-bold pl-2">Juan Pérez</p>
