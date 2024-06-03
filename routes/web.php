@@ -7,3 +7,4 @@ include "getFlor.php";
 include "getJona.php";
 include "postTito.php";
 include "postNahum.php";
+include "postVale.php";
