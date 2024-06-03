@@ -1,7 +1,8 @@
 <x-layout>
-<title class="text-center">Registrarse</title>
 
-<body class="bg-gray-100 flex justify-center items-center h-screen shadow-3xl">
+    <title class="text-center">Registrarse</title>
+
+    <body class="bg-gray-100 flex justify-center items-center h-screen shadow-3xl">
 
     <div class="flex flex-col items-center">
     <div class="bg-gray-200 p-8 rounded-lg shadow-md w-8/4 mb-4 ">
