@@ -45,8 +45,16 @@ class UserController extends Controller
     }
 
     public function update(User $user) {
-        //verificar $user->validate()
-        //actualizar
-        //cambio datos
+
+        $data = $request -> validate([
+            'name' => 'required',
+            'birthday' => 'required',
+            'email' => 'requied|email',
+            'password' => 'required|min:8|max:12',
+        ]);
+
+        $data->update($validate);
+        return redirect('')->with('success');
+        $data->save;
     }
 }
