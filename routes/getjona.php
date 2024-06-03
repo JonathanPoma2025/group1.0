@@ -23,3 +23,6 @@ Route::get('/roles', function () {
     return view('repairshops.roles');
 } );
 
+Route::get('/recomendations', function () {
+    return view('repairshops.recomendations');
+} );
