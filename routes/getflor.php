@@ -7,5 +7,9 @@ Route::get('/signup', function () {
 });
 
 Route::get('/signin', function () {
-    return view('login');
+    return view('users.login');
+});
+
+Route::get('/edit', function() {
+       Return view('users.edituser');
 });
