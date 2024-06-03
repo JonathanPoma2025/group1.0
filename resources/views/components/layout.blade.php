@@ -8,7 +8,7 @@
     <title>{{ $title }}</title>
     @vite('resources/css/app.css')
 </head>
-<body>
+<body class="bg-gray-100 flex flex-col justify-center items-center">
     {{$slot}}
 </body>
 </html>

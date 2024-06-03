@@ -11,10 +11,15 @@ Route::get('repairshops/clients', function () {
     return view('repairshops.clients');
 } );
 
+
 Route::get('repairshops/account', function () {
     return view('repairshops.account', [
         'talleres' => Repairshop::all()
         //Auth::user()->repairshops()->get()
     ]);
 });
+
+Route::get('/roles', function () {
+    return view('repairshops.roles');
+} );
 
