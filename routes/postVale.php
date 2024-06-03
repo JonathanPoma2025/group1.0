@@ -2,4 +2,4 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\VehicleController;
 
-Route::patch('/cars/update/{vehicle}', [VehicleController::class, 'update']);
+Route::patch('/cars/create/{vehicle}', [VehicleController::class, 'update']);
