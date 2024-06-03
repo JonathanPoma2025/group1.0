@@ -49,6 +49,12 @@ class RepairshopController extends Controller
             }
             return back()->withErrors(['mechanics shop'=>'wrong credentials', 'email'=>'wrong credentials', 'password' => 'Wrong password']);
         }
+
+        public function update(Repairshop $user) {
+            //verificar $user->validate()
+            //actualizar
+            //cambio datos
+        }
     }
 
 
