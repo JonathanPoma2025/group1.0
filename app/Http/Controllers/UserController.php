@@ -22,10 +22,10 @@ class UserController extends Controller
         }
 
         return back()->withErrors([
-            'name' => 'Tu nombre es invalido. Intente una vez mas',
-            'birthday' => 'Tu fecha de nacimineto es invalida. Intente una vez mas',
-            'email' => 'Tu correo electronico es invalido. Intente una vez mas',
-            'password' => 'Tu contraseña es invalida. Intente una vez nas',
+            'name' => 'Tu nombre es invalido. Intente una vez más',
+            'birthday' => 'Tu fecha de nacimineto es invalida. Intente una vez más',
+            'email' => 'Tu correo electronico es invalido. Intente una vez más',
+            'password' => 'Tu contraseña es invalida. Intente una vez más',
         ]);
 
     }
