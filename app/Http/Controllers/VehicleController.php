@@ -56,8 +56,6 @@ class VehicleController extends Controller
     }
     public function delete(Vehicle $vehicle) {
 
-        $vehicle->features()->detach();
-
         $vehicle->delete();
 
         return redirect('/')->with([
