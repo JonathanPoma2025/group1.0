@@ -14,7 +14,7 @@ class UserController extends Controller
             'name' => 'required',
             'birthday'=>'required|date',
             'email' => 'required|email|unique:users,email',
-            'password'=> 'required|min:8|max:12',
+            'password'=> 'min:8|max:12',
         ]);
 
         if(User::create($data)) {
@@ -36,9 +36,7 @@ class UserController extends Controller
             'password' => 'required|min:8|max:12',
         ]);
 
-        $credentials = $request->only('email', 'password');
-
-        if(Auth::attempt($credentials)) {
+        if(Auth::attempt($data)) {
             return redirect('')->with('success');
         }
         return back()->withErrors(['email'=>'wrong credentials', 'password' => 'Wrong password']);
