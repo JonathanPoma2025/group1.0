@@ -1,9 +1,9 @@
-<x-layout title="Agregar vehiculos">
+<x-layout title="editar vehiculo">
  
 <div class="bg-gray-200 p-8 rounded-lg shadow-lg md:w-2/4 mb-4">
     
     <div class="text-center">
-       <h1 class="text-2xl font-bold mb-4 text-center">Agregar Vehiculo</h1>
+       <h1 class="text-2xl font-bold mb-4 text-center">Editar datos del vehiculo</h1>
     </div>
    
     <form action="cars/create" method="POST"> 
@@ -22,7 +22,7 @@
             
         
              <div class="text-center">
-                <button type="submit" class="bg-gray-300 text-black rounded-full p-1 px-4">agregar</button>
+                <button type="submit" class="bg-gray-300 text-black rounded-full p-1 px-4">Editar</button>
             </div>
             
         
