@@ -7,10 +7,18 @@
     </div>
    
     <form action="cars/create" method="POST"> 
-        
+        @csrf
         <body class="flex flex-col font-bold justify-center items-center h-screen ">
             
-            <x-input type="text" name="brand" id="brand">Marca</x-input>
+          
+            <select name="select">
+                @foreach ($brands as $brand)
+                    <option value="{{$brand->id}}">
+                        {{$brand->name}}
+                    </option>
+                @endforeach
+            </select>
+
             <x-input type="text" name="brand" id="brand">Modelo</x-input>
             <x-input type="date" name="brand" id="brand">Año</x-input>
             <x-input type="text" name="brand" id="brand">Tipo</x-input>
