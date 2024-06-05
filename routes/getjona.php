@@ -26,3 +26,7 @@ Route::get('/roles', function () {
 Route::get('/recomendations', function () {
     return view('repairshops.recomendations');
 } );
+
+Route::get('/prueba', function () {
+    return view('repairshops.prueba');
+} );
