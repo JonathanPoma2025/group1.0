@@ -23,3 +23,10 @@ Route::get('/roles', function () {
     return view('repairshops.roles');
 } );
 
+Route::get('/recomendations', function () {
+    return view('repairshops.recomendations');
+} );
+
+Route::get('/prueba', function () {
+    return view('repairshops.prueba');
+} );

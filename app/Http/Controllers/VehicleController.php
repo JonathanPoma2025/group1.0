@@ -1,8 +1,6 @@
 <?php
 
 namespace App\Http\Controllers;
-
-
 use Illuminate\Http\Request;
 use App\Models\Vehicle;
 
@@ -18,7 +16,7 @@ class VehicleController extends Controller
             'model' => 'required|string',
             'year'   => 'required|interger',
             'user_id'=> 'required|exists:user_id',
-            'placa' => 'required|string',
+            'placa' => 'required',
             
         ]);
 
@@ -40,7 +38,7 @@ class VehicleController extends Controller
             'model' => 'required|string',
             'year'   => 'required|interger',
             'user_id'=> 'required|exists:user_id',
-            'placa' => 'required|string',
+            'placa' => 'required',
 
         ]);
 
@@ -57,8 +55,6 @@ class VehicleController extends Controller
         
     }
     public function delete(Vehicle $vehicle) {
-
-        $vehicle->features()->detach();
 
         $vehicle->delete();
 
