@@ -1,19 +1,16 @@
-<x-layout>
+<x-layout title="Login">
+    <div class="h-screen flex items-center">
+        <div class="py-12 px-20 bg-white/15 backdrop-blur-sm rounded-lg drop-shadow-2xl">
+            <img src="{{asset("imagenes/caricon.png")}}" class="mx-auto w-24">
+            <h1 class="text-2xl font-bold my-4 text-center text-white">Iniciar sesión</h1>
+            <form action=""  class="text-center mt-6">
+                <x-input id="email" name="email" type="email">Correo electrónico</x-input>
+                <x-input id="email" name="email" type="password">Contraseña</x-input>
 
-    <div class="bg-gray-100 flex flex-col items-center m-20 ">
-        <div class="bg-transparent p-8 rounded-lg md:w-2/4 h-96 ">
-            <h1 class="text-2xl font-bold mb-4 text-center">Iniciar sesión</h1>
-            <form action="">
-                <x-input type="email" id="email" name="email" type="email">Correo electrónico:</x-input>
-
-                <x-input type="email" id="email" name="email" type="password">Contraseña:</x-input>
-
-                <button class="bg-gray-300 text-black rounded-full p-1 px-4" type="submit">Iniciar sesión</button>
+                <x-primary-button>Iniciar sesión</x-primary-button>
             </form>
+
+            <p class="text-white mt-4">¿No tienes cuenta? <a href="{{route('register')}}" class="underline">Registrate</a></p>
         </div>
-
-
-
     </div>
-
 </x-layout>
