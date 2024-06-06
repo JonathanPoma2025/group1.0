@@ -19,6 +19,8 @@
                 @endforeach
             </select>
 
+            
+
             <x-input type="text" name="brand" id="brand">Modelo</x-input>
             <x-input type="date" name="brand" id="brand">Año</x-input>
             <x-input type="text" name="brand" id="brand">Tipo</x-input>

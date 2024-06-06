@@ -10,6 +10,7 @@ Route::get('cars/car.edit', function () {
 Route::get('cars/create', function () {
     return view('cars.create', [
         'brands' => Brand::all(),
+       
         
     ]);
 });
