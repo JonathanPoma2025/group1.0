@@ -1,7 +1,7 @@
 
 <x-layoutbg>
     <div class="flex flex-col justify-center items-center h-screen w-full">
-        <div class="bg-gray-200 bg-opacity-80 p-8 rounded-[20px] md:w-2/4 shadow-2xl mb-4">
+        <div class="bg-gray-200 bg-opacity-80 p-12 rounded-[20px] md:w-2/4 shadow-2xl mb-4">
 
             <h1 class="text-xl font-semibold text-center">¿Cómo quieres</h1>
             <h1 class="text-xl pb-2 font-semibold mb-4 text-center">inciar sesión?</h1>
