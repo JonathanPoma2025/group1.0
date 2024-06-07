@@ -14,18 +14,18 @@ class VehicleController extends Controller
             'car_type_id'  => 'required|exists:car_types',
             'brand_id' => 'required|exists:brands',
             'model' => 'required|string',
-            'year'   => 'required|interger',
+            'year'   => 'required|integer',
             'user_id'=> 'required|exists:user_id',
             'placa' => 'required',
             
         ]);
 
         if(Vehicle::create($validateddata)){
-            return redirect('/');
+            return redirect('/cars/create');
         }
 
-        return back()->withErrors([
-            'Error al registrar el vehículo'
+        return back('/welcome')->withErrors([
+            'error'=>'Error al registrar el vehículo'
         ]);
     }
 
@@ -36,7 +36,7 @@ class VehicleController extends Controller
             'car_type_id'  => 'required|exists:car_types',
             'brand_id' => 'required|exists:brands',
             'model' => 'required|string',
-            'year'   => 'required|interger',
+            'year'   => 'required|integer',
             'user_id'=> 'required|exists:user_id',
             'placa' => 'required',
 
@@ -50,7 +50,7 @@ class VehicleController extends Controller
 
         
         return back()->withErrors([
-            'Error al actualizar el vehículo'
+            'error'=>'Error al actualizar el vehículo'
         ]);
         
     }
@@ -58,10 +58,7 @@ class VehicleController extends Controller
 
         $vehicle->delete();
 
-        return redirect('/')->with([
-
-        'Se ha eliminado el vehículo'
-    ]);
+        return redirect('/')->with('Success, Se ha eliminado el vehículo');
     }
 
     

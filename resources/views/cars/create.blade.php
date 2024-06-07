@@ -20,9 +20,17 @@
             </select>
 
             
+            <label>
+            <x-input type="text" name="model" id="model">Modelo</x-input>
+            </label>
 
-            <x-input type="text" name="brand" id="brand">Modelo</x-input>
-            <x-input type="date" name="brand" id="brand">Año</x-input>
+            @error('model')
+                <br>
+                <span>*{{$message}}</span>
+                <br>
+            @enderror
+
+            <x-input type="date" name="year" id="year">Año</x-input>
 
 
             <select name="select">
@@ -35,9 +43,9 @@
             </select>
 
 
-            <x-input type="text" name="brand" id="brand">Placa</x-input>
-            <x-input type="text" name="brand" id="brand">Color</x-input>
-            <x-input type="text" name="brand" id="brand">NRO.o Motor</x-input>
+            <x-input type="text" name="placa" id="placa">Placa</x-input>
+            <x-input type="text" name="color" id="color">Color</x-input>
+            <x-input type="text" name="motor" id="motor">NRO.o Motor</x-input>
            
         </body>
             
