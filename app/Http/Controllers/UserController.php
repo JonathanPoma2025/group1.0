@@ -17,8 +17,11 @@ class UserController extends Controller
             'password'=> 'min:8|max:12',
         ]);
 
-        if(User::create($data)) {
-            return redirect('');
+        $user = User::create($data);
+
+        if($user) {
+            Auth::login($user);
+            return redirect('/users/type');
         }
 
         return back()->withErrors([
@@ -28,6 +31,12 @@ class UserController extends Controller
             'password' => 'Tu contraseña es invalida. Intente una vez más',
         ]);
 
+    }
+
+    public function editType(Request $request) {
+        $user = Auth::user();
+        $user->is_mechanic = $request->user_type;
+        $user->save();
     }
 
     public function login(Request $request) {

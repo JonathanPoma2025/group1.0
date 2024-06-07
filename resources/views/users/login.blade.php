@@ -3,9 +3,10 @@
         <div class="py-12 px-20 bg-white/15 backdrop-blur-sm rounded-lg drop-shadow-2xl">
             <img src="{{asset("imagenes/caricon.png")}}" class="mx-auto w-24">
             <h1 class="text-2xl font-bold my-4 text-center text-white">Iniciar sesión</h1>
-            <form action=""  class="text-center mt-6">
+            <form action="/signin" method="GET"  class="text-center mt-6">
+                @csrf
                 <x-input id="email" name="email" type="email">Correo electrónico</x-input>
-                <x-input id="email" name="email" type="password">Contraseña</x-input>
+                <x-input id="password" name="password" type="password">Contraseña</x-input>
 
                 <x-primary-button>Iniciar sesión</x-primary-button>
             </form>

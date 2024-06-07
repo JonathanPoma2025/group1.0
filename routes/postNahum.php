@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 
 
+Route::get('/users/type', function() {
+    return view('users.usersType');
+});
 
 Route::post('/login', [UserController::class, 'login']);
 
