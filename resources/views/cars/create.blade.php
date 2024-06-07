@@ -23,7 +23,18 @@
 
             <x-input type="text" name="brand" id="brand">Modelo</x-input>
             <x-input type="date" name="brand" id="brand">Año</x-input>
-            <x-input type="text" name="brand" id="brand">Tipo</x-input>
+
+
+            <select name="select">
+                @foreach($car_types as $car_type)
+
+                <option value="{{$car_type->id}}">
+                    {{$car_type->name}}
+                </option>
+                @endforeach
+            </select>
+
+
             <x-input type="text" name="brand" id="brand">Placa</x-input>
             <x-input type="text" name="brand" id="brand">Color</x-input>
             <x-input type="text" name="brand" id="brand">NRO.o Motor</x-input>
