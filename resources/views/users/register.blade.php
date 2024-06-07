@@ -3,11 +3,13 @@
     <div class="h-screen flex items-center">
         <div class="py-12 px-20 bg-white/15 backdrop-blur-sm rounded-lg drop-shadow-2xl">
             <h1 class="text-2xl font-bold my-4 text-center text-white">Registrarse</h1>
-            <form action=""  class="text-center mt-6">
+            <form action="/register"  method="POST"  class="text-center mt-6">
+                @csrf
+                
                 <x-input id="name" name="name" type="text">Nombre</x-input>
-                <x-input id="date" name="date" type="date">Fecha de nacimiento</x-input>
-                <x-input  id="email" name="email" type="text">Correo electrónico</x-input>
-                <x-input  id="password" name="password" type="text">Contraseña</x-input>
+                <x-input id="birthday" name="birthday" type="date">Fecha de nacimiento</x-input>
+                <x-input  id="email" name="email" type="email">Correo electrónico</x-input>
+                <x-input  id="password" name="password" type="password">Contraseña</x-input>
 
                 <x-primary-button>Registrarse</x-primary-button>
             </form>
