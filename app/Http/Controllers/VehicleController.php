@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Vehicle;
 
-
 class VehicleController extends Controller
 {
 
@@ -17,19 +16,20 @@ class VehicleController extends Controller
             'year'   => 'required|integer',
             'user_id'=> 'required|exists:user_id',
             'placa' => 'required',
-            
         ]);
 
         if(Vehicle::create($validateddata)){
-            return redirect('/cars/create');
+            return redirect('/');
         }
 
-        return back('/welcome')->withErrors([
+        $request->save();
+
+        return back('/')->withErrors([
             'error'=>'Error al registrar el vehículo'
         ]);
     }
 
-    public function update(Request $request,Vehicle $vehicle) 
+    public function update(Request $request, Vehicle $vehicle)
     {
         //validate
         $validateddata = $request->validate([
@@ -39,7 +39,6 @@ class VehicleController extends Controller
             'year'   => 'required|integer',
             'user_id'=> 'required|exists:user_id',
             'placa' => 'required',
-
         ]);
 
         if ($vehicle->update($validateddata)){
@@ -48,22 +47,21 @@ class VehicleController extends Controller
             ]);
         }
 
-        
+        $vehicle->save();
+
         return back()->withErrors([
             'error'=>'Error al actualizar el vehículo'
         ]);
-        
     }
-    public function delete(Vehicle $vehicle) {
 
+    public function delete(Vehicle $vehicle) {
         $vehicle->delete();
 
         return redirect('/')->with('Success, Se ha eliminado el vehículo');
     }
-
-    
-
-    
 }
+
+    
+
 
 

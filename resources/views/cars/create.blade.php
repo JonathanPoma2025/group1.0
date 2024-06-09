@@ -5,6 +5,7 @@
     <div class="text-center">
        <h1 class="text-2xl font-bold mb-4 text-center">Agregar Vehiculo</h1>
     </div>
+
    
     <form action="cars/create" method="POST"> 
         @csrf
@@ -24,11 +25,7 @@
             <x-input type="text" name="model" id="model">Modelo</x-input>
             </label>
 
-            @error('model')
-                <br>
-                <span>*{{$message}}</span>
-                <br>
-            @enderror
+           
 
             <x-input type="date" name="year" id="year">Año</x-input>
 
@@ -44,7 +41,9 @@
 
 
             <x-input type="text" name="placa" id="placa">Placa</x-input>
+
             <x-input type="text" name="color" id="color">Color</x-input>
+
             <x-input type="text" name="motor" id="motor">NRO.o Motor</x-input>
            
         </body>
