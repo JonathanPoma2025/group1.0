@@ -5,18 +5,46 @@
     <div class="text-center">
        <h1 class="text-2xl font-bold mb-4 text-center">Agregar Vehiculo</h1>
     </div>
+
    
     <form action="cars/create" method="POST"> 
-        
+        @csrf
         <body class="flex flex-col font-bold justify-center items-center h-screen ">
             
-            <x-input type="text" name="brand" id="brand">Marca</x-input>
-            <x-input type="text" name="brand" id="brand">Modelo</x-input>
-            <x-input type="date" name="brand" id="brand">Año</x-input>
-            <x-input type="text" name="brand" id="brand">Tipo</x-input>
-            <x-input type="text" name="brand" id="brand">Placa</x-input>
-            <x-input type="text" name="brand" id="brand">Color</x-input>
-            <x-input type="text" name="brand" id="brand">NRO.o Motor</x-input>
+          
+            <select name="select">
+                @foreach ($brands as $brand)
+                    <option value="{{$brand->id}}">
+                        {{$brand->name}}
+                    </option>
+                @endforeach
+            </select>
+
+            
+            <label>
+            <x-input type="text" name="model" id="model">Modelo</x-input>
+            </label>
+
+           
+
+            <x-input type="date" name="year" id="year">Año</x-input>
+
+
+            <select name="select">
+                @foreach($car_types as $car_type)
+
+                <option value="{{$car_type->id}}">
+                    {{$car_type->name}}
+                </option>
+                @endforeach
+            </select>
+
+
+            <x-input type="text" name="placa" id="placa">Placa</x-input>
+
+            <x-input type="text" name="color" id="color">Color</x-input>
+
+            <x-input type="text" name="motor" id="motor">NRO.o Motor</x-input>
            
         </body>
             
