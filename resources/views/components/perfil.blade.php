@@ -13,7 +13,7 @@
             </div>
 
             <div>
-            <img src="{{ asset('Images/icono4.png') }}"alt="" class="w-7 text-center">
+            <img src="{{ asset('Images/icono4.png') }}"alt="" class="w-7">
             <h1>Asistente</h1>
             </div>
 
