@@ -3,26 +3,30 @@
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Vehicle;
+use Illuminate\Support\Facades\Auth;
 
 class VehicleController extends Controller
 {
 
     public function store(Request $request)
     {
+        $request->merge([
+            'user_id' => Auth::user()->id
+        ]);
+
         $validateddata = $request->validate([
             'car_type_id'  => 'required|exists:car_types',
-            'brand_id' => 'required|exists:brands',
+            'brand_id' => 'required|exists:brands,id',
             'model' => 'required|string',
             'year'   => 'required|integer',
-            'user_id'=> 'required|exists:user_id',
+            'user_id'=> 'required|exists:users,id',
             'placa' => 'required',
+
         ]);
 
         if(Vehicle::create($validateddata)){
             return redirect('/');
         }
-
-        $request->save();
 
         return back('/')->withErrors([
             'error'=>'Error al registrar el vehículo'
@@ -61,7 +65,7 @@ class VehicleController extends Controller
     }
 }
 
-    
+
 
 
 
