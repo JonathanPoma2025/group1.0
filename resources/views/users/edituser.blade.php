@@ -1,18 +1,17 @@
 <x-layout title="editacion">
-    <form action="">
-    <div class="bg-gray-100 flex justify-center items-center h-screen shadow-3xl">
-        <div class="flex flex-col items-center">
-            <div class="bg-gray-200 p-8 rounded-lg shadow-md w-8/4 mb-4 ">
-                <h1 class="text-2xl font-bold mb-4 text-center">Perfil</h1>
+    <div class="h-screen  flex">
+        <div class="py-12 px-20  bg-gray-300 rounded-lg drop-shadow-2xl relative ">
+            <img src="{{asset("imagenes/avata.png")}}"  class="object-cover w-40 h-40 rounded-full p-10 ">
 
-                <x-input id="name" name="name" type="text">Nombre</x-input>
+            <h1 class="text-2xl font-bold my-4 text-center text-black">Cliente 1</h1>
+            <form action=""  class="text-center mt-6">
+                <p>nombre</p>
+                
+                <x-primary-button>Guardar</x-primary-button>
+            </form>
 
-                <x-input  id="email" name="email" type="text">Correo electrónico</x-input>
-
-                <x-input  id="password" name="password" type="text">Contraseña</x-input>
-
-            </div>
-
+            <p class="text-black mt-4">¿No tienes cuenta? <a href="{{route('register')}}" class="underline">Registrate</a></p>
         </div>
-    </form>
-</x-layout>
+    </div>
+
+ </x-layout>
