@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/signup', function () {
+Route::get('/register', function () {
     return view('users.register');
 })->name('register');
 
