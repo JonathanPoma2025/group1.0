@@ -1,4 +1,4 @@
-<x-layout >
+<x-layout title="Usertype">
     <div class="h-screen flex items-center" >
         <div class="py-12 px-20 bg-white/15 backdrop-blur-sm rounded-xl drop-shadow-2xl mx-6">
             <h1 class="text-2xl font-bold my-4 text-center text-white">¿Como quieres registrarte?</h1>

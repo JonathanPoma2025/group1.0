@@ -6,7 +6,7 @@ Route::get('/signup', function () {
     return view('users.register');
 })->name('register');
 
-Route::get('/signin', function () {
+Route::get('/login', function () {
     return view('users.login');
 })->name('login');
 
