@@ -2,11 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/signup', function () {
+Route::get('/register', function () {
     return view('users.register');
 })->name('register');
 
-Route::get('/signin', function () {
+Route::get('/login', function () {
     return view('users.login');
 })->name('login');
 

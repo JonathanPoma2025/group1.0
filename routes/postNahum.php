@@ -11,7 +11,7 @@ Route::get('/users/type', function() {
 
 Route::post('/login', [UserController::class, 'login']);
 
-Route::post('/signup', [UserController::class, 'create']);
+Route::post('/register', [UserController::class, 'create']);
 
 Route::post('users/{$id}/edit', [UserController::class, 'update']);
 

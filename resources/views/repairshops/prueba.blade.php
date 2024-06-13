@@ -9,7 +9,7 @@
 <body class="bg-blue-100">
     <!-- Barra de Navegación Flotante -->
     <div class="relative">
-        <div class="bg-white flex items-center justify-between rounded-full shadow-lg p-2 m-10 justify-">
+        <div class="bg-white flex items-center justify-between rounded-full shadow-lg p-2 m-10">
             <img src="{{ asset("imagenes/caricon.png")}}" alt="" class="mx-auto w-10">
             <img src="{{ asset("imagenes/caricon.png")}}" alt="" class="mx-auto w-10">
             <img src="{{ asset("imagenes/caricon.png")}}" alt="" class="mx-auto w-10">

@@ -21,7 +21,7 @@ class RepairshopController extends Controller
             ]);
 
             if(Repairshop::create($data)) {
-                return redirect('');
+                return redirect('/home');
             }
 
             return back()->withErrors([
