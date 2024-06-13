@@ -46,7 +46,7 @@ class UserController extends Controller
         ]);
 
         if(Auth::attempt($data)) {
-            return redirect('')->with('success');
+            return redirect('/home')->with('success');
         }
         return back()->withErrors(['email'=>'wrong credentials', 'password' => 'Wrong password']);
     }
@@ -61,7 +61,7 @@ class UserController extends Controller
         ]);
 
         $data->update($validate);
-        return redirect('')->with('success');
+        return redirect('/home')->with('success');
         $data->save;
     }
 }

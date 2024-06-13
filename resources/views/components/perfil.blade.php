@@ -1,33 +1,24 @@
 <x-layout>
 
+    <div class="flex justify-around items-end bg-gray-300 p-5 w-3/4 shadow-lg rounded-full">
+        <div class="flex flex-col items-center">
+            <img src="{{ asset('Images/home_20dp.png') }}" alt="" class="w-7">
+            <h1 class="text-center">Inicio</h1>
+        </div>
 
-    <nav class="bg-gray-400 justify-end "></nav>
+        <div class="flex flex-col items-center">
+            <img src="{{ asset('Images/icono4.png') }}" alt="" class="w-7">
+            <h1 class="text-center">Asistente</h1>
+        </div>
 
+        <div class="flex flex-col items-center">
+            <img src="{{ asset('Images/icono1.png') }}" alt="" class="w-7">
+            <h1 class="text-center">Agregar carro</h1>
+        </div>
 
-    <div class="bg-gray-100 flex flex-col justify-end items-center h-screen w-full mb-12">
-        <div class="bg-gray-300 p-5 w-3/4 shadow-lg flex justify-between rounded-full">
-
-            <div>
-                <img src="{{ asset('Images/home_20dp.png') }}" alt="" class="w-7">
-                <h1>Inicio</h1>
-            </div>
-
-            <div>
-            <img src="{{ asset('Images/icono4.png') }}"alt="" class="w-7">
-            <h1>Asistente</h1>
-            </div>
-
-            <div>
-            <img src="{{ asset('Images/icono1.png') }}"alt="" class="w-7">
-            <h1>Add car</h1>
-            </div>
-
-            <div>
-            <img src="{{ asset('Images/icono3.png') }}"alt="" class="w-7">
-            <h1>Tips</h1>
-            </div>
-
-            <h1 class="text-2xl font-bold mb-4 text-center"></h1>
+        <div class="flex flex-col items-center">
+            <img src="{{ asset('Images/icono3.png') }}" alt="" class="w-7">
+            <h1 class="text-center">Tips</h1>
         </div>
     </div>
 
