@@ -15,7 +15,7 @@ class RepairshopController extends Controller
                 'name' => 'required',
                 'address' => 'required',
                 'email' => 'required|email|unique:users,email',
-                'password'=> 'required|min:8|max:12',
+                'password'=> 'min:8|max:12',
                 'phone' => 'required|unique:users,phone|phone-number',
                 'mechanics shop' => 'required|unique:users,workshop',
             ]);
@@ -36,7 +36,7 @@ class RepairshopController extends Controller
         }
 
         public function login(Request $request) {
-            $data = $request->validate([
+            $credentials = $request->validate([
                 'mechanics shop' => 'required|unique:users,workshop',
                 'email' => 'required|email|exist:users,email',
                 'password' => 'required|unique:users,password|min:8|max:12',
@@ -50,10 +50,41 @@ class RepairshopController extends Controller
             return back()->withErrors(['mechanics shop'=>'wrong credentials', 'email'=>'wrong credentials', 'password' => 'Wrong password']);
         }
 
-        public function update(Repairshop $user) {
-            //verificar $user->validate()
-            //actualizar
-            //cambio datos
+        public function update(Repairshop $request) {
+            $data = $request -> validate(['name','email','password','mechanic shop','address','phone']);
+
+            $data->update($request)([
+                'name' => 'required',
+                'address' => 'required',
+                'email' => 'required|email|unique:users,email',
+                'password'=> 'min:8|max:12',
+                'phone' => 'required|unique:users,phone|phone-number',
+                'mechanics shop' => 'required|unique:users,workshop',
+
+            ]);
+
+                return redirect('')->with('success');
+            $data->save;
+
+        }
+
+        public function delete(Repairshop $user) {
+
+            $data = $user -> validate(['name','email','password','mechanic shop','address','phone']);
+
+            $data->update($user)([
+                'name' => 'required',
+                'address' => 'required',
+                'email' => 'required|email|unique:users,email',
+                'password'=> 'min:8|max:12',
+                'phone' => 'required|unique:users,phone|phone-number',
+                'mechanics shop' => 'required|unique:users,workshop',
+
+            ]);
+
+                return redirect('')->with('success');
+            $data->save;
+
         }
     }
 

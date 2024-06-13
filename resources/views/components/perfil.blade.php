@@ -1,8 +1,7 @@
 <x-layout>
 
-    <nav class="bg-gray-400 justify-end">
-        <img src="{{ asset('images/directions_car_24dp_FILL0_wght400_GRAD0_opsz24.png') }}"alt="">
-    </nav>
+
+    <nav class="bg-gray-400 justify-end "></nav>
 
 
         <div class="bg-gray-100 flex flex-col justify-end items-center h-screen">
