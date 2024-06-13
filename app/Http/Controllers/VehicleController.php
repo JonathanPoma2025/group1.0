@@ -21,6 +21,7 @@ class VehicleController extends Controller
             'year'   => 'required|integer',
             'user_id'=> 'required|exists:users,id',
             'placa' => 'required',
+            'color'=>'required|string'
 
         ]);
 
