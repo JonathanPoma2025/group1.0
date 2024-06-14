@@ -19,7 +19,10 @@ return new class extends Migration
             $table->foreignIdFor(CarType::class)->constrained();
             $table->foreignIdFor(Brand::class)->constrained();
             $table->string('model');
+            $table->string('placa');
+            $table->string('motor');
             $table->date('year');
+            $table->string('color');
             $table->foreignIdFor(User::class)->constrained();
             $table->timestamps();
         });
