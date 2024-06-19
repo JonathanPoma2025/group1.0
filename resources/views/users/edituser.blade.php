@@ -1,16 +1,43 @@
 <x-layout title="editacion">
-    <div class="h-screen flex items-center">
-        <div class="py-12 px-20 bg-gray-300 rounded-lg drop-shadow-2xl ">
-            <img src="{{asset("imagenes/avata.png")}}" alt=""  class="w-40 h-40 rounded-full ">
-            <h1 class="text-2xl font-bold my-4 text-center text-black">Cliente 1</h1>
-            <form action="/edit" method="POST" class=" mt-6 text-left">
+    
+    <div class="h-screen flex items-center scale-50 ">
+        <div class="py-12 px-20 rounded-lg drop-shadow-2xl">
+
+
+
+                <div class="pl-2 font-bold text-2xl">
+                    <img class="inline rounded-full w-16 h-16 shadow-lg" src="{{ asset('imagenes/avata.png') }}">
+                Cliente 1
+            </div>
+
+
+
+            <form action="/edit" method="POST" class=" mt-10 text-left">
                 <p class="mt-4">Nombre</p>
                 <p class="font-bold pl-2">Sofia Medina</p>
+
+
                 <p class="mt-4">Contacto</p>
-                <p class="font-bold pl-2">sofia@example.com</p>
-                <p class="font-bold pl-2">+503 7477 8037</p>
+
+                <div class="pl-2 font-bold">
+                    <img class="inline w-5" src="{{ asset("imagenes/mail_24dp_FILL0_wght400_GRAD0_opsz24 (1).png") }}">
+                    sofia@example.com
+                </div>
+
+                <div class="pl-2 font-bold">
+                    <img class="inline w-5" src="{{ asset('imagenes/call_24dp_FILL0_wght400_GRAD0_opsz24.png') }}">
+                    +503 7477 8037
+                </div>
+
+
                 <p class="mt-6">Vehiculo</p>
-                <p class="font-bold pl-2">Auto sedan</p>
+
+                <div class="pl-2 font-bold">
+                    <img class="inline w-5"
+                        src="{{ asset('imagenes/directions_car_24dp_FILL0_wght400_GRAD0_opsz24.png') }}">
+                    Auto sedan
+                </div>
+
                 <p class="mt-6">Marca</p>
                 <p class="font-bold pl-2">Hyundal</p>
                 <p class="mt-6">Modelo</p>
@@ -24,11 +51,16 @@
                 <p class="mt-6">Motor</p>
                 <p class="font-bold pl-2">1.6 'CRDi' de 136CV</p>
 
-               <x-primary-button >Cerrar Sesión</x-primary-button>
-               <x-primary-button >Editar</x-primary-button>
+
+                <div class="space-x-10">
+                    <button class="rounded-full bg-blueblack text-white px-4 mt-20  ">Cerrar Sesión</button>
+
+                <button class="rounded-full bg-blueblack text-white  px-4 space-x-6 "  >Editar</button>
+
+                </div>
             </form>
 
         </div>
     </div>
 
- </x-layout>
+</x-layout>
