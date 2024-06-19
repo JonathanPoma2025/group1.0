@@ -1,7 +1,7 @@
-<x-layout title="editacion">
+<x-layoutbg1  title="editacion">
 
     <div class="h-screen flex items-center scale-50 ">
-        <div class="py-12 px-20 rounded-lg drop-shadow-2xl bg-slate-600">
+        <div class="py-12 px-20 rounded-lg drop-shadow-2xl  bg-white/15 backdrop-blur-sm  ">
 
 
 
@@ -12,7 +12,7 @@
 
 
 
-            <form action="/edit" method="POST" class=" mt-10 text-left">
+            <form action="/edit" method="POST" class=" mt-10 text-left text-white">
                 <p class="mt-4">Nombre</p>
                 <p class="font-bold pl-2">Sofia Medina</p>
 
@@ -63,4 +63,4 @@
         </div>
     </div>
 
-</x-layout>
+</x-layoutbg1>
