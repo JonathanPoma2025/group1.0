@@ -1,7 +1,7 @@
 <x-layout title="editacion">
-    
+
     <div class="h-screen flex items-center scale-50 ">
-        <div class="py-12 px-20 rounded-lg drop-shadow-2xl">
+        <div class="py-12 px-20 rounded-lg drop-shadow-2xl bg-slate-600">
 
 
 
