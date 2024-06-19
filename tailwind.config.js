@@ -6,7 +6,8 @@ export default {
     "./resources/**/*.vue",
   ],
   theme: {
-    colors: {
+    extend: {
+      colors: {
         transparent: 'transparent',
         current: 'currentColor',
         'white': '#ffffff',
@@ -18,8 +19,7 @@ export default {
         'gray-10': '#808A93',
         'gray-5': '#EAEAEA',
       },
-
-    extend: {},
+    },
   },
   plugins: [],
 }
