@@ -10,6 +10,9 @@ class VehicleController extends Controller
 
     public function store(Request $request)
     {
+
+        
+
         $request->merge([
             'user_id' => Auth::user()->id
         ]);
