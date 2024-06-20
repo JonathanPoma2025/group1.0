@@ -1,9 +1,9 @@
 <x-layout title="Pagina principal de clientes">
   <div class="relative overflow-hidden w-full">
 
-    <div class="bg-black rounded-full h-[175%] w-[175%] absolute bottom-[60%] -left-[50%]"></div>
+    <div class="bg-black rounded-full h-[175%] w-[200%] absolute bottom-[60%] -left-[50%] z-0"></div>
 
-    <div class=" flex justify-center h-screen shadow-3xl ">
+    <div class=" flex justify-center h-screen shadow-3xl z-40">
       
         <article class="text-nowrap">
           &nbsp

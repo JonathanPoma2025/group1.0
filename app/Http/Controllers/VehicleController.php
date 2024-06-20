@@ -10,6 +10,9 @@ class VehicleController extends Controller
 
     public function store(Request $request)
     {
+
+        
+
         $request->merge([
             'user_id' => Auth::user()->id
         ]);
@@ -21,6 +24,7 @@ class VehicleController extends Controller
             'year'   => 'required|integer',
             'user_id'=> 'required|exists:users,id',
             'placa' => 'required',
+            'color'=>'required|string'
 
         ]);
 
