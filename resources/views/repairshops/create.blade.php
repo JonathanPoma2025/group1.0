@@ -16,7 +16,7 @@
 
                     <x-input type="password" id="" name="contraseña">Contraseña</x-input>
                 </div>
-            <button class="mx-auto bg-ourblack text-gray-5 rounded-full p-1 px-4 text-xs flex flex-col font-bold" type="submit">Registrarse</button>
+            <button class="mx-auto bg-babyblue text-gray-5 rounded-full p-1 px-4 text-xs flex flex-col font-bold" type="submit">Registrarse</button>
         </x-card>
     </div>
 </x-layoutbg1>
