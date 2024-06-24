@@ -17,7 +17,7 @@ class UserController extends Controller
             'password'=> 'min:8|max:12',
         ]);
 
-        #$data['password'] = Hash::make($data['password']);
+        
 
         $user = User::create($data);
 
