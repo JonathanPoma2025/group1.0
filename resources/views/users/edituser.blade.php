@@ -5,7 +5,7 @@
 
 
 
-                <div class="pl-2 font-bold text-2xl">
+                <div class="pl-2 font-bold text-2xl text-white">
                     <img class="inline rounded-full w-16 h-16 shadow-lg" src="{{ asset('imagenes/avata.png') }}">
                 Cliente 1
             </div>
@@ -52,10 +52,10 @@
                 <p class="font-bold pl-2">1.6 'CRDi' de 136CV</p>
 
 
-                <div class="space-x-10">
-                    <button class="rounded-full bg-blueblack text-white px-4 mt-20  ">Cerrar Sesión</button>
+                <div class="space-x-30 place-content-between">
+                    <button class="rounded-full bg-blueblack text-white px-4 mt-20 ">Cerrar Sesión <a href="update"></a></button>
 
-                <button class="rounded-full bg-blueblack text-white  px-4 space-x-6 "  >Editar</button>
+                    <button class="rounded-full bg-blueblack text-white px-4">Editar</button>
 
                 </div>
             </form>

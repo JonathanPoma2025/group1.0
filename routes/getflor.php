@@ -13,3 +13,7 @@ Route::get('/login', function () {
 Route::get('/edit', function() {
     return view('users.edituser');
 });
+
+Route::get('/update', function() {
+    return view('users.update');
+});
