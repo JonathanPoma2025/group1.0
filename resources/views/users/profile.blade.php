@@ -32,6 +32,7 @@
     </x-card>
 
     <x-card>
+
         <div class="text-center font-bold text-2xl">
             Vehículo
         </div>
@@ -57,7 +58,7 @@
         <p class="mt-6">Motor</p>
         <p class="font-bold pl-2">1.6 'CRDi' de 136CV</p>
 
-        <a href="/vehicle/edit/number" class="rounded-full bg-blueblack text-white px-4 text-end">Editar</button>
+        <a href="/vehicle/edit/number" class="rounded-full bg-blueblack text-white px-4 ">Editar</button>
 
     </x-card>
 </x-layoutbg1>
