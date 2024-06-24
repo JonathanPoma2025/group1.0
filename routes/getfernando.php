@@ -14,3 +14,7 @@ Route::get('/perfil', function () {
     return view('components.perfil');
 });
 
+Route::get('/mantenimiento', function () {
+    return view('components.mantenimiento');
+});
+
