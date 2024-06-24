@@ -40,10 +40,10 @@ class VehicleController extends Controller
         ]);
 
         if(Vehicle::create($validateddata)){
-            return redirect('/');
+            return redirect('/edit');
         }
 
-        return back('/')->withErrors([
+        return back('cars/create')->withErrors([
             'error'=>'Error al registrar el vehículo'
         ]);
     }
@@ -61,14 +61,14 @@ class VehicleController extends Controller
         ]);
 
         if ($vehicle->update($validateddata)){
-            return redirect('/')->with([
+            return redirect('/edit')->with([
                 'Los datos del vehículo se actualizó correctamente'
             ]);
         }
 
         $vehicle->save();
 
-        return back()->withErrors([
+        return back('/cars/create')->withErrors([
             'error'=>'Error al actualizar el vehículo'
         ]);
     }
