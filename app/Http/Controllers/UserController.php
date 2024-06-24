@@ -17,11 +17,13 @@ class UserController extends Controller
             'password'=> 'min:8|max:12',
         ]);
 
+        
+
         $user = User::create($data);
 
         if($user) {
             Auth::login($user);
-            return redirect('/users/type');
+            return redirect('/users/type')->with('success', 'Registro exitoso');
         }
 
         return back()->withErrors([
