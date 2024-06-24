@@ -10,8 +10,8 @@ Route::get('/login', function () {
     return view('users.login');
 })->name('login');
 
-Route::get('/edit', function() {
-    return view('users.edituser');
+Route::get('/user/profile', function() {
+    return view('users.profile');
 });
 
 Route::get('/update', function() {

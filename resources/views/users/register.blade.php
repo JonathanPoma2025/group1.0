@@ -1,7 +1,7 @@
 <x-layoutbg1 title="Register">
 
     <div class="h-screen flex items-center">
-        <div class="py-12 px-20 bg-white/15 backdrop-blur-sm rounded-lg drop-shadow-2xl">
+        <div class="py-12 px-20 bg-ourblack bg-opacity-30 rounded-lg drop-shadow-2xl">
             <h1 class="text-2xl font-bold my-4 text-center text-white">Registrarse</h1>
             <form action="/register"  method="POST"  class="text-center mt-6">
                 @csrf
