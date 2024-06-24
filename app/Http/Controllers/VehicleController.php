@@ -1,15 +1,29 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\Models\CarType;
 use Illuminate\Http\Request;
 use App\Models\Vehicle;
 use Illuminate\Support\Facades\Auth;
+use App\Models\Brand;
+
 
 class VehicleController extends Controller
 {
 
+   public function create()
+    {
+        $brands = Brand::all();
+        $car_types = CarType::all();
+
+        return view('cars.create', compact('brands', 'car_types'));
+    }
+
+
     public function store(Request $request)
     {
+
         $request->merge([
             'user_id' => Auth::user()->id
         ]);
