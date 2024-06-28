@@ -1,5 +1,5 @@
 <x-layoutbg1>
-    <div class="flex flex-col justify-center items-center h-screen w-full pt-2">
+    <div class="flex flex-col justify-center items-center h-screen w-full my-5">
         <x-card>
             <img src="{{ asset("images/logocar.png")}}" alt="" class="mx-auto w-32">
 
