@@ -40,7 +40,7 @@ class VehicleController extends Controller
         ]);
 
         if(Vehicle::create($validateddata)){
-            return redirect('/edit');
+            return redirect('/user/profile');
         }
 
         return back('cars/create')->withErrors([
@@ -61,7 +61,7 @@ class VehicleController extends Controller
         ]);
 
         if ($vehicle->update($validateddata)){
-            return redirect('/edit')->with([
+            return redirect('/user/profile')->with([
                 'Los datos del vehículo se actualizó correctamente'
             ]);
         }
@@ -76,7 +76,7 @@ class VehicleController extends Controller
     public function delete(Vehicle $vehicle) {
         $vehicle->delete();
 
-        return redirect('/')->with('Success, Se ha eliminado el vehículo');
+        return redirect('/user/profile')->with('Success, Se ha eliminado el vehículo');
     }
 }
 
