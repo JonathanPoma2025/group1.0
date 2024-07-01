@@ -9,7 +9,7 @@
 
 
 
-<form action="{{ url('cars.store') }}" method="POST">
+<form action="{{ route('cars.store') }}" method="POST">
     @csrf
     <div class="flex flex-col font-bold justify-center items-center h-screen">
         <select name="brand_id">

@@ -11,6 +11,11 @@ use App\Models\Brand;
 
 class VehicleController extends Controller
 {
+    #public function __construct()
+    #{
+       # $this->middleware('auth');
+    #}
+
 
    public function create()
     {
@@ -24,9 +29,10 @@ class VehicleController extends Controller
     public function store(Request $request)
     {
 
-        $request->merge([
-            'user_id' => Auth::user()->id
-        ]);
+        if (Auth::check()) {
+            $request->merge([
+                'user_id' => Auth::user()->id
+            ]);
 
         $validateddata = $request->validate([
             'car_type_id'  => 'required|exists:car_types',
@@ -40,14 +46,18 @@ class VehicleController extends Controller
         ]);
 
         if(Vehicle::create($validateddata)){
-            return redirect('/user/profile');
+            return redirect()->route('user.profile');
         }
 
-        return back('cars/create')->withErrors([
+        return back('')->withErrors([
             'error'=>'Error al registrar el vehículo'
         ]);
     }
 
+    return redirect()->route('login')->withErrors([
+        'error' => 'Debes iniciar sesión para añadir un vehículo'
+    ]);
+}
     public function update(Request $request, Vehicle $vehicle)
     {
         //validate
@@ -57,18 +67,19 @@ class VehicleController extends Controller
             'model' => 'required|string',
             'year'   => 'required|integer',
             'user_id'=> 'required|exists:user_id',
-            'placa' => 'required',
+            'placa' => 'required|string',
+            'color' => 'required|string',
         ]);
 
         if ($vehicle->update($validateddata)){
-            return redirect('/user/profile')->with([
-                'Los datos del vehículo se actualizó correctamente'
+            return redirect()->route('user.profile')->with([
+                'Los datos del vehículo se actualizaron correctamente'
             ]);
         }
 
-        $vehicle->save();
 
-        return back('/cars/create')->withErrors([
+
+        return back()->withErrors([
             'error'=>'Error al actualizar el vehículo'
         ]);
     }
@@ -76,7 +87,7 @@ class VehicleController extends Controller
     public function delete(Vehicle $vehicle) {
         $vehicle->delete();
 
-        return redirect('/user/profile')->with('Success, Se ha eliminado el vehículo');
+        return redirect()->route('user.profile')->with('Success, Se ha eliminado el vehículo');
     }
 }
 
