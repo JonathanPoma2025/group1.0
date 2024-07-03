@@ -10,11 +10,11 @@ Route::get('/login', function () {
     return view('login');
 });
 
-Route::get('/perfil', function () {
-    return view('components.perfil');
+Route::get('/navigationbar', function () {
+    return view('components.navigationbar');
 });
 
-Route::get('/mantenimiento', function () {
-    return view('components.mantenimiento');
+Route::get('/maintenance/create', function () {
+    return view('cars.maintenance');
 });
 
