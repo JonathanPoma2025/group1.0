@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->boolean('is_mechanic')->default(false);
             $table->date('birthday');
+            $table->string('cellphone_number');
             $table->string('password')->nullable();
             $table->timestamps();
         });

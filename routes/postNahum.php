@@ -9,6 +9,8 @@ Route::get('/users/type', function() {
     return view('users.usersType');
 });
 
+Route::post('/users/type', [UserController::class, 'editType']);
+
 Route::post('/login', [UserController::class, 'login']);
 
 Route::post('/register', [UserController::class, 'create']);
