@@ -19,6 +19,11 @@
                 {{ $user->cellphone_number }}
             </div>
 
+            <div class="pl-2 font-bold">
+                <img class="inline w-5" src="{{ asset('imagenes/call_24dp_FILL0_wght400_GRAD0_opsz24.png') }}">
+                {{ $user->birthday }}
+            </div>
+
             <div class="space-x-30 place-content-between">
                 <button class="rounded-full bg-blueblack text-white px-4 mt-20 ">Cerrar Sesión <a
                         href="update"></a></button>
