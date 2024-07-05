@@ -1,4 +1,4 @@
-<x-layout title="P">
+<x-layout title="Inicio">
   <div class="relative overflow-hidden w-full">
 
     <div class="bg-black rounded-full h-[175%] w-[200%] absolute bottom-[60%] -left-[50%] z-0"></div>

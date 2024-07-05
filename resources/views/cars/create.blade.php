@@ -7,11 +7,9 @@
     </div>
 
 
-   @if (Auth::check())
 
 
-
-<form action="{{ url('cars.store') }}" method="POST">
+<form action="{{ route('cars.store') }}" method="POST">
     @csrf
     <div class="flex flex-col font-bold justify-center items-center h-screen">
         <select name="brand_id">
@@ -41,9 +39,12 @@
         <button type="submit" class="bg-gray-300 text-black rounded-full p-1 px-4">Agregar</button>
     </div>
 </form>
-@else
+
+
+
   <p class="text-red-500 text-center font-bold ">Debes <href="{{route('login')}}">iniciar sesión</a> para añadir un vehículo 😮🙁 </p>
-@endif
+
+
 
 </div>
 </x-layout>

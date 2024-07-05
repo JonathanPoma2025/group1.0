@@ -2,30 +2,33 @@
 
     <x-card>
         <div class="pl-2 font-bold text-2xl text-white">
-            <img class="inline rounded-full w-16 h-16 shadow-lg" src="{{ asset('imagenes/avata.png') }}"> Cliente 1
-
+            <img class="inline rounded-full w-16 h-16 shadow-lg" src="{{ asset('imagenes/avata.png') }}">
+            Cliente 1
         </div>
 
         <div class=" mt-10 text-left text-white">
-            <p class="mt-4">Nombre</p>
-            <p class="font-bold pl-2">Sofia Medina</p>
-            <p class="mt-4">Contacto</p>
 
+            <p class="mt-4">Contacto</p>
             <div class="pl-2 font-bold">
                 <img class="inline w-5" src="{{ asset('imagenes/mail_24dp_FILL0_wght400_GRAD0_opsz24 (1).png') }}">
-                sofia@example.com
+                {{ $user->email}}
             </div>
 
             <div class="pl-2 font-bold">
                 <img class="inline w-5" src="{{ asset('imagenes/call_24dp_FILL0_wght400_GRAD0_opsz24.png') }}">
-                +503 7477 8037
+                {{ $user->cellphone_number }}
+            </div>
+
+            <div class="pl-2 font-bold">
+                <img class="inline w-5" src="{{ asset('imagenes/call_24dp_FILL0_wght400_GRAD0_opsz24.png') }}">
+                {{ $user->birthday }}
             </div>
 
             <div class="space-x-30 space-x-5 md:space-x-5 text-end">
                 <button class="rounded-full bg-blueblack text-white px-4 mt-20 ">Cerrar Sesión <a
                         href="update"></a></button>
 
-                <a href="/vehicle/edit/number"  class="rounded-full bg-blueblack text-white px-4 ">Editar</a>
+                <a href="/vehicle/edit/number"  class="rounded-full bg-blueblack text-white px-4">Editar</a>
 
             </div>
         </div>

@@ -6,9 +6,10 @@
             <form action="/register"  method="POST"  class="text-center mt-6">
                 @csrf
 
-                <x-input id="name" name="name" type="text">Nombre</x-input>
-                <x-input id="birthday" name="birthday" type="date">Fecha de nacimiento</x-input>
+                <x-input  id="name" name="name" type="text">Nombre</x-input>
                 <x-input  id="email" name="email" type="email">Correo electrónico</x-input>
+                <x-input  id="birthday" name="birthday" type="date">Fecha de nacimiento</x-input>
+                <x-input  id="cellphone" name="cellphone_number" type="text">Número de teléfono</x-input>
                 <x-input  id="password" name="password" type="password">Contraseña</x-input>
 
                 <x-primary-button>Registrarse</x-primary-button>

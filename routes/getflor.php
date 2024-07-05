@@ -11,7 +11,10 @@ Route::get('/user/login', function () {
 })->name('login');
 
 Route::get('/user/profile', function() {
-    return view('users.profile');
+    return view('users.profile', [
+        'user' => Auth::user(),
+        'cars' => Auth::user()->cars()
+    ]);
 });
 
 Route::get('/user/update', function() {

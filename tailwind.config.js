@@ -18,6 +18,7 @@ export default {
         'deepblue': '#161E42',
         'gray-10': '#808A93',
         'gray-5': '#EAEAEA',
+        'card': '#15131F',
       },
     },
   },
