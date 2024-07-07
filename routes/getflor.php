@@ -2,11 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/register', function () {
+Route::get('/user/register', function () {
     return view('users.register');
 })->name('register');
 
-Route::get('/login', function () {
+Route::get('/user/login', function () {
     return view('users.login');
 })->name('login');
 
@@ -17,6 +17,6 @@ Route::get('/user/profile', function() {
     ]);
 });
 
-Route::get('/update', function() {
+Route::get('/user/update', function() {
     return view('users.update');
 });

@@ -1,9 +1,9 @@
-<x-layoutbg1 title="editacion">
+<x-layoutbg1 title="editacion" class="my-20">
 
     <x-card>
         <div class="pl-2 font-bold text-2xl text-white">
             <img class="inline rounded-full w-16 h-16 shadow-lg" src="{{ asset('imagenes/avata.png') }}">
-            {{ $user->name}}
+            Cliente 1
         </div>
 
         <div class=" mt-10 text-left text-white">
@@ -24,11 +24,12 @@
                 {{ $user->birthday }}
             </div>
 
-            <div class="space-x-30 place-content-between">
+            <div class="space-x-30 space-x-5 md:space-x-5 text-end">
                 <button class="rounded-full bg-blueblack text-white px-4 mt-20 ">Cerrar Sesión <a
                         href="update"></a></button>
 
                 <a href="/vehicle/edit/number"  class="rounded-full bg-blueblack text-white px-4">Editar</a>
+
             </div>
         </div>
     </x-card>
@@ -42,24 +43,32 @@
 
         <div class="pl-2 font-bold">
             <img class="inline w-5"
-                src="{{ asset('imagenes/directions_car_24dp_FILL0_wght400_GRAD0_opsz24.png') }}">
+            src="{{ asset('imagenes/directions_car_24dp_FILL0_wght400_GRAD0_opsz24.png') }}">
             Auto sedan
         </div>
 
-        <p class="mt-6">Marca</p>
-        <p class="font-bold pl-2">{{ $vehicles->brand }}</p>
-        <p class="mt-6">Modelo</p>
-        <p class="font-bold pl-2">{{ $vehicles->model }}</p>
-        <p class="mt-6">Año</p>
-        <p class="font-bold pl-2">2013</p>
-        <p class="mt-6">Placa</p>
-        <p class="font-bold pl-2">P-2000877</p>
-        <p class="mt-6">Color</p>
-        <p class="font-bold pl-2">Gris</p>
-        <p class="mt-6">Motor</p>
-        <p class="font-bold pl-2">1.6 'CRDi' de 136CV</p>
+        <div class=" mt-10 text-start">
 
-        <a href="/vehicle/edit/number" class="rounded-full bg-blueblack text-white px-4 ">Editar</button>
 
+            <p class="mt-6">Marca</p>
+            <p class="font-bold pl-2">Hyundal</p>
+            <p class="mt-6">Modelo</p>
+            <p class="font-bold pl-2">Elantran</p>
+            <p class="mt-6">Año</p>
+            <p class="font-bold pl-2">2013</p>
+            <p class="mt-6">Placa</p>
+            <p class="font-bold pl-2">P-2000877</p>
+            <p class="mt-6">Color</p>
+            <p class="font-bold pl-2">Gris</p>
+            <p class="mt-6">Motor</p>
+            <p class="font-bold pl-2">1.6 'CRDi' de 136CV</p>
+        </div>
+
+        <div class=" text-end md:text-end space-x-30 space-x-5 md:space-x-5">
+
+            <a href="/vehicle/edit/number" class="rounded-full bg-blueblack text-white px-4 ">Editar</button>
+
+            </div>
+        </div>
     </x-card>
 </x-layoutbg1>
