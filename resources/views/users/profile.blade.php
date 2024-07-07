@@ -47,9 +47,9 @@
         </div>
 
         <p class="mt-6">Marca</p>
-        <p class="font-bold pl-2">Hyundal</p>
+        <p class="font-bold pl-2">{{ $vehicles->brand }}</p>
         <p class="mt-6">Modelo</p>
-        <p class="font-bold pl-2">Elantran</p>
+        <p class="font-bold pl-2">{{ $vehicles->model }}</p>
         <p class="mt-6">Año</p>
         <p class="font-bold pl-2">2013</p>
         <p class="mt-6">Placa</p>
