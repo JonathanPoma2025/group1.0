@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
+
+    
+
     public function create(Request $request) {
         $data = $request->validate([
             //'datoverificados' => 'reglas',
@@ -41,7 +44,7 @@ class UserController extends Controller
         if ( $user->is_mechanic ) {
             return redirect('/users/home');
         }
-        return redirect('/');//RUTA DE TALLERES HOME 
+        return redirect('/');//RUTA DE TALLERES HOME
     }
 
     public function login(Request $request) {
