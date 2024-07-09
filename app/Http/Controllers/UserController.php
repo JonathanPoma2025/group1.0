@@ -10,7 +10,6 @@ class UserController extends Controller
 {
 
     
-
     public function create(Request $request) {
         $data = $request->validate([
             //'datoverificados' => 'reglas',
