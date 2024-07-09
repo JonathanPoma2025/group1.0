@@ -34,6 +34,10 @@
         </div>
     </x-card>
 
+    @foreach ( $user->cars as $car)
+
+    @endforeach
+
     <x-card>
         <div class="text-center font-bold text-2xl">
             Vehículo
