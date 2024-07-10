@@ -53,15 +53,15 @@
 
         <div class=" mt-10 text-start">
             <p class="mt-6">Marca</p>
-            <p class="font-bold pl-2">{{$vehicle->brand_id}}</p>
+            <p class="font-bold pl-2">{{$car->brand_id}}</p>
             <p class="mt-6">Modelo</p>
-            <p class="font-bold pl-2">{{$vehicle->model}}</p>
+            <p class="font-bold pl-2">{{$car->model}}</p>
             <p class="mt-6">Año</p>
-            <p class="font-bold pl-2">{{$vehicle->year}}</p>
+            <p class="font-bold pl-2">{{$car->year}}</p>
             <p class="mt-6">Placa</p>
-            <p class="font-bold pl-2">{{$vehicle->placa}}</p>
+            <p class="font-bold pl-2">{{$car->placa}}</p>
             <p class="mt-6">Color</p>
-            <p class="font-bold pl-2">{{$vehicle->color}}</p>
+            <p class="font-bold pl-2">{{$car->color}}</p>
             <p class="mt-6">Motor</p>
             <p class="font-bold pl-2">1.6 'CRDi' de 136CV</p>
         </div>
