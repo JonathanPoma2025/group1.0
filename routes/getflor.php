@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 Route::get('/user/register', function () {
     return view('users.register');
@@ -12,8 +13,7 @@ Route::get('/user/login', function () {
 
 Route::get('/user/profile', function() {
     return view('users.profile', [
-        'user' => Auth::user(),
-        'cars' => Auth::user()->cars()
+        'user' => Auth::user()->load('cars'),
     ]);
 });
 

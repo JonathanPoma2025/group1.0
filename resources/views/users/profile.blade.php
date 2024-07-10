@@ -34,6 +34,10 @@
         </div>
     </x-card>
 
+    @foreach ( $user->cars as $car)
+
+    @endforeach
+
     <x-card>
         <div class="text-center font-bold text-2xl">
             Vehículo
@@ -48,18 +52,16 @@
         </div>
 
         <div class=" mt-10 text-start">
-
-
             <p class="mt-6">Marca</p>
-            <p class="font-bold pl-2">Hyundal</p>
+            <p class="font-bold pl-2">{{$car->brand_id}}</p>
             <p class="mt-6">Modelo</p>
-            <p class="font-bold pl-2">Elantran</p>
+            <p class="font-bold pl-2">{{$car->model}}</p>
             <p class="mt-6">Año</p>
-            <p class="font-bold pl-2">2013</p>
+            <p class="font-bold pl-2">{{$car->year}}</p>
             <p class="mt-6">Placa</p>
-            <p class="font-bold pl-2">P-2000877</p>
+            <p class="font-bold pl-2">{{$car->placa}}</p>
             <p class="mt-6">Color</p>
-            <p class="font-bold pl-2">Gris</p>
+            <p class="font-bold pl-2">{{$car->color}}</p>
             <p class="mt-6">Motor</p>
             <p class="font-bold pl-2">1.6 'CRDi' de 136CV</p>
         </div>

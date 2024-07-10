@@ -1,11 +1,11 @@
 <x-layout title="Agregar vehiculos">
 
-<div class="bg-gray-200 p-8 rounded-lg shadow-lg md:w-2/4 mb-4">
+    <div class="">
 
-    <div class="text-center">
-       <h1 class="text-2xl font-bold mb-4 text-center">Agregar Vehiculo</h1>
-    </div>
-
+        <div class="py-12 px-20 bg-ourblack bg-opacity-30 rounded-lg drop-shadow-2xl mx-5">
+           <div class="text-center">
+              <h1 class="text-2xl font-bold mb-4 text-center text-white">Agregar Vehículo</h1>
+           </div>
 
 
 

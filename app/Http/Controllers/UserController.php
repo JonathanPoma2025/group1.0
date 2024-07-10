@@ -41,7 +41,7 @@ class UserController extends Controller
         if ( $user->is_mechanic ) {
             return redirect('/users/home');
         }
-        return redirect('/');//RUTA DE TALLERES HOME 
+        return redirect('/');//RUTA DE TALLERES HOME
     }
 
     public function login(Request $request) {
@@ -58,7 +58,7 @@ class UserController extends Controller
 
     public function update(User $user) {
 
-        $data = $request -> validate([
+        $data = request()->validate([
             'name' => 'required',
             'birthday' => 'required',
             'email' => 'requied|email',
@@ -66,8 +66,14 @@ class UserController extends Controller
             'password' => 'required|min:8|max:12',
         ]);
 
-        $data->update($validate);
+        $user->update($data);
+        $user->save();
         return redirect('/home')->with('success');
-        $data->save;
+    }
+
+    public function showProfile() {
+        return view('users.profile', [
+            'user' => Auth::user()
+        ]);
     }
 }
