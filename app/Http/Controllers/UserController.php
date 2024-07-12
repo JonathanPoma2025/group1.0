@@ -8,8 +8,6 @@ use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
-
-    
     public function create(Request $request) {
         $data = $request->validate([
             //'datoverificados' => 'reglas',
@@ -48,19 +46,19 @@ class UserController extends Controller
 
     public function login(Request $request) {
         $data = $request->validate([
-            'email' => 'required|email|exist:users,email',
+            'email' => 'required|email|exists:users,email',
             'password' => 'required|min:8|max:12',
         ]);
 
         if(Auth::attempt($data)) {
-            return redirect('/home')->with('success');
+            return redirect('users/home')->with('success');
         }
         return back()->withErrors(['email'=>'wrong credentials', 'password' => 'Wrong password']);
     }
 
     public function update(User $user) {
 
-        $data = $request -> validate([
+        $data = request()->validate([
             'name' => 'required',
             'birthday' => 'required',
             'email' => 'requied|email',
@@ -68,8 +66,14 @@ class UserController extends Controller
             'password' => 'required|min:8|max:12',
         ]);
 
-        $data->update($validate);
+        $user->update($data);
+        $user->save();
         return redirect('/home')->with('success');
-        $data->save;
+    }
+
+    public function showProfile() {
+        return view('users.profile', [
+            'user' => Auth::user()
+        ]);
     }
 }
