@@ -12,6 +12,15 @@ class CarTypeSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+
+        $CarroTipo = [
+            'Sedán',
+            'Hatchback',
+            'Camioneta',
+            'Todoterreno',
+        ];
+
+        #CarType::factory(count($CarroTipo))->sequence(fn($sqn) => ['name'=>$CarroTipo[$sqn->index]])->create();
+
     }
 }
