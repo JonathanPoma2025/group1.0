@@ -19,18 +19,13 @@ Route::get('repairshops/account', function () {
     ]);
 });
 
-Route::get('/roles', function () {
-    return view('repairshops.roles');
+Route::get('roles', function () {
+    return view('users.usersType');
 } );
 
-Route::get('/recomendations', function () {
+Route::get('recomendations', function () {
     return view('repairshops.recomendations');
 } );
 
-Route::get('/prueba', function () {
-    return view('repairshops.prueba');
-} );
 
-Route::get('/createprueba', function () {
-    return view('repairshops.pruebacreate');
-} );
+
