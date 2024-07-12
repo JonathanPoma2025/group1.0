@@ -26,4 +26,8 @@
     </p>
   </x-card>
 
+  <x-card>
+   
+  </x-card>
+
 </x-layoutbg1>
