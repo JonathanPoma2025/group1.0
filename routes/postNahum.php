@@ -14,8 +14,9 @@ Route::post('/users/type', [UserController::class, 'editType']);
 
 Route::post('/login', [UserController::class, 'login']);
 
+Route::post('/user/logout', [UserController::class, 'logout']);
+
 Route::post('/register', [UserController::class, 'create']);
 
 Route::post('users/{$id}/edit', [UserController::class, 'update']);
-
 
