@@ -46,12 +46,12 @@ class UserController extends Controller
 
     public function login(Request $request) {
         $data = $request->validate([
-            'email' => 'required|email|exist:users,email',
+            'email' => 'required|email|exists:users,email',
             'password' => 'required|min:8|max:12',
         ]);
 
         if(Auth::attempt($data)) {
-            return redirect('/home')->with('success');
+            return redirect('users/home')->with('success');
         }
         return back()->withErrors(['email'=>'wrong credentials', 'password' => 'Wrong password']);
     }

@@ -5,11 +5,11 @@
             <form action="/users/type" method="POST" class="text-center mt-6">
                 @csrf
                 <div>
-                    <input name="is_mechanic" value="0">
+                    <input name="is_mechanic" value="0" class="hidden">
                     <button class="bg-gray-300 text-black rounded-full py-4 my-3 px-8" type="submit">Cliente</button>
                 </div>
                 <div>
-                    <input name="is_mechanic" value="1">
+                    <input name="is_mechanic" value="1" class="hidden">
                     <button class="bg-gray-300 text-black rounded-full py-4 my-3 px-9" type="submit">Taller</button>
                 </div>
         </form>

@@ -10,11 +10,15 @@ Route::get('/login', function () {
     return view('users.login');
 });
 
-Route::get('/navigationbar', function () {
-    return view('components.navigationbar');
+Route::get('/navigationbarcliente', function () {
+    return view('components.navigationbarcliente');
 });
 
 Route::get('/maintenance/create', function () {
     return view('cars.maintenance');
+});
+
+Route::get('/navigationbartaller', function () {
+    return view('components.navigationbartaller');
 });
 
