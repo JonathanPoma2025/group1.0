@@ -2,10 +2,10 @@
 
 <x-card>
 
-        <div class="py-12 px-20 bg-ourblack bg-opacity-30 rounded-lg drop-shadow-2xl mx-5">
+        <div>
 
-           <div class="text-center">
-              <h1 class="text-2xl font-bold mb-4 text-center text-white">Agregar Vehículo</h1>
+           <div class="text-center ">
+              <h1 class="text-2xl font-bold mb-4 my-16  text-center ">Agregar Vehículo</h1>
            </div>
 
 
@@ -15,7 +15,7 @@
     <div class="flex flex-col font-bold justify-center items-center h-screen">
         <select name="brand_id">
             @foreach ($brands as $brand)
-                <option value="{{ $brand->id }}">{{ $brand->name }}</option>
+                <option  value="{{ $brand->id }}">{{ $brand->name }}</option>
             @endforeach
         </select>
 
