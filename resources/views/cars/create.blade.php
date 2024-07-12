@@ -3,6 +3,7 @@
 <x-card>
 
         <div class="py-12 px-20 bg-ourblack bg-opacity-30 rounded-lg drop-shadow-2xl mx-5">
+
            <div class="text-center">
               <h1 class="text-2xl font-bold mb-4 text-center text-white">Agregar Vehículo</h1>
            </div>
