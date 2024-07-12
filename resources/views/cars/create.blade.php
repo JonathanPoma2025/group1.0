@@ -1,8 +1,6 @@
-<x-layout title="Agregar vehiculos">
+<x-layoutbg1 title="Agregar vehiculos">
 
-
-
-<div class="bg-gray-200 p-8 rounded-lg shadow-lg md:w-2/4 mb-4">
+<x-card>
 
         <div class="py-12 px-20 bg-ourblack bg-opacity-30 rounded-lg drop-shadow-2xl mx-5">
 
@@ -12,7 +10,7 @@
 
 
 
-<form action="{{ route('cars.store') }}" method="POST">
+    <form action="{{ route('cars.store') }}" method="POST">
     @csrf
     <div class="flex flex-col font-bold justify-center items-center h-screen">
         <select name="brand_id">
@@ -26,6 +24,7 @@
         <x-input type="number" name="year" id="year" min="1990" max="{{ date('Y') }}">Año</x-input>
 
         <select name="car_type_id">
+
             @foreach($car_types as $car_type)
                 <option value="{{ $car_type->id }}">{{ $car_type->name }}</option>
             @endforeach
@@ -35,13 +34,13 @@
 
         <x-input type="text" name="color" id="color">Color</x-input>
 
-        <x-input type="text" name="motor" id="motor">NRO. Motor</x-input>
+        <x-input type="text" name="motor" id="motor">Numero de Motor</x-input>
     </div>
 
     <div class="text-center">
         <button type="submit" class="bg-gray-300 text-black rounded-full p-1 px-4">Agregar</button>
     </div>
-</form>
+    </form>
 
 
 
@@ -49,5 +48,5 @@
 
 
 
-</div>
-</x-layout>
+</x-card>
+</x-layoutbg1>
