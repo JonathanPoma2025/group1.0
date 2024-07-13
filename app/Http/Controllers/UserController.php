@@ -35,13 +35,20 @@ class UserController extends Controller
 
     public function editType(Request $request) {
         $user = Auth::user();
-        $user->is_mechanic = $request->is_mechanic;
-        $user->save();
+        $user->update(['is_mechanic' => $request->is_mechanic ]);
 
         if ( $user->is_mechanic ) {
-            return redirect('/users/home');
+            return redirect('/repairshops/account');
         }
-        return redirect('/');//RUTA DE TALLERES HOME
+        return redirect('/users/home ');
+    }
+
+public function logout(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('/login');
     }
 
     public function login(Request $request) {

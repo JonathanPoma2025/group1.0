@@ -2,8 +2,7 @@
 
     <x-card>
         <div class="pl-2 font-bold text-2xl text-white">
-            <img class="inline rounded-full w-16 h-16 shadow-lg" src="{{ asset('imagenes/avata.png') }}">
-            Cliente 1
+        </span>¡Hola! {{$user->name}} <span>
         </div>
 
         <div class=" mt-10 text-left text-white">
@@ -25,8 +24,10 @@
             </div>
 
             <div class="space-x-30 space-x-5 md:space-x-5 text-end">
-                <button class="rounded-full bg-blueblack text-white px-4 mt-20 ">Cerrar Sesión <a
-                        href="update"></a></button>
+                <form action="logout" method="POST">
+                    @csrf
+                    <button class="rounded-full bg-blueblack text-white px-4 mt-20 ">Cerrar Sesión</button>
+                </form>
 
                 <a href="/vehicle/edit/number" class="rounded-full bg-blueblack text-white px-4">Editar</a>
 
@@ -65,7 +66,7 @@
 
             <div class=" text-end md:text-end space-x-30 space-x-5 md:space-x-5">
 
-                <a href="/vehicle/edit/number" class="rounded-full bg-blueblack text-white px-4 ">Editar</button>
+                <a href="/vehicle/edit/number" class="rounded-full bg-blueblack text-white px-4">Editar</button>
 
             </div>
             </div>
