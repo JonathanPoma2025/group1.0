@@ -13,38 +13,15 @@
 
     </div>
 
-     <div class=" flex justify-center h-screen shadow-3xl z-40">
-      <div class="grid items-center justify-center text-xs">
- 
-   <div class="rounded-[24px] pl-12 py-6 mb-6 shadow-2xl w-72 bg-ourblack bg-opacity-30 text-white">
-    <p class="text-xl font-bold">Taller 1</p>
- 
-    <p class="">Mecanico</p>
-    <p class="font-bold pl-2 ">Juanchito@example.com</p>
-    <p class="mt-2">Direccion</p>
-    <p class="font-bold pl-2">Rio de san blas</p>
-    <p class="mt-2">Contacto</p>
-    <p class="font-bold pl-2">+503 7542547</p>
- 
-   </div>
- </div>
-     </div>
-   </div>
- 
-  </x-layoutbg1>
 
-  
+    <div class=" flex justify-center h-screen shadow-3xl z-40">
 
+    </div>
+  </div>
+  <x-card>
+    <p>
+      article
+    </p>
+  </x-card>
 
- 
- 
- 
- 
-
-
-
-
-
-
-
-
+</x-layoutbg1>
