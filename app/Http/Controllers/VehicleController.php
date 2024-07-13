@@ -35,7 +35,7 @@ class VehicleController extends Controller
             ]);
 
         $validateddata = $request->validate([
-            'car_type_id'  => 'required|exists:car_types',
+            'car_type_id'  => 'required|exists:car_types,id',
             'brand_id' => 'required|exists:brands,id',
             'model' => 'required|string',
             'year'   => 'required|integer',

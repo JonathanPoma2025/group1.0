@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\CarType;
 
 class CarTypeSeeder extends Seeder
 {
@@ -20,7 +21,7 @@ class CarTypeSeeder extends Seeder
             'Todoterreno',
         ];
 
-        #CarType::factory(count($CarroTipo))->sequence(fn($sqn) => ['name'=>$CarroTipo[$sqn->index]])->create();
+        CarType::factory(count($CarroTipo))->sequence(fn($sqn) => ['name'=>$CarroTipo[$sqn->index]])->create();
 
     }
 }
