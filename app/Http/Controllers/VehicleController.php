@@ -16,7 +16,6 @@ class VehicleController extends Controller
        # $this->middleware('auth');
     #}
 
-
    public function create()
     {
         $brands = Brand::all();
@@ -41,12 +40,13 @@ class VehicleController extends Controller
             'year'   => 'required|integer',
             'user_id'=> 'required|exists:users,id',
             'placa' => 'required',
-            'color'=>'required|string'
+            'color'=>'required|string',
+            'motor' => 'required|string'
 
         ]);
 
         if(Vehicle::create($validateddata)){
-            return redirect()->route('user.profile');
+            return redirect()->route('users.profile');
         }
 
         return back('')->withErrors([
@@ -69,6 +69,7 @@ class VehicleController extends Controller
             'user_id'=> 'required|exists:user_id',
             'placa' => 'required|string',
             'color' => 'required|string',
+            'motor' => 'required|string'
         ]);
 
         if ($vehicle->update($validateddata)){
