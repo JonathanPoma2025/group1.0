@@ -98,7 +98,7 @@ public function edit($id)
     $brands = Brand::all();
     $car_types = CarType::all();
 
-    return view('cars.edit', compact('vehicle', 'brands', 'car_types'));
+    return view('cars.caredit', compact('vehicle', 'brands', 'car_types'));
 }
 
 
