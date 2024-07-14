@@ -20,3 +20,4 @@ Route::get('/user/profile', function() {
 Route::get('/user/update', function() {
     return view('users.update');
 });
+ 

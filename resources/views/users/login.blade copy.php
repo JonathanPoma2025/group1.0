@@ -16,8 +16,5 @@
         </div>
     </div>
 
-    
-
-
 </x-layoutbg1>
 

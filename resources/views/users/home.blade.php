@@ -11,7 +11,7 @@
 
 
           </article>
-          
+
 
     </div>
 
@@ -27,7 +27,9 @@
   </x-card>
 
   <x-card>
-   
+
   </x-card>
+  
+
 
 </x-layoutbg1>
