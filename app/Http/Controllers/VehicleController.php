@@ -90,9 +90,17 @@ class VehicleController extends Controller
 
         return redirect()->route('users.profile')->with('Success, Se ha eliminado el vehículo');
     }
+
+
+public function edit($id)
+{
+    $vehicle = Vehicle::findOrFail($id);
+    $brands = Brand::all();
+    $car_types = CarType::all();
+
+    return view('cars.edit', compact('vehicle', 'brands', 'car_types'));
 }
 
 
-
-
+}
 
