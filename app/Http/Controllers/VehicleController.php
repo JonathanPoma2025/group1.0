@@ -73,7 +73,7 @@ class VehicleController extends Controller
         ]);
 
         if ($vehicle->update($validateddata)){
-            return redirect()->route('user.profile')->with([
+            return redirect()->route('users.profile')->with([
                 'Los datos del vehículo se actualizaron correctamente'
             ]);
         }
@@ -88,7 +88,7 @@ class VehicleController extends Controller
     public function delete(Vehicle $vehicle) {
         $vehicle->delete();
 
-        return redirect()->route('user.profile')->with('Success, Se ha eliminado el vehículo');
+        return redirect()->route('users.profile')->with('Success, Se ha eliminado el vehículo');
     }
 }
 

@@ -78,6 +78,16 @@ public function logout(Request $request)
         return redirect('/home')->with('success');
     }
 
+
+    public function profile()
+    {
+        
+        $user = Auth::user();
+        return view('users.profile', compact('user'));
+    }
+
+
+
     public function showProfile() {
         return view('users.profile', [
             'user' => Auth::user()
