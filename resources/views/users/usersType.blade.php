@@ -17,4 +17,5 @@
             </form>
         </div>
     </div>
+<x-navigationbartaller></x-navigationbartaller>
 </x-layoutbg1>
