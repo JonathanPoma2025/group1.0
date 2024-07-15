@@ -35,4 +35,3 @@ Route::get('/createprueba', function () {
 Route::get('/addcostumer', function () {
     return view('repairshops.pruebacreate');
 } );
-
