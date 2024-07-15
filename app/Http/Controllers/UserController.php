@@ -38,7 +38,7 @@ class UserController extends Controller
         $user->update(['is_mechanic' => $request->is_mechanic ]);
 
         if ( $user->is_mechanic ) {
-            return redirect('/repairshops/account');
+            return redirect('/repairshops/create');
         }
         return redirect('/users/home ');
     }
