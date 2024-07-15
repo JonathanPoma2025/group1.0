@@ -16,7 +16,6 @@ class VehicleController extends Controller
        # $this->middleware('auth');
     #}
 
-
    public function create()
     {
         $brands = Brand::all();
@@ -35,18 +34,19 @@ class VehicleController extends Controller
             ]);
 
         $validateddata = $request->validate([
-            'car_type_id'  => 'required|exists:car_types',
+            'car_type_id'  => 'required|exists:car_types,id',
             'brand_id' => 'required|exists:brands,id',
             'model' => 'required|string',
             'year'   => 'required|integer',
             'user_id'=> 'required|exists:users,id',
             'placa' => 'required',
-            'color'=>'required|string'
+            'color'=>'required|string',
+            'motor' => 'required|string'
 
         ]);
 
         if(Vehicle::create($validateddata)){
-            return redirect()->route('user.profile');
+            return redirect()->route('users.profile');
         }
 
         return back('')->withErrors([
@@ -69,10 +69,11 @@ class VehicleController extends Controller
             'user_id'=> 'required|exists:user_id',
             'placa' => 'required|string',
             'color' => 'required|string',
+            'motor' => 'required|string'
         ]);
 
         if ($vehicle->update($validateddata)){
-            return redirect()->route('user.profile')->with([
+            return redirect()->route('users.profile')->with([
                 'Los datos del vehículo se actualizaron correctamente'
             ]);
         }
@@ -87,11 +88,19 @@ class VehicleController extends Controller
     public function delete(Vehicle $vehicle) {
         $vehicle->delete();
 
-        return redirect()->route('user.profile')->with('Success, Se ha eliminado el vehículo');
+        return redirect()->route('users.profile')->with('Success, Se ha eliminado el vehículo');
     }
+
+
+public function edit($id)
+{
+    $vehicle = Vehicle::findOrFail($id);
+    $brands = Brand::all();
+    $car_types = CarType::all();
+
+    return view('cars.caredit', compact('vehicle', 'brands', 'car_types'));
 }
 
 
-
-
+}
 
