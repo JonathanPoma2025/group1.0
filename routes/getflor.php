@@ -20,11 +20,4 @@ Route::get('/user/profile', function() {
 Route::get('/user/update', function() {
     return view('users.update');
 });
-<<<<<<< Updated upstream
- 
-=======
 
-Route::get('/user/carousel', function() {
-    return view('users.carousel');
-});
->>>>>>> Stashed changes
