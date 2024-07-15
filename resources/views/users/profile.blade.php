@@ -64,4 +64,5 @@
             </div>
         </x-card>
     @endforeach
+<x-navigationbarcliente></x-navigationbarcliente>
 </x-layoutbg1>
