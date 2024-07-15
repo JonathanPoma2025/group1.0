@@ -10,12 +10,11 @@ class UserController extends Controller
 {
     public function create(Request $request) {
         $data = $request->validate([
-            //'datoverificados' => 'reglas',
             'name' => 'required',
             'email' => 'required|email|unique:users,email',
             'birthday'=>'required|date',
             'cellphone_number'=> 'required|max:9',
-            'password'=> 'min:8|max:12',
+            'password'=> 'min:8',
         ]);
 
         $user = User::create($data);
@@ -38,7 +37,7 @@ class UserController extends Controller
         $user->update(['is_mechanic' => $request->is_mechanic ]);
 
         if ( $user->is_mechanic ) {
-            return redirect('/repairshops/account');
+            return redirect('/repairshops/create');
         }
         return redirect('/users/home ');
     }
