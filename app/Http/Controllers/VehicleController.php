@@ -50,7 +50,8 @@ class VehicleController extends Controller
         }
 
         return back('')->withErrors([
-            'error'=>'Error al registrar el vehículo'
+            'error'=>'Error al registrar el vehículo',
+            
         ]);
     }
 
