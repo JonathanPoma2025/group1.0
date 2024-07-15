@@ -11,7 +11,9 @@ Route::get('user/profile', [UserController::class, 'showProfile'])->name('users.
 
 Route::get('cars/car.edit{id}', [VehicleController::class, 'edit'])->name('cars.caredit');
 
+Route::put('cars/update/{id}', [VehicleController::class, 'update'])->name('cars.update');
 
+Route::post('/logout', [UserController::class, 'logout'])->name('logout');
 
 
 
