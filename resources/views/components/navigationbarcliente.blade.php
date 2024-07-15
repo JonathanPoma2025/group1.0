@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="bg-gray-500 p-5 w-11/12 md:w-5/12 shadow-lg rounded-full fixed bottom-10 left-1/2 transform -translate-x-1/2">
+    <div class="bg-ourblack bg-opacity-35 p-5 w-11/12 md:w-5/12 shadow-lg rounded-full fixed bottom-10 left-1/2 transform -translate-x-1/2">
         <div class="flex justify-around">
             <div>
                 <img src="{{ asset('Images/new1.png') }}" alt="" class="w-7 mx-auto">
