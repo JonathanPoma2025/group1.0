@@ -21,4 +21,8 @@ Route::get('users/home', function () {
   return view('users.home');
 });
 
+Route::get('inicio/bienvenido', function () {
+    return view('inicio.bienvenido');
+  });
+
 

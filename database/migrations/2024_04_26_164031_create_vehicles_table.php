@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('model');
             $table->string('placa');
             $table->string('motor');
-            $table->date('year');
+            $table->integer('year');
             $table->string('color');
             $table->foreignIdFor(User::class)->constrained();
             $table->timestamps();

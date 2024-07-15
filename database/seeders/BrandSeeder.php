@@ -16,6 +16,10 @@ class BrandSeeder extends Seeder
         $marcas = [
             'Toyota',
             'Nissan',
+            'Honda',
+            'Kia',
+            'Hyundai',
+            'Mitsubishi'
         ];
 
         Brand::factory(count($marcas))->sequence(fn($sqn) => ['name' => $marcas[$sqn->index]])->create();
