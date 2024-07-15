@@ -20,7 +20,8 @@
                 <img src="{{ asset('Images/icono9.png') }}"alt="" class="w-7 mx-auto md:'12px'">
                 <h1>Agregar</h1>
             </div>
-
+            
         </div>
     </div>
+
 </x-layout>

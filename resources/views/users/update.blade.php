@@ -20,6 +20,7 @@
             <h1 class="text-2xl font-bold my-4 text-center text-white">Actualiza los datos de tu carro aqui</h1>
             <form action="/update" method="GET" class="text-center mt-6">
                 @csrf
+
                 <x-input id="name" name="name" type="text">Vehiculo</x-input>
                 <x-input id="name" name="name" type="text">Marca</x-input>
                 <x-input id="name" name="name" type="text">Modelo</x-input>
@@ -27,14 +28,18 @@
                 <x-input id="name" name="name" type="text">Placa</x-input>
                 <x-input id="name" name="name" type="text">Color</x-input>
                 <x-input id="name" name="name" type="text">Motor</x-input>
+
+
                 <x-primary-button>Guardar</x-primary-button>
+
 
 
             </form>
 
         </div>
+
     </div>
 
-
+    <x-navigationbarcliente></x-navigationbarcliente>
 </x-layoutbg1>
 
