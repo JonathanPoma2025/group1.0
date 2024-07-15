@@ -6,7 +6,8 @@
        <h1 class="text-2xl font-bold mb-4 text-center">Editar datos del vehiculo</h1>
     </div>
 
-    <form action="cars/create" method="POST">
+  <form action="cars/create" method="POST">
+        
 
         <body class="flex flex-col font-bold justify-center items-center h-screen ">
 
