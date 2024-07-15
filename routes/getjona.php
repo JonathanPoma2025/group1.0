@@ -28,9 +28,6 @@ Route::get('recomendations', function () {
 } );
 
 
-<<<<<<< Updated upstream
-
-=======
 Route::get('/createprueba', function () {
     return view('repairshops.pruebacreate');
 } );
@@ -38,4 +35,4 @@ Route::get('/createprueba', function () {
 Route::get('/addcostumer', function () {
     return view('repairshops.pruebacreate');
 } );
->>>>>>> Stashed changes
+
