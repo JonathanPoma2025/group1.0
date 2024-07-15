@@ -1,8 +1,8 @@
 <x-layout>
-    <div class="bg-gray-300 p-5 w-11/12 md:w-5/12 shadow-lg rounded-full fixed bottom-10 left-1/2 transform -translate-x-1/2">
+    <div class="bg-ourblack bg-opacity-30 p-5 w-11/12 md:w-5/12 shadow-lg rounded-full fixed bottom-10 left-1/2 transform -translate-x-1/2 ">
         <div class="flex justify-around">
             <div>
-                <img src="{{ asset('Images/home_20dp.png') }}" alt="" class="w-7 mx-auto">
+                <img src="{{ asset('Images/home_20dp.png') }}" alt="" class="w-7 mx-auto object-white ">
                 <h1 class="text-center">Inicio</h1>
             </div>
 

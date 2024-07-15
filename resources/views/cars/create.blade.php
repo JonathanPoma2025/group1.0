@@ -1,6 +1,6 @@
 <x-layoutbg1 title="Agregar vehiculos">
 
-<x-card>
+
 
         <div>
 
@@ -49,5 +49,5 @@
 
     <x-navigationbartaller></x-navigationbartaller>
 
-</x-card>
+
 </x-layoutbg1>
