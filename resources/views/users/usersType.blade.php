@@ -6,14 +6,14 @@
                 @csrf
                 <div>
                     <input name="is_mechanic" value="0" class="hidden">
-                    <button class="bg-card bg-opacity-30 text-white rounded-full py-4 my-3 px-8" type="submit">Cliente</button>
+                    <button class="bg-card bg-opacity-50 text-white rounded-full py-4 my-3 px-8" type="submit">Cliente</button>
                 </div>
         </form>
 
             <form action="/users/type" method="POST" class="text-center mt-6">
                 @csrf
                 <input name="is_mechanic" value="1" class="hidden">
-                <button class="bg-card bg-opacity-30 text-white rounded-full py-4 my-3 px-9" type="submit">Taller</button>
+                <button class="bg-card bg-opacity-50 text-white rounded-full py-4 my-3 px-9" type="submit">Taller</button>
             </form>
         </div>
     </div>
