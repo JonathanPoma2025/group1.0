@@ -39,7 +39,7 @@ class UserController extends Controller
         if ( $user->is_mechanic ) {
             return redirect('/repairshops/create');
         }
-        return redirect('/users/home ');
+        return redirect('/cars/create ');
     }
 
 public function logout(Request $request)
