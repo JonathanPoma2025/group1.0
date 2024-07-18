@@ -23,13 +23,13 @@
 
             <x-input type="text" name="placa" id="placa">Placa</x-input>
 
-            <x-input type="text" name="color" id="color">Color</x-input>
+            <x-input type="text" name="color" id="color" value="{{$vehicle->color}}">Color</x-input>
 
             <x-input type="text" name="motor" id="motor">Numero de Motor</x-input>
 
         </body>
 
-
+        {{$vehicle}}
              <div class="text-center">
                 <button type="submit" class="bg-gray-300 text-black rounded-full p-1 px-4">Editar</button>
             </div>

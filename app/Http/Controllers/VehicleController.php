@@ -51,7 +51,7 @@ class VehicleController extends Controller
 
         return back('')->withErrors([
             'error'=>'Error al registrar el vehículo',
-            
+
         ]);
     }
 
@@ -93,9 +93,9 @@ class VehicleController extends Controller
     }
 
 
-public function edit($id)
+public function edit(Vehicle $vehicle)
 {
-    $vehicle = Vehicle::findOrFail($id);
+    $vehicle->load(['brand', 'carType']);
     $brands = Brand::all();
     $car_types = CarType::all();
 

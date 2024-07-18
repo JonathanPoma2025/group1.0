@@ -9,7 +9,7 @@ Route::post('cars/store', [VehicleController::class, 'store'])->name('cars.store
 
 Route::get('user/profile', [UserController::class, 'showProfile'])->name('users.profile');
 
-Route::get('cars/car.edit{id}', [VehicleController::class, 'edit'])->name('cars.caredit');
+Route::get('cars/edit/{vehicle}', [VehicleController::class, 'edit'])->name('cars.caredit');
 
 Route::put('cars/update/{id}', [VehicleController::class, 'update'])->name('cars.update');
 
