@@ -8,18 +8,18 @@
                 <h1 class="text-xl text-gray-5 py-2 font-bold mb-4 text-center">Registra tu taller</h1>
 
                 <div class="mb-4 px-9 flex flex-col items-center ">
-                    <x-input type="" id="" name="">Nombre del taller</x-input>
+                    <x-input type="string" id="Nombre del taller" name="Nombre del taller">Nombre del taller</x-input>
 
-                    <x-input type="" id="" name="">Propietario</x-input>
+                    <x-input type="string" id="Propietario" name="Propietario">Propietario</x-input>
 
-                    <x-input type="" id="" name="">Dirección</x-input>
+                    <x-input type="string" id="Ubicacion" name="Ubicacion">Ubicación</x-input>
 
-                    <x-input type="email" id="email" name="correo">Dirección de correo electrónico</x-input>
+                    <x-input type="email" id="email" name="Correo">Dirección de correo electrónico</x-input>
 
-                    <x-input type="password" id="" name="contraseña">Contraseña</x-input>
+                    <x-input type="string" id="Telefono" name="Telefono">Numero de telefono</x-input>
+
                 </div>
-                <button class="mx-auto bg-blueblack text-gray-5 rounded-full p-1 px-4 text-xs flex flex-col font-bold"
-                    type="submit">Registrarse</button>
+                <x-primary-button class="items-center">Registrar taller</x-primary-button>
             </form>
         </x-card>
 

@@ -7,9 +7,7 @@ use Illuminate\Database\Seeder;
 
 class RepairshopsSeeder extends Seeder
 {
-    /**
-     * Run the database seeds.
-     */
+
     public function run(): void
     {
         $taller = [
@@ -24,6 +22,6 @@ class RepairshopsSeeder extends Seeder
                 "user_id" => 1
             ],
         ];
-        
+
     }
 }

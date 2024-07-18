@@ -36,4 +36,9 @@ public function brand()
     return $this->belongsTo(Brand::class);
 }
 
+public function carType()
+{
+    return $this->belongsTo(CarType::class);
+}
+
 }
