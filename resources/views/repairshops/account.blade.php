@@ -5,6 +5,16 @@
             <div>
                 <h1>Mecánico</h1>
                 <h1 class="pl-6">Juan Pérez</h1>
+                <h1>Contacto</h1>
+                <h2 class="pl-6">juanmecanico@example.com</h2>
+                <h2 class="pl-6">+503 7477 8037</h2>
+                <h1>Horario de atención</h1>
+                <h2 class="pl-6">De lunes a sábado de 8:00 AM a</h2>
+                <h2 class="pl-6">8:00 PM</h2>
+                <h1>Valoraciones</h1>
+                <h2 class="pl-8">Sofia@example.com⭐⭐⭐⭐</h2>
+                <h2 class="pl-8">Sofia@example.com⭐⭐⭐</h2>
+                <h2 class="pl-8">Sofia@example.com⭐⭐⭐⭐⭐</h2>
             </div>
         </x-card>
     </div>
