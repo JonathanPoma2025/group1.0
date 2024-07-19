@@ -15,5 +15,6 @@ Route::put('cars/update/{id}', [VehicleController::class, 'update'])->name('cars
 
 Route::post('/logout', [UserController::class, 'logout'])->name('logout');
 
+Route::resource('cars', VehicleController::class);
 
 

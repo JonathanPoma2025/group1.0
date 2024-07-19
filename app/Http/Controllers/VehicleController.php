@@ -63,23 +63,19 @@ class VehicleController extends Controller
     {
         //validate
         $validateddata = $request->validate([
-            'car_type_id'  => 'required|exists:car_types',
-            'brand_id' => 'required|exists:brands',
-            'model' => 'required|string',
-            'year'   => 'required|integer',
-            'user_id'=> 'required|exists:user_id',
-            'placa' => 'required|string',
-            'color' => 'required|string',
-            'motor' => 'required|string'
+            'car_type_id'  => 'exists:car_types',
+            'brand_id' => 'exists:brands',
+           'model' => 'string',
+           'year'   => 'integer',
+            'user_id'=> 'exists:user_id',
+            'placa' => 'string',
+            'color' => 'string',
+            'motor' => 'string'
         ]);
 
-        if ($vehicle->update($validateddata)){
-            return redirect()->route('users.profile')->with([
-                'Los datos del vehículo se actualizaron correctamente'
-            ]);
+        if ($vehicle->update($validateddata)) {
+            return redirect('users.profile')->route('users.profile')->with('success', 'Los datos del vehículo se actualizaron correctamente');
         }
-
-
 
         return back()->withErrors([
             'error'=>'Error al actualizar el vehículo'
