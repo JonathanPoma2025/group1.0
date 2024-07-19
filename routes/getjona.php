@@ -28,10 +28,10 @@ Route::get('recomendations', function () {
 } );
 
 
-Route::get('/createprueba', function () {
+Route::get('repairshops/createprueba', function () {
     return view('repairshops.pruebacreate');
 } );
 
-Route::get('/addcostumer', function () {
-    return view('repairshops.pruebacreate');
-} );
+Route::get('repairshops/addcostumer', function () {
+    return view('repairshops.addcostumer');
+});

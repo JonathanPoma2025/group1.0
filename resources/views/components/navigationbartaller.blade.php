@@ -12,12 +12,12 @@
 
             <div>
                 <img src="{{ asset('Images/new3.png') }}"alt="" class="w-7 mx-auto md:'12px'">
-                <h1>Calendario</h1>
+                <h1 class="text-center text-white">Calendario</h1>
             </div>
 
             <div>
                 <img src="{{ asset('Images/new4.png') }}"alt="" class="w-7 mx-auto md:'12px'">
-                <h1>Agregar</h1>
+                <h1 class="text-center text-white">Agregar</h1>
             </div>
 
         </div>
