@@ -1,5 +1,5 @@
 <x-layoutbg1>
-    <div class="flex flex-col justify-center items-center h-screen w-full pt-2">
+    <div class="flex flex-col justify-center items-center h-screen w-full pt-2 mb-[172px]">
         <x-card>
             <img src="{{ asset("images/logocar.png")}}" alt="" class="mx-auto w-16">
             <div>
@@ -18,4 +18,5 @@
             </div>
         </x-card>
     </div>
+    <x-navigationbarcliente/>
 </x-layoutbg1>
