@@ -12,5 +12,6 @@
 <body class="bg-gray-100 flex flex-col justify-center items-center bg-contain bg-center" style="background-image: url('{{ asset("images/fondodefault.jpg") }}'); background-size: cover; background-position: center center;">
     {{$slot}}
 </body>
+</body>
 </html>
 
