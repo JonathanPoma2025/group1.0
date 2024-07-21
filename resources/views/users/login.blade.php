@@ -9,7 +9,7 @@
                 <x-input id="email" name="email" type="email">Correo electrónico</x-input>
                 <x-input id="password" name="password" type="password">Contraseña</x-input>
 
-                <x-primary-button class="bg-ourblack bg-opacity-30 text-white">Iniciar sesión</x-primary-button>
+                <x-primary-button class=" text-white">Iniciar sesión</x-primary-button>
             </form>
 
             <p class="text-white mt-4 text-center">¿No tienes cuenta? <a href="{{route('register')}}" class="underline">Registrate</a></p>

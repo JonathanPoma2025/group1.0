@@ -25,7 +25,7 @@
             <div class="space-x-30 space-x-5 md:space-x-5 text-end">
                 <form action="{{ route('logout') }}" method="POST">
                     @csrf
-                    <button class="rounded-full bg-blueblack text-white px-4 mt-20 ">Cerrar Sesión</button>
+                    <x-primary-button class="rounded-full text-white px-4 mt-20 ">Cerrar Sesión</x-primary-button>
                 </form>
             </div>
         </div>

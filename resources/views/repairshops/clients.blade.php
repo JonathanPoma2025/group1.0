@@ -1,7 +1,9 @@
 <x-layoutbg1>
+<div class="space-y-5">
+    <h1 class="text-2xl text-white font-bold">Clientes</h1>
+</div>
 
-
-    <div class="flex flex-col items-center scroll-ful mb-[20px]">
+    <div class="flex flex-col items-center  mb-[20px] ">
 
         <div class="rounded-[24px] pl-12 py-6 mb-6 shadow-2xl w-72  bg-ourblack bg-opacity-30 text-white">
             <p class="">Sofia Medina</p>
@@ -13,7 +15,7 @@
         </div>
     </div>
 
-    <div class=" flex flex-col items-center scroll-ful mb-[20px]">
+    <div class=" flex flex-col items-center  mb-[20px]">
 
         <div class="rounded-[24px] pl-12 py-6 mb-6 shadow-2xl w-72  bg-ourblack bg-opacity-30 text-white">
             <p class="">Sofia Medina</p>
