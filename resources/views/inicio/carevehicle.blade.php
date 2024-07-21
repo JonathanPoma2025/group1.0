@@ -4,9 +4,9 @@
 <img src="{{ asset('Images/Logo 2.png') }}" alt="" class="w-20 mx-auto md:'12px '">
 <p class="Ubuntu-bold 2xl">TrackMate</p>
 <article class="align-baseline">
-    <h1 class="text-xl font-bold mt-6">Bienvenido/a</h1>
-    <p class="mt-6">Somos una App cuyo proposito es ayudar con el mantenimiento y gestion automotriz de tu vehiculo, 
-        contribuyendo al cuidado de el.
+    <h1 class="text-xl font-bold mt-6">Cuidado de tu vehiculo</h1>
+    <p class="mt-6">consejos y herramientas para el mantenimientode tu auto y recomendaciones para mantenerlo 
+        en buen estado
     </p>
     <x-primary-button class="mb-20 w-40 mx-auto">registrarse</x-primary-button>    
 
