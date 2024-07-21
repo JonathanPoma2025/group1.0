@@ -8,7 +8,7 @@
             <form action="/update" method="GET" class="text-center mt-6">
                 @csrf
                 <x-input id="name" name="name" type="text">Correo</x-input>
-                <x-primary-button class="bg-ourblack bg-opacity-35 text-white">Agregar</x-primary-button>
+                <x-primary-button class=" text-white">Agregar</x-primary-button>
             </form>
 
 

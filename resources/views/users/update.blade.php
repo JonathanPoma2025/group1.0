@@ -10,7 +10,7 @@
                 <x-input id="name" name="name" type="text">Nombre</x-input>
                 <x-input id="email" name="email" type="email">Email</x-input>
                 <x-input id="cellphone" name="cellphone" type="text">Numero de telefono</x-input>
-                <x-primary-button class="bg-ourblack bg-opacity-35 text-white">Guardar</x-primary-button>
+                <x-primary-button class=" text-white">Guardar</x-primary-button>
             </form>
 
 
@@ -28,7 +28,7 @@
                 <x-input id="name" name="name" type="text">Motor</x-input>
 
 
-                <x-primary-button class="bg-ourblack bg-opacity-35 text-white">Guardar</x-primary-button>
+                <x-primary-button class=" text-white">Guardar</x-primary-button>
         </div>
     </div>
     <x-navigationbarcliente />

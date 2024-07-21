@@ -50,7 +50,7 @@
 
 
              <div class="text-center">
-                <button type="submit" class="bg-gray-300 text-black rounded-full p-1 px-4">Editar</button>
+                <button type="submit" class="  rounded-full p-1 px-4 text-white">Editar</button>
             </div>
 
 

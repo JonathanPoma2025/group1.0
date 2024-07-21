@@ -28,9 +28,9 @@ Route::get('recomendations', function () {
 } );
 
 
-Route::get('repairshops/createprueba', function () {
-    return view('repairshops.pruebacreate');
-} );
+Route::get('repairshops/updatetaller', function () {
+    return view('repairshops.updatetaller');
+});
 
 Route::get('repairshops/addcostumer', function () {
     return view('repairshops.addcostumer');

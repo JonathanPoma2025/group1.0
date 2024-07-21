@@ -7,6 +7,7 @@
         <h2 class="text-white text-1xl">Tu Proximo mantenimiento es en:</h2>
 
         <p class="text-white principal de clientes text-3xl font-bold text-center">2 meses</p>
+        
         <x-primary-button class="mb-20 w-40 mx-auto">Editar datos</x-primary-button>
 
 
@@ -28,6 +29,4 @@
 
   <x-card>
 
-  </x-card>
-<x-navigationbarcliente/>
 </x-layoutbg1>
