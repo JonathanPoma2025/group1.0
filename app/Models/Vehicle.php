@@ -41,4 +41,10 @@ public function carType()
     return $this->belongsTo(CarType::class);
 }
 
+
+
+public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
