@@ -8,6 +8,9 @@
     <p class="mt-6">Somos una App cuyo proposito es ayudar con el mantenimiento y gestion automotriz de tu vehiculo,
         contribuyendo al cuidado de el.
     </p>
+    <x-primary-button class="mb-20 w-40 mx-auto">registrarse</x-primary-button>
+
+    <h1>¿ya tienes una cuenta? inicia sesion</h1>
 
 <div>
     <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-10 ms-96 mt-14">
