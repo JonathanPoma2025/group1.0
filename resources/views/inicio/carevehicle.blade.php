@@ -12,6 +12,7 @@
 
     <h1>¿ya tienes una cuenta? inicia sesion</h1>
 
+
 </article>
 </div>
 </x-layoutbg1> 
