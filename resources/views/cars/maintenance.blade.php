@@ -1,6 +1,6 @@
 <x-layoutbg1 title="Login">
 
-    <div class="h-screen w-full flex flex-col items-center justify-center">
+    <div class="h-screen w-full flex flex-col items-center justify-center scroll-full mb-[172px]">
         <h1 class="text-2xl font-bold my-4 text-center text-white">Agregar Mantenimiento</h1>
 
         <x-card class="h-screen flex items-center">
