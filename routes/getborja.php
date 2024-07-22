@@ -25,4 +25,11 @@ Route::get('inicio/bienvenido', function () {
     return view('inicio.bienvenido');
   });
 
+  Route::get('inicio/carevehicle', function () {
+    return view('inicio.carevehicle');
+  });
+
+  Route::get('inicio/wellnes', function () {
+    return view('inicio.wellnes');
+  });
 
