@@ -2,6 +2,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VehicleController;
+use App\Http\Controllers\ClientController;
 
 Route::get('cars/create', [VehicleController::class, 'create'])->name('cars.create');
 
@@ -18,3 +19,11 @@ Route::post('/logout', [UserController::class, 'logout'])->name('logout');
 Route::resource('cars', VehicleController::class);
 
 
+#Rutas para clientes del taller :)
+Route::get('repairshops/addcostumer', [ClientController::class, 'create'])->name('clients.create');
+
+Route::post('repairshops/addcostumer', [ClientController::class, 'store'])->name('clients.store');
+
+Route::get('repairshops/clients', [ClientController::class, 'index'])->name('clients.index');
+
+Route::get('<repairshops/clients/{email}', [ClientController::class, 'show'])->name('clients.show');
