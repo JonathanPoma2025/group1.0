@@ -43,7 +43,7 @@ class DatabaseSeeder extends Seeder
                 'email' => 'test@example.com',
             ]);
             Advice::factory()->create([
-                'name' => 'Test User',
+                'tittle' => 'Test User',
                 'email' => 'test@example.com',
             ]);
             Brand::factory()->create([
