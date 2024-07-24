@@ -18,6 +18,8 @@ class UserFactory extends Factory
      */
     protected static ?string $password;
 
+
+
     /**
      * Define the model's default state.
      *
@@ -29,6 +31,8 @@ class UserFactory extends Factory
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
             'password' => static::$password ??= Hash::make('password'),
+            'birthday' => (''),
+
 
         ];
     }
