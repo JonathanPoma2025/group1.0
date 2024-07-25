@@ -82,8 +82,8 @@ class DatabaseSeeder extends Seeder
                 'maintenance_id' => 'test@example.com',
             ]);
             Type::factory()->create([
-                '' => ' ',
-                '' => ' ',
+                'maintenance' => '',
             ]);
+
     }
 }
