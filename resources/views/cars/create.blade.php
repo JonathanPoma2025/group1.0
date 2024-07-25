@@ -2,14 +2,14 @@
 
     <div class="scroll-full mb-[172px] md:w-5/6">
         <x-card>
-            
+
                 <h1 class="text-2xl font-bold w-4/5 mb-8 px-14 pl-20 md:pl-52  ">Agregar Vehículo</h1>
-           
+
             @if (Auth::check())
                 <form action="{{ route('cars.store') }}" method="POST">
                     @csrf
                     <div class="flex flex-col font-bold justify-center items-center ">
-                        <select name="brand_id">
+                        <select name="brand_id" class="text-black bg-oublack">
                             @foreach ($brands as $brand)
                                 <option value="{{ $brand->id }}">{{ $brand->name }}</option>
                             @endforeach
@@ -20,7 +20,7 @@
                         <x-input type="number" name="year" id="year" min="1990"
                             max="{{ date('Y') }}">Año</x-input>
 
-                        <select name="car_type_id">
+                        <select name="car_type_id" class="text-black bg-oublack">
 
                             @foreach ($car_types as $car_type)
                                 <option value="{{ $car_type->id }}">{{ $car_type->name }}</option>
