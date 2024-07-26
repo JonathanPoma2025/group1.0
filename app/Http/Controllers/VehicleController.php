@@ -60,11 +60,12 @@ class VehicleController extends Controller
     ]);
 }
     public function update(Request $request, Vehicle $vehicle)
+
     {
         //validate
         $validateddata = $request->validate([
-            'car_type_id'  => 'exists:car_types',
-            'brand_id' => 'exists:brands',
+            'car_type_id'  => 'exists:car_types,id',
+            'brand_id' => 'exists:brands,id',
            'model' => 'string',
            'year'   => 'integer',
             'user_id'=> 'exists:user_id',
@@ -73,12 +74,14 @@ class VehicleController extends Controller
             'motor' => 'string'
         ]);
 
-        if ($vehicle->update($validateddata)) {
-            return redirect('users.profile')->route('users.profile')->with('success', 'Los datos del vehículo se actualizaron correctamente');
+
+        if($vehicle->update($validateddata)){
+
+        return redirect()->route('users.profile')->with('success', 'Los datos del vehículo se actualizaron correctamente');
         }
 
         return back()->withErrors([
-            'error'=>'Error al actualizar el vehículo'
+           'error'=>'Error al actualizar el vehículo'
         ]);
     }
 
@@ -94,6 +97,8 @@ public function edit(Vehicle $vehicle)
     $vehicle->load(['brand', 'carType']);
     $brands = Brand::all();
     $car_types = CarType::all();
+
+
 
     return view('cars.caredit', compact('vehicle', 'brands', 'car_types'));
 }

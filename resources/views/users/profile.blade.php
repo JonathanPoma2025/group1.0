@@ -1,4 +1,4 @@
-<x-layoutbg1 title="editacion" class="my-20">
+<x-layoutbg1 title="Perfil de Usuario" class="my-20">
 
     <x-card>
         <div class="pl-2 font-bold text-2xl text-white">

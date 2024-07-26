@@ -15,6 +15,10 @@ return new class extends Migration
     {
         Schema::create('client_repairshops', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('email')->unique();
+            $table->string('vehicle');
+            $table->date('last_maintenance');
             $table->foreignIdFor(Repairshop::class)->constrained();
             $table->foreignIdFor(User::class)->constrained();
             $table->timestamps();
