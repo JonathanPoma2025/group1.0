@@ -14,6 +14,5 @@ class ClientRepairshop extends Model
         'email',
         'vehicle',
         'last_maintenance',
-
     ];
 }
