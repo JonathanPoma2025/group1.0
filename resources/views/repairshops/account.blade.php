@@ -16,7 +16,7 @@
                 <h2 class="pl-8">Sofia@example.com⭐⭐⭐</h2>
                 <h2 class="pl-8">Sofia@example.com⭐⭐⭐⭐⭐</h2>
             </div>
-            <div class="space-x-5 justify-center">
+            <div class="space-x-12 justify-center md:text-end ">
             <x-primary-button>Editar</x-primary-button> <x-primary-button>Cerrar sesión</x-primary-button>
            </div>
         </x-card>
