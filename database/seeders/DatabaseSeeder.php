@@ -36,43 +36,43 @@ class DatabaseSeeder extends Seeder
          ]);
 
             User::factory()->create([
-                'name' => 'Test User',
-                'email' => 'test@example.com',
-                'birthday' => '',
+                'name' => 'j',
+                'email' => '',
+
             ]);
             Advice::factory()->create([
-                'title' => 'Test User',
-                'description' => 'test@example.com',
+                'title' => 'j',
+                'description' => '',
             ]);
             Brand::factory()->create([
-                'name' => 'Test User',
+                'name' => 'j',
             ]);
             CarType::factory()->create([
-                'name' => 'Test User',
+                'name' => 'j',
             ]);
             Repairshop::factory()->create([
-                'name' => 'Test User',
-                'email' => 'test@example.com',
+                'name' => 'j',
+                'email' => '',
             ]);
             Reminder::factory()->create([
-                'date' => 'Test User',
-                'description' => 'test@example.com',
+                'date' => 'j',
+                'description' => '',
                 'maintenance_id' => '',
             ]);
             Maintenance::factory()->create([
-                'date' => 'Test User',
-                'time_span' => 'test@example.com',
+                'date' => 'j',
+                'time_span' => '',
                 'upcoming_date' => '',
                 'type_id' => '',
                 'vehicle_id' => '',
             ]);
             ClientRepairshop::factory()->create([
-                'name' => 'Test User',
-                'email' => 'test@example.com',
+                'name' => 'j',
+                'email' => '',
             ]);
             Vehicle::factory()->create([
-                'car_type_id' => 'Test User',
-                'brand_id' => 'test@example.com',
+                'car_type_id' => '',
+                'brand_id' => '',
                 'model' => '',
                 'year' => '',
                 'user_id' => '',
