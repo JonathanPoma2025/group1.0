@@ -17,7 +17,7 @@ class UserFactory extends Factory
      * The current password being used by the factory.
      */
     protected static ?string $password;
-
+    protected static $date;
 
 
     /**
@@ -31,8 +31,8 @@ class UserFactory extends Factory
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
             'password' => static::$password ??= Hash::make('password'),
-            'birthday' => date(''),
-
+            'birthday' => fake()->date(), // Corrected method
+            'cellphone_number' => '',
 
         ];
     }
