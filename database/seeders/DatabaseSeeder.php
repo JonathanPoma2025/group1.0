@@ -36,12 +36,12 @@ class DatabaseSeeder extends Seeder
          ]);
 
             User::factory()->create([
-                'name' => 'j',
+                'name' => 'TestExample@User',
                 'email' => '',
 
             ]);
             Advice::factory()->create([
-                'title' => 'j',
+                'name' => 'j',
                 'description' => '',
             ]);
             Brand::factory()->create([
@@ -52,37 +52,27 @@ class DatabaseSeeder extends Seeder
             ]);
             Repairshop::factory()->create([
                 'name' => 'j',
-                'email' => '',
+                'email' => 'TestExample@Mechanic',
             ]);
             Reminder::factory()->create([
-                'date' => 'j',
-                'description' => '',
-                'maintenance_id' => '',
+                'name' => 'j',
+
             ]);
             Maintenance::factory()->create([
-                'date' => 'j',
-                'time_span' => '',
-                'upcoming_date' => '',
-                'type_id' => '',
-                'vehicle_id' => '',
+                'name' => 'j',
             ]);
             ClientRepairshop::factory()->create([
                 'name' => 'j',
-                'email' => '',
+
             ]);
             Vehicle::factory()->create([
-                'car_type_id' => '',
-                'brand_id' => '',
-                'model' => '',
-                'year' => '',
-                'user_id' => '',
+                'name' => '',
             ]);
             DetailMaintenance::factory()->create([
-                'detail' => 'Test User',
-                'maintenance_id' => 'test@example.com',
+                'name' => '',
             ]);
             Type::factory()->create([
-                'maintenance' => '',
+                'name' => '',
             ]);
 
     }

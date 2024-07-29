@@ -25,9 +25,9 @@ class ReminderFactory extends Factory
     public function definition(): array
     {
         return [
-            'date' => fake()->date(),
-            'description' => fake()->word(),
-            'maintenance_id' => fake()->maintenances()->random(),
+            'date',
+            'description',
+            'maintenance_id',
         ];
     }
 }
