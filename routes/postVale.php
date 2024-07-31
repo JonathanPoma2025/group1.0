@@ -3,6 +3,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\VehicleController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\RepairshopController;
+
 
 Route::get('cars/create', [VehicleController::class, 'create'])->name('cars.create');
 
@@ -26,4 +28,7 @@ Route::post('repairshops/addcostumer', [ClientController::class, 'store'])->name
 
 Route::get('repairshops/clients', [ClientController::class, 'index'])->name('clients.index');
 
-Route::get('<repairshops/clients/{email}', [ClientController::class, 'show'])->name('clients.show');
+Route::get('repairshops/clients/{email}', [ClientController::class, 'show'])->name('clients.show');
+
+
+Route::post('/repairshops/store', [RepairshopController::class, 'store']);
