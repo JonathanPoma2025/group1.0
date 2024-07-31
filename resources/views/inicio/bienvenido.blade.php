@@ -9,12 +9,9 @@
             contribuyendo al cuidado de el.
         </p>
 
-    <div>
-        <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-7 mt-8 ml-48">
-    </div>
-
-    <div>
-        <img src="{{ asset('Images/circle.png') }}" alt="" class="w-6">
+    <div class="flex justify-between mt-8 items-center">
+        <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5 flex ml-48 mr-5">
+        <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-7 flex mr-28">
     </div>
 
         <x-primary-button class="mb-20 w-40 mx-auto">registrarse</x-primary-button>
