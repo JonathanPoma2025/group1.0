@@ -20,5 +20,4 @@ Route::post('/register', [UserController::class, 'create']);
 
 Route::post('users/{$id}/edit', [UserController::class, 'update']);
 
-Route::post('')
 
