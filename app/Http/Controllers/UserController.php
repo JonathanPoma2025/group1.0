@@ -42,7 +42,24 @@ class UserController extends Controller
         return redirect('/cars/create ');
     }
 
-public function logout(Request $request)
+    public function gohome(Request $request) {
+        $data = $request->validate([
+            'name' => 'required',
+            'owner'=> 'required',
+            'adress'=>'required',
+            'email'=> 'required|email',
+            'phone'=> 'required|min:8',
+        ]);
+
+        $user = User::gohome($data);
+
+        if($user) {
+            Auth::gohome($user);
+            return redirect('/users/home');
+        }
+    }
+
+    public function logout(Request $request)
     {
         Auth::logout();
         $request->session()->invalidate();

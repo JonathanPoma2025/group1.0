@@ -2,9 +2,9 @@
 
     <div class="scroll-full mb-[172px] md:w-5/6">
         <x-card>
-            
+
                 <h1 class="text-2xl font-bold w-4/5 mb-8 px-14 pl-20 md:pl-52  ">Agregar Vehículo</h1>
-           
+
             @if (Auth::check())
                 <form action="{{ route('cars.store') }}" method="POST">
                     @csrf
@@ -40,12 +40,11 @@
                     </div>
         </x-card>
         </form>
+
     @else
         <p class="text-red-500 text-center font-bold ">Debes <href="{{ route('login') }}">iniciar sesión</a> para
             añadir un vehículo 😮🙁 </p>
-        @endif
+    @endif
 
         <x-navigationbarcliente></x-navigationbarcliente>
-
-
 </x-layoutbg1>
