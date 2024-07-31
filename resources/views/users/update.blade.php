@@ -3,7 +3,7 @@
     <div class="flex flex-col items-center scroll-full mb-[172px]">
         <div
             class="py-12 px-20 bg-ourblack bg-opacity-30  drop-shadow-2xl rounded-[24px] pt-4 pl-10 pr-10 pb-10 mb-6 shadow-2xl w-5/6 my-20 md:mx-16">
-            <img src="{{ asset('imagenes/avata.png') }}" class="mx-auto w-24 rounded-full h-24">
+            <img src="{{ asset('images/logo 2.png') }}" class="mx-auto w-24 rounded-full h-24">
             <h1 class="text-2xl font-bold my-4 text-center text-white">Actualiza tus datos aqui</h1>
             <form action="/update" method="GET" class="text-center mt-6">
                 @csrf

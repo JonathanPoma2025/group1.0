@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Repairshop;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -10,7 +11,7 @@ class RepairshopsSeeder extends Seeder
 
     public function run(): void
     {
-        $taller = [
+        $Repairshop = [
             [
                 "name" => "j",
                 "email" => "",
@@ -22,6 +23,8 @@ class RepairshopsSeeder extends Seeder
                 "user_id" => 1
             ],
         ];
+
+        Repairshop::factory(count($Repairshop))->sequence(fn($sqn) => ['name' => $Repairshop[$sqn->index]])->create();
 
     }
 }

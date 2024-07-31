@@ -36,53 +36,43 @@ class DatabaseSeeder extends Seeder
          ]);
 
             User::factory()->create([
-                'name' => 'Test User',
-                'email' => 'test@example.com',
-                'birthday' => '',
+                'name' => 'TestExample@User',
+                'email' => '',
+
             ]);
             Advice::factory()->create([
-                'title' => 'Test User',
-                'description' => 'test@example.com',
+                'name' => 'j',
+                'description' => '',
             ]);
             Brand::factory()->create([
-                'name' => 'Test User',
+                'name' => 'j',
             ]);
             CarType::factory()->create([
-                'name' => 'Test User',
+                'name' => 'j',
             ]);
             Repairshop::factory()->create([
-                'name' => 'Test User',
-                'email' => 'test@example.com',
+                'name' => 'j',
+                'email' => 'TestExample@Mechanic',
             ]);
             Reminder::factory()->create([
-                'date' => 'Test User',
-                'description' => 'test@example.com',
-                'maintenance_id' => '',
+                'name' => 'j',
+
             ]);
             Maintenance::factory()->create([
-                'date' => 'Test User',
-                'time_span' => 'test@example.com',
-                'upcoming_date' => '',
-                'type_id' => '',
-                'vehicle_id' => '',
+                'name' => 'j',
             ]);
             ClientRepairshop::factory()->create([
-                'name' => 'Test User',
-                'email' => 'test@example.com',
+                'name' => 'j',
+
             ]);
             Vehicle::factory()->create([
-                'car_type_id' => 'Test User',
-                'brand_id' => 'test@example.com',
-                'model' => '',
-                'year' => '',
-                'user_id' => '',
+                'name' => '',
             ]);
             DetailMaintenance::factory()->create([
-                'detail' => 'Test User',
-                'maintenance_id' => 'test@example.com',
+                'name' => '',
             ]);
             Type::factory()->create([
-                'maintenance' => '',
+                'name' => '',
             ]);
 
     }

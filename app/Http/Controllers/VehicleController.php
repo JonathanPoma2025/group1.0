@@ -11,10 +11,7 @@ use App\Models\Brand;
 
 class VehicleController extends Controller
 {
-    #public function __construct()
-    #{
-       # $this->middleware('auth');
-    #}
+
 
    public function create()
     {
@@ -62,20 +59,25 @@ class VehicleController extends Controller
     public function update(Request $request, Vehicle $vehicle)
 
     {
-        //validate
-        $validateddata = $request->validate([
-            'car_type_id'  => 'exists:car_types,id',
-            'brand_id' => 'exists:brands,id',
-           'model' => 'string',
-           'year'   => 'integer',
-            'user_id'=> 'exists:user_id',
-            'placa' => 'string',
-            'color' => 'string',
-            'motor' => 'string'
-        ]);
+
+            $vehicle->car_type_id = $request->input('car_type_id');
+            $vehicle->brand_id = $request->input('brand_id');
+            $vehicle->model = $request->input('model');
+            $vehicle->year = $request->input('year');
+            $vehicle->placa = $request->input('placa');
+            $vehicle->color = $request->input('color');
+            $vehicle->motor = $request->input('motor');
 
 
-        if($vehicle->update($validateddata)){
+            if (Auth::check()) {
+                $vehicle->user_id = Auth::user()->id;
+            } else {
+                return back()->withErrors([
+                    'error' => 'Debe iniciar sesión para actualizar el vehículo'
+                ]);
+            }
+
+        if($vehicle->save()){
 
         return redirect()->route('users.profile')->with('success', 'Los datos del vehículo se actualizaron correctamente');
         }

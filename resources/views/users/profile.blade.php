@@ -61,6 +61,7 @@
 
             <div class="text-end md:text-end space-x-30 space-x-5 md:space-x-5">
                 <a href="{{ route('cars.caredit', $car->id) }}" class="rounded-full bg-blueblack text-white px-4">Editar</a>
+                <a href="{{ route('cars.caredit', $car->id) }}" class="rounded-full bg-blueblack text-white px-4">Eliminar</a>
             </div>
         </x-card>
     @endforeach

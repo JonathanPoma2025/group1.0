@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Reminder;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -12,6 +13,13 @@ class ReminderSeeder extends Seeder
      */
     public function run(): void
     {
-        //
+        $Reminder =[
+        'date',
+        'description',
+        ];
+
+        Reminder::factory(count($Reminder))->sequence(fn($sqn) => ['name' => $Reminder[$sqn->index]])->create();
+
+
     }
 }
