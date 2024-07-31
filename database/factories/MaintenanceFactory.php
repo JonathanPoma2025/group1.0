@@ -34,11 +34,11 @@ class MaintenanceFactory extends Factory
     public function definition(): array
     {
         return [
-            'date' => fake()->date(),
-            'time_span' => fake()->randomNumber(2, false),
-            'upcoming_date' => fake()->date(),
-            'type_id' => $this->types()->random(),
-           'vehicle_id' => $this->vehicles()->random(),
+            'date',
+            'time_span',
+            'upcoming_date',
+            'type_id',
+           'vehicle_id',
         ];
     }
 }

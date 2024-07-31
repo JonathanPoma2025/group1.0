@@ -15,5 +15,5 @@
             <p class="text-white mt-4 text-center">¿Ya tienes cuenta? <a href="{{route('login')}}" class="underline">Inicia sesión</a></p>
         </div>
     </div>
-    <x-navigationbarcliente />
+    <x-navigationbarcliente/>
 </x-layoutbg1>

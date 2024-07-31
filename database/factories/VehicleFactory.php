@@ -47,11 +47,11 @@ class VehicleFactory extends Factory
     public function definition(): array
     {
         return [
-            "car_type_id" => $this->carTypes()->random(),
-            "brand_id" => $this->brands()->random(),
-            "model" => fake()->word(),
-            "year" => fake()->year(),
-            "user_id" => $this->users()->random()
+            "car_type_id",
+            "brand_id",
+            "model",
+            "year",
+            "user_id",
         ];
     }
 }

@@ -21,7 +21,6 @@
                 </div>
                 <x-primary-button class="items-center">Registrar taller</x-primary-button>
             </form>
-            <p class="text-white mt-4 text-center">¿Ya tienes cuenta? <a href="{{route('login')}}" class="underline">Inicia sesión</a></p>
         </x-card>
 
     </div>
