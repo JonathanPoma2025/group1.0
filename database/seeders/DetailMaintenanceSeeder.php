@@ -19,6 +19,6 @@ class DetailMaintenanceSeeder extends Seeder
             'detail',
 
         ];
-        $DetailMaintenance::factory(count($DetailMaintenance))->sequence(fn($sqn) => ['name' => $DetailMaintenance[$sqn->index]])->create();
+        DetailMaintenance::factory(count($DetailMaintenance))->sequence(fn($sqn) => ['name' => $DetailMaintenance[$sqn->index]])->create();
     }
 }
