@@ -14,12 +14,10 @@ class MaintenanceSeeder extends Seeder
     public function run(): void
     {
         $Maintenance =[
-            'date',
-            'time_span',
-            'upcoming_date',
+         //
      ];
 
-        Maintenance::factory(count($Maintenance))->sequence(fn($sqn) => ['name' => $Maintenance[$sqn->index]])->create();
+        Maintenance::factory(count($Maintenance))->sequence(fn($sqn) => ['Maintenance' => $Maintenance[$sqn->index]])->create();
 
     }
 }

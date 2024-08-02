@@ -16,9 +16,10 @@ class TypeSeeder extends Seeder
         $Type =[
 
             'maintenance',
+            'type',
 
         ];
-        Type::factory(count($Type))->sequence(fn($sqn) => ['name' => $Type[$sqn->index]])->create();
+        Type::factory(count($Type))->sequence(fn($sqn) => ['type' => $Type[$sqn->index]])->create();
 
     }
 }
