@@ -1,4 +1,16 @@
 <x-layoutbg1>
+    <swiper-container class="h-100 w-100" navigation="true">
+        <swiper-slide class="flex">Slide 1</swiper-slide>
+        <swiper-slide>Slide 2</swiper-slide>
+        <swiper-slide>Slide 3</swiper-slide>
+        <swiper-slide>Slide 4</swiper-slide>
+        <swiper-slide>Slide 5</swiper-slide>
+        <swiper-slide>Slide 6</swiper-slide>
+        <swiper-slide>Slide 7</swiper-slide>
+        <swiper-slide>Slide 8</swiper-slide>
+        <swiper-slide>Slide 9</swiper-slide>
+    </swiper-container>
+
     <div class="bg-card bg-opacity-30 py-8 my-10 text-white text-center px-6 w-4/5 mx-auto rounded-[20px] md:w-2/4 drop-shadow-2xl shadow-2xl">
 
     <img src="{{ asset('Images/Logo 2.png') }}" alt="" class="w-20 mx-auto md:'12px '">
