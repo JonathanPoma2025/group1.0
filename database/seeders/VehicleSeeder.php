@@ -14,15 +14,12 @@ class VehicleSeeder extends Seeder
     public function run(): void
     {
         $Vehicle =[
-            "car_type_id",
-            "brand_id",
-            "model",
-            "year",
-            "user_id",
+          //  "model",
+          //  "year",
 
         ];
 
-        Vehicle::factory(count($Vehicle))->sequence(fn($sqn) => ['name' => $Vehicle[$sqn->index]])->create();
+        Vehicle::factory(count($Vehicle))->sequence(fn($sqn) => ['Vehicle' => $Vehicle[$sqn->index]])->create();
 
     }
 }

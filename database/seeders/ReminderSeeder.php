@@ -14,11 +14,10 @@ class ReminderSeeder extends Seeder
     public function run(): void
     {
         $Reminder =[
-        'date',
-        'description',
+         //
         ];
 
-        Reminder::factory(count($Reminder))->sequence(fn($sqn) => ['name' => $Reminder[$sqn->index]])->create();
+        Reminder::factory(count($Reminder))->sequence(fn($sqn) => ['Reminder' => $Reminder[$sqn->index]])->create();
 
 
     }

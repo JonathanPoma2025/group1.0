@@ -9,19 +9,19 @@ use Illuminate\Support\Facades\Auth;
 class RepairshopController extends Controller
 
     {
-        public function create(Request $request) {
+        public function store(Request $request) {
+            $request->merge(['user_id' => Auth::user()->id]);
             $data = $request->validate([
                 //'datoverificados' => 'reglas',
                 'name' => 'required',
                 'address' => 'required',
-                'email' => 'required|email|unique:users,email',
-                'password'=> 'min:8|max:12',
-                'phone' => 'required|unique:users,phone|phone-number',
-                'mechanics shop' => 'required|unique:users,workshop',
+                'email' => 'required|email',
+                'phone' => 'required',
+                'user_id' => 'required',
             ]);
 
             if(Repairshop::create($data)) {
-                return redirect('/home');
+                return redirect('repairshops/account');
             }
 
             return back()->withErrors([

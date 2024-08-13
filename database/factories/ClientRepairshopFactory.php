@@ -17,7 +17,15 @@ class ClientRepairshopFactory extends Factory
     public function definition(): array
     {
         return [
-            //
+            'name' => $this->faker->company,
+            'email' => $this->faker->unique()->safeEmail,
+            'phone' => $this->faker->phoneNumber,
+            'vehicle_brand' => $this->faker->randomElement(['Toyota', 'Honda', 'Ford', 'Chevrolet', 'Nissan']),
+            'vehicle_model' => $this->faker->randomElement(['Sedán', 'Hatcback', 'Todoterreno', 'Camioneta', 'SUV']),
+            'vehicle_year' => $this->faker->year
+
+
+
         ];
     }
 }
