@@ -14,7 +14,7 @@
                 @csrf
                 <input name="is_mechanic" value="1" class="hidden">
                 <button class="bg-card bg-opacity-50 text-white rounded-lg py-4 my-3 px-9" type="submit">Taller</button>
-            </form>
+            </form> 
         </div>
     </div>
 <x-navigationbartaller></x-navigationbartaller>

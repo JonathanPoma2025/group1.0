@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('motor');
             $table->integer('year');
             $table->string('color');
-            $table->foreignIdFor(User::class)->constrained();
+            $table->foreignIdFor(User::class)->nullable()->constrained();
             $table->timestamps();
         });
     }
