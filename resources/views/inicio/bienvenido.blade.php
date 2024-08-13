@@ -20,13 +20,5 @@
 
         <h1>¿ya tienes una cuenta? inicia sesion</h1>
 
-
-
-    </article>
-    <img src="{{ asset('Images/circle 1.png') }}" alt="" >
-    <img src="{{ asset('Images/circle.png') }}" alt="" class="w-6 ml-72 mb-6 my-8 ">
-
-    <x-primary-button>registrarse</x-primary-button>
-
 </x-card>
 </x-layoutbg1>
