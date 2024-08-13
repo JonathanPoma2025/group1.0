@@ -2,7 +2,6 @@
 
 namespace Database\Seeders;
 
-use App\Models\Advice;
 use App\Models\User;
 use App\Models\Brand;
 use App\Models\CarType;
@@ -10,13 +9,12 @@ use App\Models\ClientRepairshop;
 use App\Models\DetailMaintenance;
 use App\Models\Maintenance;
 use App\Models\Reminder;
-use App\Models\Repairshop;
+use App\Models\Repairshops;
 use App\Models\Type;
 use App\Models\Vehicle;
-
-
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Database\Factories\RepairshopsFactory;
 
 class DatabaseSeeder extends Seeder
 {
@@ -30,19 +28,19 @@ class DatabaseSeeder extends Seeder
 
             BrandSeeder::class,
             CarTypeSeeder::class,
-
-
+            ClientRepairshopSeeder::class,
+            DetailMaintenanceSeeder::class,
+            MaintenanceSeeder::class,
+            ReminderSeeder::class,
+            RepairshopsSeeder::class,
+            TypeSeeder::class,
+            VehicleSeeder::class,
 
          ]);
 
             User::factory()->create([
                 'name' => 'TestExample@User',
                 'email' => '',
-
-            ]);
-            Advice::factory()->create([
-                'name' => 'j',
-                'description' => '',
             ]);
             Brand::factory()->create([
                 'name' => 'j',
@@ -50,29 +48,26 @@ class DatabaseSeeder extends Seeder
             CarType::factory()->create([
                 'name' => 'j',
             ]);
-            Repairshop::factory()->create([
+            Repairshops::factory()->create([
                 'name' => 'j',
-                'email' => 'TestExample@Mechanic',
             ]);
             Reminder::factory()->create([
-                'name' => 'j',
-
+                'Reminder' => 'j',
             ]);
             Maintenance::factory()->create([
-                'name' => 'j',
+                'Maintenance' => 'j',
             ]);
             ClientRepairshop::factory()->create([
                 'name' => 'j',
-
             ]);
             Vehicle::factory()->create([
-                'name' => '',
+                'Vehicle' => '',
             ]);
             DetailMaintenance::factory()->create([
-                'name' => '',
+                'DetailMaintenance' => '',
             ]);
             Type::factory()->create([
-                'name' => '',
+                'type' => 'j',
             ]);
 
     }

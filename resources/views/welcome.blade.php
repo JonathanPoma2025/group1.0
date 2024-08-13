@@ -10,13 +10,13 @@
         </p>
 
     <div class="flex justify-between mt-8 items-center">
-        <img src="{{ asset('Images/circle.png') }}" alt="" class="">
-        <img src="{{ asset('Images/circle 1.png') }}" alt="" class="">
+        <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5 flex ml-48 mr-5">
+        <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-7 flex mr-20">
     </div>
 
         <x-primary-button class="mb-20 w-40 mx-auto">registrarse</x-primary-button>
 
-        <h1>¿ya tienes una cuenta? inicia sesion</h1>
+        <h1>¿ya tienes una cuenta?</h1> <x-primary-button class="mb-20 w-40 mx-auto">inicia sesion</x-primary-button>
 
 
 

@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Repairshop;
+use App\Models\Repairshops;
 use App\Models\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
@@ -15,11 +15,7 @@ return new class extends Migration
     {
         Schema::create('client_repairshops', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->string('vehicle');
-            $table->date('last_maintenance');
-            $table->foreignIdFor(Repairshop::class)->constrained();
+            $table->foreignIdFor(Repairshops::class)->constrained();
             $table->foreignIdFor(User::class)->constrained();
             $table->timestamps();
         });
