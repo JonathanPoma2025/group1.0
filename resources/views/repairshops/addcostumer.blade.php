@@ -5,26 +5,14 @@
 
             <h1 class="text-2xl font-bold my-4 text-center text-white mb-10">Agregar Clientes</h1>
             <form action="{{ route('clients.store') }}" method="POST" class="text-center mt-6">
+               
                 @csrf
-                <div class="mb-4">
-                    <x-input id="name" name="name" type="text" placeholder="Nombre del cliente"/>
-                </div>
 
-                <div class="mb-4">
+
                     <x-input id="email" name="email" type="email" placeholder="Correo"/>
-                </div>
-
-                <div class="mb-4">
-                    <x-input id="vehicle" name="vehicle" type="text" placeholder="Vehículo"/>
-                </div>
-
-                <div class="mb-4">
-                    <x-input id="last_maintenance" name="last_maintenance" type="date" placeholder="Último Mantenimiento"/>
-
-                </div>
 
 
-                <x-primary-button class="text-white">Agregar</x-primary-button>
+               <x-primary-button class="text-white">Agregar</x-primary-button>
             </form>
         </div>
         <x-navigationbartaller/>
