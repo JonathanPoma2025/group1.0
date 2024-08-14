@@ -22,5 +22,4 @@
         </x-card>
 
     </div>
-    <x-navigationbartaller></x-navigationbartaller>
 </x-layoutbg1>
