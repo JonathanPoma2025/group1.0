@@ -34,10 +34,5 @@
         </x-card>
         </form>
 
-    @else
-        <p class="text-red-500 text-center font-bold ">Debes <href="{{ route('login') }}">iniciar sesión</a> para
-            añadir un vehículo 😮🙁 </p>
-    @endif
-
         <x-navigationbarcliente></x-navigationbarcliente>
 </x-layoutbg1>
