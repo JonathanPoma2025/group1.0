@@ -1,6 +1,6 @@
 <x-layoutbg1>
-    <swiper-container class="h-100 w-100" navigation="true">
-        <swiper-slide class="flex"></swiper-slide>
+    <swiper-container class="h-100 w-100"  space-between="50" history-key="slide" pagination="true" navigation="true">
+        <swiper-slide class="flex">
         <x-card class="scroll-full h-full">
             <img src="{{ asset('Images/Logo 2.png') }}" alt="" class="w-20 mx-auto md:'12px'">
             <p class="Ubuntu-fold text-center text-1xl ">TrackMate</p>
@@ -21,7 +21,8 @@
 
                 <x-primary-button class="mb-20 w-40 mx-auto">registrarse</x-primary-button>
 
-                <h1>¿ya tienes una cuenta? inicia sesion</h1>
+                <h1>¿ya tienes una cuenta?</h1>
+                <x-primary-button>inicia sesion</x-primary-button>
 
         </x-card>
         <swiper-slide>
@@ -38,8 +39,8 @@
                     </p>
                     <x-primary-button class="mb-20 w-40 mx-auto">registrarse</x-primary-button>
 
-                    <h1>¿ya tienes una cuenta? inicia sesion</h1>
-
+                    <h1>¿ya tienes una cuenta?</h1>
+                    <x-primary-button>inicia sesion</x-primary-button>
 
                 </article>
             </div>
@@ -56,7 +57,8 @@
                     </p>
                     <x-primary-button class="mb-20 w-40 mx-auto">registrarse</x-primary-button>
 
-                    <h1>¿ya tienes una cuenta? inicia sesion</h1>
+                    <h1>¿ya tienes una cuenta?</h1>
+                    <x-primary-button>inicia sesion</x-primary-button>
 
                 </article>
             </div>
