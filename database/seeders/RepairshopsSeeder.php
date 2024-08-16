@@ -21,13 +21,10 @@ class RepairshopsSeeder extends Seeder
                 ->create();
 
 
-                 // Directly using the factory class
                 $factory = new RepairshopsFactory();
 
-                 // Use the factory to create Repairshop instances
                 $repairshops = $factory->count(10)->make();
 
-                 // Save the created instances to the database
                 foreach ($repairshops as $repairshop) {
                     $repairshop->save();
 
