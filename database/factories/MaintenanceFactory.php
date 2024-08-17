@@ -34,11 +34,11 @@ class MaintenanceFactory extends Factory
     public function definition(): array
     {
         return [
-            'date',
-            'time_span',
-            'upcoming_date',
-            'type_id',
-           'vehicle_id',
+            'date' => '',
+            'time_span' => '',
+            'upcoming_date' => '',
+            'type_id' => '',
+           'vehicle_id' => '',
         ];
     }
 }

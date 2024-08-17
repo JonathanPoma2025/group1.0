@@ -13,13 +13,13 @@ class VehicleSeeder extends Seeder
      */
     public function run(): void
     {
-        $Vehicle =[
-          //  "model",
-          //  "year",
+        $Vehicle = [
+
+            "model",
+            "year",
 
         ];
 
         Vehicle::factory(count($Vehicle))->sequence(fn($sqn) => ['Vehicle' => $Vehicle[$sqn->index]])->create();
-
     }
 }
