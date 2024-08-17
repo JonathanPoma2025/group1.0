@@ -5,9 +5,27 @@
     <p class="Ubuntu-bold 2xl">TrackMate</p>
     <article class="align-baseline">
         <h1 class="text-xl font-bold mt-6">Bienestar y seguridad</h1>
-        <p class="mt-6">Cuida facilmente de tu vehiculo y mantenlo seguro para evitar problemas
+        <p class="mt-6 text-balance">Cuida facilmente de tu vehiculo y
+            mantenlo seguro para evitar problemas
         </p>
+
+        
+        <div class="flex justify-center mt-8 items-center">
+        <img src="{{ asset('Images/circle 1.png') }}" alt="" class="rotate-180 ml-4 w-7">
+        <img src="{{ asset('Images/circle.png') }}" alt="" class="w-3 ml-3">
+        <img src="{{ asset('Images/circle.png') }}" alt="" class="w-3 ml-3">
+        <img src="{{ asset('Images/circle.png') }}" alt="" class="color-blue w-3 ml-3">
+        <img src="{{ asset('Images/circle 1.png') }}" alt="" class=" w-7 ml-4">
+
+       
+    </div>
+
+
+
         <x-primary-button class="mb-20 w-40 mx-auto">registrarse</x-primary-button>
+
+    
+       
 
         <h1>¿ya tienes una cuenta? inicia sesion</h1>
 
