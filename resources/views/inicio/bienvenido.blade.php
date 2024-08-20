@@ -13,11 +13,10 @@
                 </p>
 
                 <div class="flex justify-center mt-8 items-center">
-                    <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-5 invisible">
-                    <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
-                    <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
-                    <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
-                    <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-5">
+                    <img src="{{ asset('Images/circle.png') }}" alt="" class="w-4 ml-5">
+                    <img src="{{ asset('Images/circle.png') }}" alt="" class="w-4 ml-5">
+                    <img src="{{ asset('Images/circle.png') }}" alt="" class="w-4 ml-5">
+                    <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-8 ml-8">
                 </div>
 
                 <x-primary-button class="mb-20 w-40 mx-auto"><a
