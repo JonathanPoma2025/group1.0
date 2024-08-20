@@ -1,6 +1,6 @@
 <x-layoutbg1>
-    <swiper-container class="h-100 w-100" space-between="50" history-key="slide" pagination="true" navigation="true">
-        <swiper-slide class="">
+    <swiper-container class="h-100 w-100 text-center" space-between="50" history-key="slide" pagination="true" navigation="true">
+        <swiper-slide class="block">
             <x-card class="scroll-full h-full">
                 <img src="{{ asset('Images/Logo 2.png') }}" alt="" class="w-20 mx-auto md:'12px'">
                 <p class="Ubuntu-fold text-center text-1xl">TrackMate</p>
@@ -11,13 +11,14 @@
                         vehiculo,
                         contribuyendo al cuidado de el.
                     </p>
-
                     <div class="flex justify-center mt-8 items-center">
-                        <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-5 invisible">
-                        <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
-                        <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
-                        <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
-                        <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-5">
+                        <img src="{{ asset('Images/circle 1.png') }}" alt="" class="ml-4 w-7 invisible">
+                        <img src="{{ asset('Images/circle.png') }}" alt="" class="w-3 ml-3">
+                        <img src="{{ asset('Images/circle.png') }}" alt="" class="w-3 ml-3">
+                        <img src="{{ asset('Images/circle.png') }}" alt="" class="color-blue w-3 ml-3">
+                        <img src="{{ asset('Images/circle 1.png') }}" alt="" class=" w-7 ml-4">
+
+
                     </div>
 
                     <x-primary-button class="mb-20 w-40 mx-auto"><a
@@ -39,11 +40,13 @@
                             en buen estado
                         </p>
                         <div class="flex justify-center mt-8 items-center">
-                            <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-5 rotate-180 w-5">
-                            <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
-                            <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
-                            <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
-                            <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-5">
+                            <img src="{{ asset('Images/circle 1.png') }}" alt="" class="rotate-180 ml-4 w-7">
+                            <img src="{{ asset('Images/circle.png') }}" alt="" class="w-3 ml-3">
+                            <img src="{{ asset('Images/circle.png') }}" alt="" class="w-3 ml-3">
+                            <img src="{{ asset('Images/circle.png') }}" alt="" class="color-blue w-3 ml-3">
+                            <img src="{{ asset('Images/circle 1.png') }}" alt="" class=" w-7 ml-4">
+
+
                         </div>
                         <x-primary-button class="mb-20 w-40 mx-auto"><a
                                 href="{{ route('register') }}">registrarse</a></x-primary-button>
@@ -65,11 +68,13 @@
                         <p class="mt-6">Cuida facilmente de tu vehiculo y mantenlo seguro para evitar problemas
                         </p>
                         <div class="flex justify-center mt-8 items-center">
-                            <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-5 rotate-180 w-5">
-                            <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
-                            <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
-                            <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
-                            <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-5 invisible" >
+                            <img src="{{ asset('Images/circle 1.png') }}" alt="" class="rotate-180 ml-4 w-7">
+                            <img src="{{ asset('Images/circle.png') }}" alt="" class="w-3 ml-3">
+                            <img src="{{ asset('Images/circle.png') }}" alt="" class="w-3 ml-3">
+                            <img src="{{ asset('Images/circle.png') }}" alt="" class="color-blue w-3 ml-3">
+                            <img src="{{ asset('Images/circle 1.png') }}" alt="" class=" w-7 ml-4 invisible">
+
+
                         </div>
                         <x-primary-button class="mb-20 w-40 mx-auto"><a
                                 href="{{ route('register') }}">registrarse</a></x-primary-button>
