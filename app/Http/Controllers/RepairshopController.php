@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Repairshop;
+use App\Models\Repairshops;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -20,7 +20,7 @@ class RepairshopController extends Controller
                 'user_id' => 'required',
             ]);
 
-            if(Repairshop::create($data)) {
+            if(Repairshops::create($data)) {
                 return redirect('repairshops/account');
             }
 
@@ -50,7 +50,7 @@ class RepairshopController extends Controller
             return back()->withErrors(['mechanics shop'=>'wrong credentials', 'email'=>'wrong credentials', 'password' => 'Wrong password']);
         }
 
-        public function update(Repairshop $request) {
+        public function update(Repairshops $request) {
             $data = $request -> validate(['name','email','password','mechanic shop','address','phone']);
 
             $data->update($request)([
@@ -68,7 +68,7 @@ class RepairshopController extends Controller
 
         }
 
-        public function delete(Repairshop $user) {
+        public function delete(Repairshops $user) {
 
             $data = $user -> validate(['name','email','password','mechanic shop','address','phone']);
 
