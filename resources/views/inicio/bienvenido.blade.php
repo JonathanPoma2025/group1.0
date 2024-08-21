@@ -9,16 +9,13 @@
         </p>
 
     <div class="flex justify-center mt-8 items-center">
-        <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-5 invisible">
-        <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
-        <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
-        <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
         <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-5">
+        <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-5 ">
     </div>
 
         <x-primary-button class="mb-20 w-40 mx-auto">registrarse</x-primary-button>
 
-        <h1>¿ya tienes una cuenta?  sesion</h1>
+        <h1>¿ya tienes una cuenta? Iniciar sesion</h1>
 
 </x-card>
 </x-layoutbg1>
