@@ -9,7 +9,7 @@ namespace App\Http\Controllers;
 
 use App\Models\ClientRepairshop;
 use App\Models\User;
-use Illuminate\Http\Request;
+use Illuminate\Http\Request;    
 use Illuminate\Support\Facades\Auth;
 
 class ClientController extends Controller
@@ -31,7 +31,7 @@ class ClientController extends Controller
         if(ClientRepairshop::create($data)) {
             return redirect()->route('clients.index');
         }
-        
+
         return back()->withErrors([]);
     }
 
