@@ -33,6 +33,4 @@
             @endif
         </x-card>
         </form>
-
-        <x-navigationbarcliente></x-navigationbarcliente>
 </x-layoutbg1>
