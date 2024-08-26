@@ -15,11 +15,11 @@
                 </p>
 
                 <div class="flex justify-center mt-8 items-center">
-                    <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-5 invisible">
-                    <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
-                    <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
-                    <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
-                    <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-5">
+                    <img src="{{ asset('Images/circle 1.png') }}" alt="" class="rotate-180 w-7">
+                    <img src="{{ asset('Images/circle.png') }}" alt="" class="w-3 ml-3">
+                    <img src="{{ asset('Images/circle.png') }}" alt="" class="w-3 ml-3">
+                    <img src="{{ asset('Images/circle.png') }}" alt="" class="w-3 ml-3">
+                    <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-7 ml-4">
                 </div>
 
                 <x-primary-button class="mb-20 w-40 mx-auto"><a
