@@ -29,7 +29,7 @@
                     </div>
                 </form>
             @else
-                <p class="text-red-500 text-center font-bold">Debes <a href="{{ route('login') }}">iniciar sesión</a> para añadir un vehículo 😮🙁 </p>
+                <p class="text-red-500 text-center font-bold">Debes <a href="{{ route('login') }}">iniciar sesión</a> para añadir un vehículo  </p>
             @endif
         </x-card>
         </form>
