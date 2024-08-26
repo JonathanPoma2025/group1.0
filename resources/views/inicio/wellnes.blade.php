@@ -12,7 +12,7 @@
                     <img src="{{ asset('Images/circle 1.png') }}" alt="" class="rotate-180 ml-4 w-7">
                     <img src="{{ asset('Images/circle.png') }}" alt="" class="w-3 ml-3">
                     <img src="{{ asset('Images/circle.png') }}" alt="" class="w-3 ml-3">
-                    <img src="{{ asset('Images/circle.png') }}" alt="" class="color-blue w-3 ml-3">
+                    <img src="{{ asset('Images/circle.png') }}" alt="" class="w-3 ml-3">
                     <img src="{{ asset('Images/circle 1.png') }}" alt="" class=" w-7 ml-4">
                 </div>
 
