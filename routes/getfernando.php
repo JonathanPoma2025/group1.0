@@ -22,3 +22,6 @@ Route::get('/navigationbartaller', function () {
     return view('components.navigationbartaller');
 });
 
+Route::get('users/viewclient', function () {
+    return view('users.viewclient');
+});
