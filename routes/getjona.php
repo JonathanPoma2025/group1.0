@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Models\Repairshop;
+use App\Models\Repairshops;
 
 Route::get('repairshops/create', function () {
     return view('repairshops.create');
@@ -14,7 +14,7 @@ Route::get('repairshops/clients', function () {
 
 Route::get('repairshops/account', function () {
     return view('repairshops.account', [
-        'talleres' => Repairshop::all()
+        'talleres' => Repairshops::all()
         //Auth::user()->repairshops()->get()
     ]);
 });

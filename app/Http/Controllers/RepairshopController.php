@@ -21,7 +21,7 @@ class RepairshopController extends Controller
             ]);
 
             if(Repairshops::create($data)) {
-                return redirect('repairshops/account');
+                return redirect('account');
             }
 
             return back()->withErrors([

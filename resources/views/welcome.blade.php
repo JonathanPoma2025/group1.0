@@ -1,6 +1,7 @@
 <x-layoutbg1>
-    <swiper-container class="h-100 w-100 text-center" space-between="50" history-key="slide" pagination="true" navigation="true">
-        <swiper-slide class="block">
+    <swiper-container class="h-100 w-100 text-center MySwiper" space-between="50" history-key="slide" pagination="true"
+        navigation="true">
+        <swiper-slide class="text-center justify-content-center align-items" data-history="1">
             <x-card class="scroll-full h-full">
                 <img src="{{ asset('Images/Logo 2.png') }}" alt="" class="w-20 mx-auto md:'12px'">
                 <p class="Ubuntu-fold text-center text-1xl">TrackMate</p>
@@ -17,8 +18,6 @@
                         <img src="{{ asset('Images/circle.png') }}" alt="" class="w-3 ml-3">
                         <img src="{{ asset('Images/circle.png') }}" alt="" class="color-blue w-3 ml-3">
                         <img src="{{ asset('Images/circle 1.png') }}" alt="" class=" w-7 ml-4">
-
-
                     </div>
 
                     <x-primary-button class="mb-20 w-40 mx-auto"><a
@@ -27,7 +26,7 @@
                     <h1>¿ya tienes una cuenta? <a href="{{ route('login') }} " class="underline">Inicia sesión</a> </h1>
 
             </x-card>
-            <swiper-slide>
+            <swiper-slide data-history="2">
                 <div
                     class="bg-card bg-opacity-30 py-8 my-10 text-white text-center px-6 w-4/5 mx-auto rounded-[20px] md:w-2/4 drop-shadow-2xl shadow-2xl">
 
@@ -57,7 +56,7 @@
                     </article>
                 </div>
             </swiper-slide>
-            <swiper-slide>
+            <swiper-slide data-history="3">
                 <div
                     class="bg-card bg-opacity-30 py-8 my-10 text-white text-center px-6 w-4/5 mx-auto rounded-[20px] md:w-2/4 drop-shadow-2xl shadow-2xl">
 

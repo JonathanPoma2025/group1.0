@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
+
     public function create(Request $request) {
         $data = $request->validate([
             'name' => 'required',
@@ -35,6 +36,7 @@ class UserController extends Controller
     public function editType(Request $request) {
         $user = Auth::user();
         $user->update(['is_mechanic' => $request->is_mechanic ]);
+
 
         if ( $user->is_mechanic ) {
             return redirect('/repairshops/create');
