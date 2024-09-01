@@ -44,7 +44,7 @@ class User extends Authenticatable
     }
 
     public function repairshop() {
-        return $this->hasOne(Repairshop::class);
+        return $this->hasOne(Repairshops::class);
     }
 
     public function cars() {

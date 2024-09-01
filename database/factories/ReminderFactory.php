@@ -25,9 +25,9 @@ class ReminderFactory extends Factory
     public function definition(): array
     {
         return [
-            'date',
-            'description',
-            'maintenance_id',
+            'date' => '',
+            'description' => '',
+            'maintenance_id' => '',
         ];
     }
 }
