@@ -31,7 +31,7 @@
       <div class=" flex justify-center h-screen shadow-3xl z-40">
         <div class="grid items-center  justify-center text-xs">
 
-          <div class="rounded-[24px] pl-12 py-6 mb-6 shadow-2xl w-72 bg-ourblack bg-opacity-30 text-white">
+          <div class="rounded-[24px] pl-12 py-6 mt-24 shadow-2xl w-72 bg-ourblack bg-opacity-30 text-white">
 
             <p class="text-xl font-bold">Taller 1</p>
 
@@ -43,7 +43,7 @@
             <p class="font-bold pl-2">+503 7542547</p>
 
 
-
+                <x-navigationbarcliente></x-navigationbarcliente>
           </div>
         </div>
       </div>

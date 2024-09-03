@@ -14,21 +14,18 @@
                     contribuyendo al cuidado de el.
                 </p>
 
-                <div class="flex justify-center mt-8 items-center">
-                    <img src="{{ asset('Images/circle 1.png') }}" alt="" class="rotate-180 w-7">
-                    <img src="{{ asset('Images/circle.png') }}" alt="" class="w-3 ml-3">
-                    <img src="{{ asset('Images/circle.png') }}" alt="" class="w-3 ml-3">
-                    <img src="{{ asset('Images/circle.png') }}" alt="" class="w-3 ml-3">
-                    <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-7 ml-4">
-                </div>
+    <div class="flex justify-center mt-8 items-center">
+        <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-5 invisible">
+        <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
+        <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
+        <img src="{{ asset('Images/circle.png') }}" alt="" class="w-5">
+        <img src="{{ asset('Images/circle 1.png') }}" alt="" class="w-5">
+    </div>
 
                 <x-primary-button class="mb-20 w-40 mx-auto"><a
                 href="{{ route('register') }}">registrarse</a></x-primary-button>
 
-                <h1>¿ya tienes una cuenta? <a href="{{ route('login') }}" class="underline">inicia sesión</a> </h1>
-            </article>
-        </x-card>
-        <swiper-slide>
+        <h1>¿ya tienes una cuenta?  sesion</h1>
 
- </div>
-            </x-layoutbg1>
+</x-card>
+</x-layoutbg1>
