@@ -3,48 +3,33 @@
 namespace Database\Seeders;
 
 use App\Models\Repairshops;
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\User;
 use Illuminate\Database\Seeder;
-use Database\Factories\RepairshopsFactory;
-
 
 class RepairshopsSeeder extends Seeder
 {
+    public function users() {
+        return User::where('is_mechanic', true)->pluck('id');
+    }
 
     public function run(): void
     {
-       $repairshopNames = ['Repairshop1', 'Repairshop2', 'Repairshop3']; // Example array of repairshop names
+        $users = $this->users();
+           $repairshops = [
+               [
+                   'name' => 'Taller Ejemplo 1',
+                   'email' => 'taller1@example.com',
+                   'cellphone_number' => '50364789',
+                   'user_id' => $users->random()
+               ],
+               [
+                   'name' => 'Taller Ejemplo 2',
+                   'email' => 'taller2@example.com',
+                   'cellphone_number' => '42364521',
+                   'user_id' => $users->random()
+               ],
+           ]; // Example array of repairshop names
 
-        Repairshops::factory()
-            ->count(count($repairshopNames))
-            ->sequence(fn($sqn) => ['name' => $repairshopNames[$sqn->index]])
-                ->create();
-
-
-                $factory = new RepairshopsFactory();
-
-                $repairshops = $factory->count(10)->make();
-
-                foreach ($repairshops as $repairshop) {
-                    $repairshop->save();
-
-        $Repairshop = [
-
-
-            [
-                "name" => "j",
-                "email" => "",
-                "user_id" => 1
-            ],
-            [
-                "name" => "j",
-                "email" => "",
-                "user_id" => 1
-            ],
-        ];
-
-        Repairshops::factory(count($Repairshop))->sequence(fn($sqn) => ['name' => $Repairshop[$sqn->index]])->create();
-
-    }
+        Repairshops::factory(count($repairshops))->sequence(fn ($sqn) => $repairshops[$sqn->index])->create();
     }
 }
