@@ -18,7 +18,6 @@
 
 
     </div>
-    <x-navigationbarcliente/>
 
     <div class=" flex justify-center h-screen shadow-3xl z-40">
 
