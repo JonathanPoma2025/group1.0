@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Models\Repairshops;
 
@@ -33,5 +34,8 @@ Route::get('repairshops/updatetaller', function () {
 });
 
 Route::get('repairshops/addcostumer', function () {
-    return view('repairshops.addcostumer');
+    dd(Repairshops::where('user_id', Auth::user()->id)->get());
+    return view('repairshops.addcostumer', [
+        'talleres' => Repairshops::where('user_id', Auth::user()->id)->get()
+    ]);
 });
