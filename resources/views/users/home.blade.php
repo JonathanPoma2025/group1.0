@@ -4,7 +4,7 @@
     <div class=" bg-ourblack bg-opacity-20 rounded-full h-[175%] w-[200%] absolute bottom-[60%] -left-[50%] z-0 flex justify-center items-end md:*:">
 
       <article class="text-nowrap flex flex-col justify-center">
-
+        <img src="{{ asset('Images/Profile.png') }}" class="mx-auto w-24">
         <h2 class="text-white text-1xl">Tu Proximo mantenimiento es en:</h2>
 
 

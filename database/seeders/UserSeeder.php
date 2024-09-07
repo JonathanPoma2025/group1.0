@@ -15,15 +15,91 @@ class UserSeeder extends Seeder
     {
         $User = [
             [
-                'name' => 'Juan Pérez',
-                'email' => 'mechanic@example.com',
-                'cellphone_number' => 45326981,
+                'name' => 'Juan Perez',
+                'email' => 'mjuanpz@email.com',
                 'is_mechanic' => true
             ],
             [
-                'name' => 'Luis Pérez',
-                'email' => 'mechanic1@example.com',
-                'cellphone_number' => 45326981,
+                'name' => 'Luis Benitez',
+                'email' => 'Lui33@yahoo.com',
+                'is_mechanic' => false
+            ],
+
+            [
+                'name' => 'Fernando Alfaro',
+                'email' => 'fernanalfa@example.com',
+                'is_mechanic' => true
+            ],
+
+            [
+                'name' => 'Hazel Peña',
+                'email' => 'jhadsg@gmail.com',
+                'is_mechanic' => false
+            ],
+
+            [
+                'name' => 'Lisseth Mejia',
+                'email' => 'lismejia@yahoo.com',
+                'is_mechanic' => true
+            ],
+
+            [
+                'name' => 'Valeria Rivas',
+                'email' => 'vareri@gmail.com',
+                'is_mechanic' => false
+            ],
+
+            [
+                'name' => 'Josue Echeverria',
+                'email' => 'chevie@example.com',
+                'is_mechanic' => true
+            ],
+
+            [
+                'name' => 'Karla Cardona',
+                'email' => 'Kaya@gmail.com',
+                'is_mechanic' => false
+            ],
+
+            [
+                'name' => 'Alisson Ayala',
+                'email' => 'alissayal@yahoo.com',
+                'is_mechanic' => true
+            ],
+
+            [
+                'name' => 'Justin Ramirez',
+                'email' => 'rami33ju@example.com',
+                'is_mechanic' => false
+            ],
+
+            [
+                'name' => 'Karen Rivas',
+                'email' => 'sofiamiss@yahoo.com',
+                'is_mechanic' => true
+            ],
+
+            [
+                'name' => 'Nahum Goómez',
+                'email' => 'student1@yahoo.com',
+                'is_mechanic' => false
+            ],
+
+            [
+                'name' => 'Jonathan Zelada',
+                'email' => 'expoprueba@example.com',
+                'is_mechanic' => true
+            ],
+
+            [
+                'name' => 'Alex Moreno',
+                'email' => 'etudenprueba1@example.com',
+                'is_mechanic' => false
+            ],
+
+            [
+                'name' => 'Edgardo Cabrera',
+                'email' => 'seeder1@example.com',
                 'is_mechanic' => true
             ],
 

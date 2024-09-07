@@ -22,12 +22,48 @@ class RepairshopsSeeder extends Seeder
                    'cellphone_number' => '50364789',
                    'user_id' => $users->random()
                ],
+
                [
                    'name' => 'Taller Ejemplo 2',
                    'email' => 'taller2@example.com',
                    'cellphone_number' => '42364521',
                    'user_id' => $users->random()
                ],
+
+               [
+                    'name' => 'Taller Ejemplo 2',
+                    'email' => 'taller2@example.com',
+                    'cellphone_number' => '42364521',
+                    'user_id' => $users->random()
+                ],
+
+                [
+                    'name' => 'Taller Ejemplo 2',
+                    'email' => 'taller2@example.com',
+                    'cellphone_number' => '42364521',
+                    'user_id' => $users->random()
+                ],
+
+                [
+                    'name' => 'Taller Ejemplo 2',
+                    'email' => 'taller2@example.com',
+                    'cellphone_number' => '42364521',
+                    'user_id' => $users->random()
+                ],
+
+                [
+                    'name' => 'Taller Ejemplo 2',
+                    'email' => 'taller2@example.com',
+                    'cellphone_number' => '42364521',
+                    'user_id' => $users->random()
+                ],
+
+                [
+                    'name' => 'Taller Ejemplo 2',
+                    'email' => 'taller2@example.com',
+                    'cellphone_number' => '42364521',
+                    'user_id' => $users->random()
+                ],
            ]; // Example array of repairshop names
 
         Repairshops::factory(count($repairshops))->sequence(fn ($sqn) => $repairshops[$sqn->index])->create();
