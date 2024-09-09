@@ -23,8 +23,8 @@ class RepairshopsFactory extends Factory
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
             'password' => static::$password ??= Hash::make('password'),
-            'addrees' => fake()->unique()->safeEmail(),
-            'phone-number' => '',
+            'address' => fake()->unique()->safeEmail(),
+            'cellphone_number' => '',
         ];
     }
     public function unverified(): static

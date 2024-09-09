@@ -14,15 +14,21 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         $User = [
-
-            'name',
-            'email',
-            'password',
-            'birthday',
-            'cellphone_number',
+            [
+                'name' => 'Juan Pérez',
+                'email' => 'mechanic@example.com',
+                'cellphone_number' => 45326981,
+                'is_mechanic' => true
+            ],
+            [
+                'name' => 'Luis Pérez',
+                'email' => 'mechanic1@example.com',
+                'cellphone_number' => 45326981,
+                'is_mechanic' => true
+            ],
 
         ];
 
-        User::factory(count($User))->sequence(fn($sqn) => ['type' => $User[$sqn->index]])->create();
+        User::factory(count($User))->sequence(fn($sqn) => $User[$sqn->index])->create();
     }
 }

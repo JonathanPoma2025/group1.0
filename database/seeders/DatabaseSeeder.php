@@ -25,16 +25,16 @@ class DatabaseSeeder extends Seeder
     {
         // User::factory(10)->create();
         $this->call([
-
-            BrandSeeder::class,
-            CarTypeSeeder::class,
-            ClientRepairshopSeeder::class,
-            DetailMaintenanceSeeder::class,
-            MaintenanceSeeder::class,
-            ReminderSeeder::class,
-            RepairshopsSeeder::class,
-            TypeSeeder::class,
-            VehicleSeeder::class,
+            UserSeeder::class,
+            //BrandSeeder::class,
+            //CarTypeSeeder::class,
+            //ClientRepairshopSeeder::class,
+            //DetailMaintenanceSeeder::class,
+            //MaintenanceSeeder::class,
+            //ReminderSeeder::class,
+            //RepairshopsSeeder::class,
+            //TypeSeeder::class,
+            //VehicleSeeder::class,
 
          ]);
 
