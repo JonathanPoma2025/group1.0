@@ -3,7 +3,7 @@
         <x-card>
             <img src="{{ asset("images/logocar.png")}}" alt="" class="mx-auto w-16">
             <div class="pl-2 font-bold text-2xl text-white space-y-2">
-                Mecanico {{$user->name}}
+                Mecanico {{$Repairshops->name}}
             </div>
             <div class="mt-10 text-left text-white">
                 <p class="mt-4">Contacto</p>
@@ -16,11 +16,18 @@
                     {{ $user->cellphone_number }}
                 </div>
                 <div class="pl-2 font-bold">
+                    <img class="inline w-5" src="{{asset('Vector.png')}}">
+                    Ubicación
+                </div>
+                <div class="pl-2 font-bold">
                     <img class="inline w-5" src="{{asset('calendario8.png')}}">
-                    Horario de atención{{$user->}}
+                    Horario de atención
                 </div>
                 <div>
-                    valoraciones {{}}
+                    valoraciones
+                    <h2 class="pl-8">Sofia@example.com⭐⭐⭐⭐</h2>
+                    <h2 class="pl-8">Sofia@example.com⭐⭐⭐</h2>
+                    <h2 class="pl-8">Sofia@example.com⭐⭐⭐⭐⭐</h2>
                 </div>
 
             <div class="space-x-12 justify-center md:text-end ">
@@ -30,9 +37,3 @@
     </div>
     <x-navigationbarcliente/>
 </x-layoutbg1>
-
-
-<h1>Valoraciones</h1>
-<h2 class="pl-8">Sofia@example.com⭐⭐⭐⭐</h2>
-<h2 class="pl-8">Sofia@example.com⭐⭐⭐</h2>
-<h2 class="pl-8">Sofia@example.com⭐⭐⭐⭐⭐</h2>
