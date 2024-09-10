@@ -64,6 +64,7 @@
                 <a href="{{ route('cars.caredit', $car->id) }}" class="rounded-full bg-blueblack text-white px-4">Eliminar</a>
             </div>
         </x-card>
+        
     @endforeach
 <x-navigationbarcliente></x-navigationbarcliente>
 </x-layoutbg1>
