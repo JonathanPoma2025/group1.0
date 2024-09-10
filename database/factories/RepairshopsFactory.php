@@ -21,9 +21,8 @@ class RepairshopsFactory extends Factory
     {
         return [
             'name' => fake()->name(),
-            'email' => fake()->unique()->safeEmail(),
-            'password' => static::$password ??= Hash::make('password'),
             'address' => fake()->unique()->safeEmail(),
+            'email' => fake()->unique()->safeEmail(),
             'cellphone_number' => '',
         ];
     }
