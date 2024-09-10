@@ -15,7 +15,6 @@ return new class extends Migration
         Schema::create('repairshops', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('password');
             $table->string('address');
             $table->string('email');
             $table->string('cellphone_number');
