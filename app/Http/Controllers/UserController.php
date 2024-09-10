@@ -15,7 +15,7 @@ class UserController extends Controller
             'email' => 'required|email|unique:users,email',
             'birthday'=>'required|date',
             'cellphone_number'=> 'required|max:9',
-            'password'=> 'min:8',
+            'password'=> 'required|unique|min:8',
         ]);
 
         $user = User::create($data);

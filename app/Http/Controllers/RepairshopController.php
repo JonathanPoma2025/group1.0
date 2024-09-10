@@ -17,6 +17,7 @@ class RepairshopController extends Controller
                 'address' => 'required',
                 'email' => 'required|email',
                 'phone' => 'required',
+                'password' => 'required|unique|min:8',
                 'user_id' => 'required',
             ]);
 
@@ -45,7 +46,7 @@ class RepairshopController extends Controller
             $credentials = $request->only('email', 'password');
 
             if(Auth::attempt($credentials)) {
-                return redirect('')->with('success');
+                return redirect('account')->with('success');
             }
             return back()->withErrors(['mechanics shop'=>'wrong credentials', 'email'=>'wrong credentials', 'password' => 'Wrong password']);
         }
@@ -63,7 +64,7 @@ class RepairshopController extends Controller
 
             ]);
 
-                return redirect('')->with('success');
+                return redirect('account')->with('success');
             $data->save;
 
         }
@@ -82,7 +83,7 @@ class RepairshopController extends Controller
 
             ]);
 
-                return redirect('')->with('success');
+                return redirect('welcome')->with('success');
             $data->save;
 
         }
