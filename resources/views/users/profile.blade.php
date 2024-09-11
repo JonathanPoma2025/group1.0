@@ -2,7 +2,7 @@
 
     <x-card>
         <div class="pl-2 font-bold text-2xl text-white">
-            ¡Hola! {{ $user->name }}
+            <span>¡Hola!</span>{{ $user->name }}
         </div>
 
         <div class="mt-10 text-left text-white">
