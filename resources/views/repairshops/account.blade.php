@@ -1,39 +1,47 @@
-<x-layoutbg1 title="Cuenta de taller" class="my-20">
-    <div class="flex flex-col justify-center items-center h-screen w-full pt-2 mb-[172px]">
+<x-layout>
+    <div class="flex flex-col justify-center items-center w-full pt-2 my-14 mb-40">
         <x-card>
-            <img src="{{ asset("images/logocar.png")}}" alt="" class="mx-auto w-16">
-            <div class="pl-2 font-bold text-2xl text-white space-y-2">
-                Mecanico {{$Repairshops->name}}
+            <img src="{{ asset("images/logocar.png")}}" class="mx-auto my-4 w-16">
+            <div class="pl-2 font-bold text-2xl text-white">
+                <p class="font-medium text-center">{{$mecanico->repairshop->name}}</p>
             </div>
-            <div class="mt-10 text-left text-white">
-                <p class="mt-4">Contacto</p>
-                <div class="pl-2 font-bold">
-                    <img class="inline w-5" src="{{ asset('imagenes/mail_24dp_FILL0_wght400_GRAD0_opsz24 (1).png') }}">
-                    {{ $user->email }}
+
+            <div class="mt-6 text-left text-white">
+                <p>Contacto</p>
+
+                <div class="pl-2">
+                    <img class="inline w-5 font-bold" src="{{ asset('imagenes/mail.png') }}">
+                    <span class="font-bold">Correo electrónico</span>
+                    <p class="pl-10">{{ $mecanico->repairshop->email }}</p>
                 </div>
-                <div class="pl-2 font-bold">
-                    <img class="inline w-5" src="{{ asset('imagenes/call_24dp_FILL0_wght400_GRAD0_opsz24.png') }}">
-                    {{ $user->cellphone_number }}
+                <div class="pl-2">
+                    <img class="inline w-5" src="{{ asset('imagenes/phone.png') }}">
+                    <span class="font-bold">Número de teléfono</span>
+                    <p class="pl-10">{{ $mecanico->repairshop->cellphone_number }}</p>
                 </div>
-                <div class="pl-2 font-bold">
-                    <img class="inline w-5" src="{{asset('Vector.png')}}">
-                    Ubicación
+                <div class="pl-2">
+                    <img class="inline w-5" src="{{asset('/imagenes/location.svg')}}">
+                    <span class="font-bold">Ubicación</span>
+                    <p class="pl-10">{{ $mecanico->repairshop->address }}</p>
                 </div>
                 <div class="pl-2 font-bold">
                     <img class="inline w-5" src="{{asset('calendario8.png')}}">
                     Horario de atención
                 </div>
-                <div>
-                    valoraciones
-                    <h2 class="pl-8">Sofia@example.com⭐⭐⭐⭐</h2>
-                    <h2 class="pl-8">Sofia@example.com⭐⭐⭐</h2>
-                    <h2 class="pl-8">Sofia@example.com⭐⭐⭐⭐⭐</h2>
+                <div class="pl-10">
+                    <p>Lunes a viernes</p>
+                    <p>8:00 AM a 5:00 PM</p>
                 </div>
 
-            <div class="space-x-12 justify-center md:text-end ">
-            <x-primary-button>Editar</x-primary-button> <x-primary-button>Cerrar sesión</x-primary-button>
-           </div>
+                <div class="space-x-4 justify-center md:text-end">
+                    <x-primary-button>Editar</x-primary-button>
+                    <a href="{{ route('logout') }}">
+                        <x-primary-button>Cerrar sesión</x-primary-button>
+                    </a>
+                </div>
+            </div>
         </x-card>
     </div>
-    <x-navigationbarcliente/>
-</x-layoutbg1>
+
+    <x-navigationbartaller/>
+</x-layout>

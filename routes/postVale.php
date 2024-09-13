@@ -18,7 +18,6 @@ Route::get('cars/edit/{vehicle}', [VehicleController::class, 'edit'])->name('car
 
 Route::put('cars/update/{id}', [VehicleController::class, 'update'])->name('cars.update');
 
-Route::post('/logout', [UserController::class, 'logout'])->name('logout');
 
 
 
@@ -33,4 +32,3 @@ Route::get('repairshops/clients', [ClientController::class, 'index'])->name('cli
 Route::get('repairshops/clients/{email}', [ClientController::class, 'show'])->name('clients.show');
 
 
-Route::post('/repairshops/store', [RepairshopController::class, 'store']);

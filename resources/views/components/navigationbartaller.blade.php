@@ -1,7 +1,7 @@
 <x-layout>
-        <nav class="bg-ourblack bg-opacity-60 blackdrop-blur p-5 w-11/12 md:w-7/12 shadow-lg flex justify-around rounded-full fixed bottom-10 left-1/2 transform -translate-x-1/2">
+        <nav class="bg-ourblack bg-opacity-60 blackdrop-blur p-5 w-11/12 md:w-7/12 shadow-lg flex justify-around rounded-full fixed bottom-5 left-1/2 transform -translate-x-1/2">
 
-            <a href="/repairshop/account">
+            <a href="/repairshop/home">
                 <button>
                     <img src="{{ asset('Images/new1.png') }}" alt="" class="w-7 mx-auto md:'12px'">
                     <h1 class="text-center text-white">Inicio</h1>

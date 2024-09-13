@@ -13,12 +13,7 @@ Route::get('repairshops/clients', function () {
 } );
 
 
-Route::get('repairshops/account', function () {
-    return view('repairshops.account', [
-        'talleres' => Repairshops::all()
-        //Auth::user()->repairshops()->get()
-    ]);
-});
+
 
 Route::get('roles', function () {
     return view('users.usersType');

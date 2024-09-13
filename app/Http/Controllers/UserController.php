@@ -76,7 +76,11 @@ class UserController extends Controller
         ]);
 
         if(Auth::attempt($data)) {
-            return redirect('users/home')->with('success');
+            if(!Auth::user()->is_mechanic){
+                return redirect('users/home')->with('success');
+            } else {
+                return redirect('repairshops/home')->with('success');
+            }
         }
         return back()->withErrors(['email'=>'wrong credentials', 'password' => 'Wrong password']);
     }

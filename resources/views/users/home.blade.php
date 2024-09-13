@@ -1,4 +1,4 @@
-<x-layoutbg1>
+<x-layout>
 
 <div class="relative overflow-hidden w-full">
         <button class="text-end">
@@ -34,4 +34,4 @@
         <x-navigationbarcliente></x-navigationbarcliente>
     </div>
 </div>
-</x-layoutbg1>
+</x-layout>

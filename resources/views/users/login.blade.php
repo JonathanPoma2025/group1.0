@@ -1,9 +1,12 @@
-<x-layoutbg1 title="Login">
-
+<x-layout>
     <div class="h-screen flex items-center">
-        <div class="py-12 px-20 bg-ourblack bg-opacity-30 rounded-lg drop-shadow-2xl">
+        <div class="bg-ourblack bg-opacity-30 drop-shadow-2xl rounded-2xl py-10 px-8 md:px-10 shadow-2xl w-full my-14 md:mx-16">
             <img src="{{ asset('images/logo 2.png') }}" class="mx-auto w-24">
-            <h1 class="text-2xl font-bold my-4 text-center text-white">Iniciar sesión en TrackMate</h1>
+            <h1 class="my-4 text-center text-white">Iniciar sesión  en
+                <p class="font-ubuntu text-2xl">
+                    TrackMate
+                </p>
+            </h1>
             <form action="/login" method="POST" class="text-center mt-6">
                 @csrf
                 <x-input id="email" name="email" type="email">Correo electrónico</x-input>
@@ -16,8 +19,4 @@
                     class="underline">Registrate</a></p>
         </div>
     </div>
-
-
-
-
-</x-layoutbg1>
+</x-layout>

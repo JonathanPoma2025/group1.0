@@ -8,17 +8,17 @@
         <div class="mt-10 text-left text-white">
             <p class="mt-4">Contacto</p>
             <div class="pl-2 font-bold">
-                <img class="inline w-5" src="{{ asset('imagenes/mail_24dp_FILL0_wght400_GRAD0_opsz24 (1).png') }}">
+                <img class="inline w-5" src="{{ asset('imagenes/mail.png') }}">
                 {{ $user->email }}
             </div>
 
             <div class="pl-2 font-bold">
-                <img class="inline w-5" src="{{ asset('imagenes/call_24dp_FILL0_wght400_GRAD0_opsz24.png') }}">
+                <img class="inline w-5" src="{{ asset('imagenes/phone.png') }}">
                 {{ $user->cellphone_number }}
             </div>
 
             <div class="pl-2 font-bold">
-                <img class="inline w-5" src="{{ asset('imagenes/call_24dp_FILL0_wght400_GRAD0_opsz24.png') }}">
+                <img class="inline w-5" src="{{ asset('imagenes/phone.png') }}">
                 {{ $user->birthday }}
             </div>
 
@@ -64,7 +64,7 @@
                 <a href="{{ route('cars.caredit', $car->id) }}" class="rounded-full bg-blueblack text-white px-4">Eliminar</a>
             </div>
         </x-card>
-        
+
     @endforeach
 <x-navigationbarcliente></x-navigationbarcliente>
 </x-layoutbg1>

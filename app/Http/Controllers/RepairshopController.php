@@ -7,7 +7,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class RepairshopController extends Controller
-
     {
         public function store(Request $request) {
             $request->merge(['user_id' => Auth::user()->id]);
@@ -16,12 +15,12 @@ class RepairshopController extends Controller
                 'name' => 'required',
                 'address' => 'required',
                 'email' => 'required|email',
-                'phone' => 'required',
+                'cellphone_number' => 'required',
                 'user_id' => 'required',
             ]);
 
             if(Repairshops::create($data)) {
-                return redirect('account');
+                return redirect('/repairshops/home');
             }
 
             return back()->withErrors([
@@ -34,23 +33,8 @@ class RepairshopController extends Controller
 
         }
 
-        public function login(Request $request) {
-            $credentials = $request->validate([
-                'mechanics shop' => 'required|unique:users,workshop',
-                'email' => 'required|email|exist:users,email',
-                'password' => 'required|unique:users,password|min:8|max:12',
-            ]);
-
-            $credentials = $request->only('email', 'password');
-
-            if(Auth::attempt($credentials)) {
-                return redirect('account')->with('success');
-            }
-            return back()->withErrors(['mechanics shop'=>'wrong credentials', 'email'=>'wrong credentials', 'password' => 'Wrong password']);
-        }
-
         public function update(Repairshops $request) {
-            $data = $request -> validate(['name','email','password','mechanic shop','address','phone']);
+            $data = $request->validate(['name','email','password','mechanic shop','address','phone']);
 
             $data->update($request)([
                 'name' => 'required',
@@ -63,7 +47,7 @@ class RepairshopController extends Controller
             ]);
 
                 return redirect('account')->with('success');
-            $data->save;
+            $data->save();
 
         }
 
@@ -86,5 +70,3 @@ class RepairshopController extends Controller
 
         }
     }
-
-
