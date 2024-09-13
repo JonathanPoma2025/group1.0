@@ -17,7 +17,6 @@ class RepairshopController extends Controller
                 'address' => 'required',
                 'email' => 'required|email',
                 'phone' => 'required',
-                'password' => 'required|unique|min:8',
                 'user_id' => 'required',
             ]);
 
@@ -29,7 +28,6 @@ class RepairshopController extends Controller
                 'name' => 'Este usuario ya existe. Intente una vez más',
                 'address' => 'La dirección ya existe. Intente una vez más',
                 'email' => 'El correo electronico ya existe. Intente una vez más',
-                'password'=> 'La contraseña ya existe. Intente una vez más',
                 'phone' => 'El número teléfonico ya existe. Intente una vez más',
                 'mechanics shop' => 'El nombre del taller ya existe. Intente una vez más',
             ]);

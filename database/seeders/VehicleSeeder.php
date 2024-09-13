@@ -86,6 +86,7 @@ class VehicleSeeder extends Seeder
                 "color"=> 'morado'
             ],
         ];
+    
 
         Vehicle::factory(count($Vehicle))->sequence(fn($sqn) => ['Vehicle' => $Vehicle[$sqn->index]])->create();
     }

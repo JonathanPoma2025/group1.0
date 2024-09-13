@@ -19,6 +19,7 @@
                             @foreach ($car_types as $car_type)
                                 <option value="{{ $car_type->id }}">{{ $car_type->name }}</option>
                             @endforeach
+                            
                         </select>
                         <x-input type="text" name="placa" id="placa">Placa</x-input>
                         <x-input type="text" name="color" id="color">Color</x-input>

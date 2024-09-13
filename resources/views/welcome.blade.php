@@ -1,8 +1,8 @@
 <x-layoutbg1>
 
-    <swiper-container class="mx-auto w-full h-screen" pagination="true" pagination-clickable="true" navigation="true"
-        space-between="30" loop="true">
-        <swiper-slide>
+
+<swiper-container class="mx-auto w-full h-screen" pagination="true" pagination-clickable="true" navigation="true" space-between="30" loop="true">
+    <swiper-slide class="inline-block align-middle">
             <div
                 class="bg-card bg-opacity-30 py-8 my-10 text-white px-6 mx-auto rounded-[20px] md:w-2/4 drop-shadow-xl shadow-2xl">
                 <img src="{{ asset('Images/Logo 2.png') }}" alt="" class="w-20 mx-auto md:'12px'">
@@ -22,8 +22,9 @@
                     </p>
                 </article>
             </div>
-        </swiper-slide>
-        <swiper-slide>
+    </swiper-slide>
+
+    <swiper-slide class="inline-block align-middle">
             <div
                 class="bg-card bg-opacity-30 py-8 my-10 text-white px-6 mx-auto rounded-[20px] md:w-2/4 drop-shadow-xl shadow-2xl">
                 <img src="{{ asset('Images/Logo 2.png') }}" alt="" class="w-20 mx-auto md:'12px'">
@@ -43,8 +44,9 @@
                     </p>
                 </article>
             </div>
-        </swiper-slide>
-        <swiper-slide>
+    </swiper-slide>
+
+    <swiper-slide class="inline-block align-middle">
             <div
                 class="bg-card bg-opacity-30 py-8 my-10 text-white px-6 mx-auto rounded-[20px] md:w-2/4 drop-shadow-xl shadow-2xl">
                 <img src="{{ asset('Images/Logo 2.png') }}" alt="" class="w-20 mx-auto md:'12px'">
@@ -63,6 +65,7 @@
                     </p>
                 </article>
             </div>
-        </swiper-slide>
-    </swiper-container>
+    </swiper-slide>
+
+</swiper-container>
 </x-layoutbg1>
