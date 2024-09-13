@@ -2,7 +2,7 @@
 
     <x-card>
         <div class="pl-2 font-bold text-2xl text-white">
-            ¡Hola! {{ $user->name }}
+            <span>¡Hola!</span>{{ $user->name }}
         </div>
 
         <div class="mt-10 text-left text-white">
@@ -64,6 +64,7 @@
                 <a href="{{ route('cars.caredit', $car->id) }}" class="rounded-full bg-blueblack text-white px-4">Eliminar</a>
             </div>
         </x-card>
+        
     @endforeach
 <x-navigationbarcliente></x-navigationbarcliente>
 </x-layoutbg1>

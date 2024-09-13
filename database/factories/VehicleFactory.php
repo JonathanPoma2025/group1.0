@@ -47,11 +47,9 @@ class VehicleFactory extends Factory
     public function definition(): array
     {
         return [
-            'model' =>  '',
-            'placa' =>  '',
-            'motor' =>  '',
-            'year' =>  '',
-            'color' =>  '',
+            'car_type_id' =>  carTypes(),
+            'brand_id' => brands(),
+            'user_id' => users(),
         ];
     }
 }

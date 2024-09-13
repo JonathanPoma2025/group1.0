@@ -31,7 +31,7 @@
                 <x-primary-button class=" text-white">Guardar</x-primary-button>
         </div>
     </div>
-    <x-navigationbarcliente />
 
+    <x-navigationbarcliente></x-navigationbarcliente>
 </x-layoutbg1>
 

@@ -14,8 +14,8 @@ class UserController extends Controller
             'name' => 'required',
             'email' => 'required|email|unique:users,email',
             'birthday'=>'required|date',
-            'cellphone_number'=> 'required|max:9',
-            'password'=> 'min:8',
+            'cellphone_number'=> 'required',
+            'password'=> 'required|',
         ]);
 
         $user = User::create($data);
@@ -41,7 +41,7 @@ class UserController extends Controller
         if ( $user->is_mechanic ) {
             return redirect('/repairshops/create');
         }
-        return redirect('/cars/create ');
+        return redirect('/cars/create');
     }
 
     public function gohome(Request $request) {
@@ -72,7 +72,7 @@ class UserController extends Controller
     public function login(Request $request) {
         $data = $request->validate([
             'email' => 'required|email|exists:users,email',
-            'password' => 'required|min:8|max:12',
+            'password' => 'required|min:8|max:20',
         ]);
 
         if(Auth::attempt($data)) {

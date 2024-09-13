@@ -15,7 +15,7 @@ Route::get('/user/profile', function() {
     return view('users.profile', [
         'user' => Auth::user()->load('cars'),
     ]);
-});
+})->name('Profile');
 
 Route::get('/user/update', function() {
     return view('users.update');
