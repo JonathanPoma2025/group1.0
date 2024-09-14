@@ -3,13 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\ClientRepairshop;
-use Illuminate\Http\Request;
-
-namespace App\Http\Controllers;
-
-use App\Models\ClientRepairshop;
 use App\Models\User;
-use Illuminate\Http\Request;    
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class ClientController extends Controller
@@ -37,7 +32,7 @@ class ClientController extends Controller
 
     public function index()
     {
-        $customers = ClientRepairshop::all();
+        $customers = Auth::user()->load('repairshop.clients', 'repairshop.clients.cars');
         return view('repairshops.clients', compact('customers'));
     }
 }

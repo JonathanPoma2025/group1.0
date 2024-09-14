@@ -10,8 +10,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Vehicle extends Model
 {
-
-
     use HasFactory;
 
     /**
@@ -19,17 +17,9 @@ class Vehicle extends Model
      *
      * @var array
      */
-    protected $fillable = [
-        'car_type_id',
-        'brand_id',
-        'model',
-        'year',
-        'user_id',
-        'placa',
-        'color',
-        'motor'
+    protected $guarded = [
+        'id',
     ];
-
 
 public function brand()
 {
@@ -40,8 +30,6 @@ public function carType()
 {
     return $this->belongsTo(CarType::class);
 }
-
-
 
 public function user()
     {

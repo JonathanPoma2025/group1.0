@@ -14,31 +14,6 @@ use Illuminate\Database\Eloquent\Factories\Factory;
  */
 class VehicleFactory extends Factory
 {
-
-    public function users()
-    {
-        return once(function (){
-            return User::pluck('id');
-        });
-    }
-
-    public function brands()
-    {
-        return once(function (){
-            return Brand::pluck('id');
-        });
-    }
-
-    public function carTypes()
-    {
-        return once(function (){
-            return CarType::pluck('id');
-        });
-    }
-
-
-
-
     /**
      * Define the model's default state.
      *
@@ -46,10 +21,6 @@ class VehicleFactory extends Factory
      */
     public function definition(): array
     {
-        return [
-            'car_type_id' =>  carTypes(),
-            'brand_id' => brands(),
-            'user_id' => users(),
-        ];
+        return [];
     }
 }

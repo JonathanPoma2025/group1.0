@@ -13,11 +13,23 @@ class UserSeeder extends Seeder
      */
     public function run(): void
     {
-        $User = [
+        $user = [
+            [
+                'name' => 'Edgardo Cabrera',
+                'email' => 'mechanic@example.com',
+                'is_mechanic' => true,
+                'password'=> 'password'
+            ],
+            [
+                'name' => 'Alex Moreno',
+                'email' => 'customer@example.com',
+                'is_mechanic' => false,
+                'password'=> 'password'
+            ],
             [
                 'name' => 'Juan Perez',
                 'email' => 'mjuanpz@email.com',
-                'is_mechanic' => true,
+                'is_mechanic' => false,
                 'password'=> 'Password100'
             ],
 
@@ -31,7 +43,7 @@ class UserSeeder extends Seeder
             [
                 'name' => 'Fernando Alfaro',
                 'email' => 'fernanalfa@example.com',
-                'is_mechanic' => true,
+                'is_mechanic' => false,
                 'password'=> 'Password100'
             ],
 
@@ -45,7 +57,7 @@ class UserSeeder extends Seeder
             [
                 'name' => 'Lisseth Mejia',
                 'email' => 'lismejia@yahoo.com',
-                'is_mechanic' => true,
+                'is_mechanic' => false,
                 'password'=> 'Password100'
             ],
 
@@ -59,7 +71,7 @@ class UserSeeder extends Seeder
             [
                 'name' => 'Josue Echeverria',
                 'email' => 'chevie@example.com',
-                'is_mechanic' => true,
+                'is_mechanic' => false,
                 'password'=> 'Password100'
             ],
 
@@ -73,7 +85,7 @@ class UserSeeder extends Seeder
             [
                 'name' => 'Alisson Ayala',
                 'email' => 'alissayal@yahoo.com',
-                'is_mechanic' => true,
+                'is_mechanic' => false,
                 'password'=> 'Password100'
             ],
 
@@ -104,23 +116,8 @@ class UserSeeder extends Seeder
                 'is_mechanic' => true,
                 'password'=> 'Password100'
             ],
-
-            [
-                'name' => 'Alex Moreno',
-                'email' => 'etudenprueba1@example.com',
-                'is_mechanic' => false,
-                'password'=> 'Password100'
-            ],
-
-            [
-                'name' => 'Edgardo Cabrera',
-                'email' => 'seeder1@example.com',
-                'is_mechanic' => true,
-                'password'=> 'Password100'
-            ],
-
         ];
 
-        User::factory(count($User))->sequence(fn($sqn) => $User[$sqn->index])->create();
+        User::factory(count($user))->sequence(fn($sqn) => $user[$sqn->index])->create();
     }
 }

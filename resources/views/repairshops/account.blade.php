@@ -33,11 +33,12 @@
                     <p>8:00 AM a 5:00 PM</p>
                 </div>
 
-                <div class="space-x-4 justify-center md:text-end">
+                <div class="space-x-4 flex justify-end md:text-end">
                     <x-primary-button>Editar</x-primary-button>
-                    <a href="{{ route('logout') }}">
+                    <form action="{{ route('logout') }}" method="post">
+                        @csrf
                         <x-primary-button>Cerrar sesión</x-primary-button>
-                    </a>
+                    </form>
                 </div>
             </div>
         </x-card>

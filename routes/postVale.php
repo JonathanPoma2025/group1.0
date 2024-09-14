@@ -22,13 +22,5 @@ Route::put('cars/update/{id}', [VehicleController::class, 'update'])->name('cars
 
 
 
-#Rutas para clientes del taller :)
-Route::get('repairshops/addcostumer', [ClientController::class, 'create'])->name('clients.create');
-
-Route::post('repairshops/addcostumer', [ClientController::class, 'store'])->name('clients.store');
-
-Route::get('repairshops/clients', [ClientController::class, 'index'])->name('clients.index');
-
-Route::get('repairshops/clients/{email}', [ClientController::class, 'show'])->name('clients.show');
 
 

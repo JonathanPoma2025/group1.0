@@ -13,4 +13,13 @@ class Repairshops extends Model
         'id',
     ];
 
+    //public function users()
+    //{
+      //  return $this->through('clients')->has('users');
+    //}
+
+    public function clients()
+    {
+        return $this->belongsToMany(User::class, 'client_repairshops', 'repairshops_id', 'user_id');
+    }
 }
