@@ -13,7 +13,7 @@
                     </x-primary-button>
 
                     <p>¿Ya tienes una cuenta?
-                        <a href="{{ route('login') }}" class="underline">Inicia sesión</a>
+                        <a class="underline">Inicia sesión</a>
                     </p>
                 </article>
             </div>
@@ -32,7 +32,7 @@
                     </x-primary-button>
 
                     <p>¿Ya tienes una cuenta?
-                        <a href="{{ route('login') }}" class="underline">Inicia sesión</a>
+                        <a class="underline">Inicia sesión</a>
                     </p>
                 </article>
             </div>
@@ -51,7 +51,7 @@
                     </x-primary-button>
 
                     <p>¿Ya tienes una cuenta?
-                        <a href="{{ route('login') }}" class="underline">Inicia sesión</a>
+                        <a class="underline">Inicia sesión</a>
                     </p>
                 </article>
             </div>
