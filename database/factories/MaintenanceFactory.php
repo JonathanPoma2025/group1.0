@@ -37,8 +37,7 @@ class MaintenanceFactory extends Factory
             'date' => '',
             'time_span' => '',
             'upcoming_date' => '',
-            'type_id' => '',
-           'vehicle_id' => '',
+            'vehicle_id' => '',
         ];
     }
 }

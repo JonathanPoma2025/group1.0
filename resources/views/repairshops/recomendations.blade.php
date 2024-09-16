@@ -1,4 +1,4 @@
-<x-layoutbg1>
+<x-layout>
     <div class="flex flex-col items-center scroll-full mb-[172px]">
 
         <h1 class="text-xl text-gray-5 py-6 mt-8 font-bold mb-4 text-center">Recomendaciones</h1>
@@ -39,4 +39,4 @@
 
     </div>
     <x-navigationbarcliente/>
-</x-layoutbg1>
+</x-layout>

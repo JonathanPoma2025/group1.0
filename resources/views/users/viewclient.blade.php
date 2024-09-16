@@ -1,4 +1,4 @@
-<x-layoutbg1>
+<x-layout>
         <img src="{{ asset('Images/contac.png') }}" alt="" class="absolute top-0 right-0 h-12 w-12">
 
 
@@ -34,4 +34,4 @@
 
 
 
-</x-layoutbg1>
+</x-layout>

@@ -32,7 +32,7 @@ class UserFactory extends Factory
             'birthday' => fake()->date(),
             'cellphone_number' => fake()->unique()->phoneNumber(),
             'password' => static::$password ??= Hash::make('password'),
-
+            'pin' => Str::random(4),
         ];
     }
 

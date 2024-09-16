@@ -31,8 +31,8 @@ class DatabaseSeeder extends Seeder
             ClientRepairshopSeeder::class,
             VehicleSeeder::class,
             //TypeSeeder::class,
-            //DetailMaintenanceSeeder::class,
-            //MaintenanceSeeder::class,
+            MaintenanceSeeder::class,
+            DetailMaintenanceSeeder::class,
             //ReminderSeeder::class,
          ]);
     }

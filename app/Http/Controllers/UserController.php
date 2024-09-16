@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Str;
 
 class UserController extends Controller
 {
@@ -17,6 +18,8 @@ class UserController extends Controller
             'cellphone_number'=> 'required',
             'password'=> 'required|',
         ]);
+
+        $data['pin'] = Str::random(4);
 
         $user = User::create($data);
 
@@ -44,23 +47,6 @@ class UserController extends Controller
         return redirect('/cars/create');
     }
 
-    public function gohome(Request $request) {
-        $data = $request->validate([
-            'name' => 'required',
-            'owner'=> 'required',
-            'adress'=>'required',
-            'email'=> 'required|email',
-            'phone'=> 'required|min:8',
-        ]);
-
-        $user = User::gohome($data);
-
-        if($user) {
-            Auth::gohome($user);
-            return redirect('/users/home');
-        }
-    }
-
     public function logout(Request $request)
     {
         Auth::logout();
@@ -77,7 +63,7 @@ class UserController extends Controller
 
         if(Auth::attempt($data)) {
             if(!Auth::user()->is_mechanic){
-                return redirect('users/home')->with('success');
+                return redirect('clients/home')->with('success');
             } else {
                 return redirect('repairshops/home')->with('success');
             }
@@ -102,7 +88,7 @@ class UserController extends Controller
 
     public function showProfile() {
         return view('users.profile', [
-            'user' => Auth::user()
+            'user' => Auth::user()->load('cars')
         ]);
     }
 }

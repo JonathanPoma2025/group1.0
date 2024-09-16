@@ -36,7 +36,8 @@ class VehicleSeeder extends Seeder
                 "placa"=>'p234567',
                 "motor"=>'M1DH',
                 "year"=>'2015',
-                "color"=> 'rojo'
+                "color"=> 'rojo',
+                "user_id" => 2
             ],
             [
                 "car_type_id" => $carTypes->random(),
@@ -48,13 +49,15 @@ class VehicleSeeder extends Seeder
                 "color"=> 'amarillo'
             ],
             [
+                "car_type_id" => $carTypes->random(),
+                "brand_id" => $brands->random(),
                 "model"=>'Challenger',
                 "placa"=>'P654321',
                 "motor"=>'ATN',
                 "year"=>'2013',
-                "color"=> 'azul'
+                "color"=> 'azul',
+                "user_id" => 5
             ],
-
             [
                 "car_type_id" => $carTypes->random(),
                 "brand_id" => $brands->random(),
@@ -62,7 +65,8 @@ class VehicleSeeder extends Seeder
                 "placa"=>'P098765',
                 "motor"=>'V8',
                 "year"=>'2018',
-                "color"=> 'verde'
+                "color"=> 'verde',
+                "user_id" => 6
             ],
             [
                 "car_type_id" => $carTypes->random(),
@@ -71,7 +75,8 @@ class VehicleSeeder extends Seeder
                 "placa"=>'P592550',
                 "motor"=>'V12',
                 "year"=>'2012',
-                "color"=> 'café'
+                "color"=> 'café',
+                "user_id" => 7
             ],
             [
                 "car_type_id" => $carTypes->random(),
@@ -80,7 +85,8 @@ class VehicleSeeder extends Seeder
                 "placa"=>'P703953',
                 "motor"=>'B47 D20 A',
                 "year"=>'2011',
-                "color"=> 'negro'
+                "color"=> 'negro',
+                "user_id" => 2
             ],
             [
                 "car_type_id" => $carTypes->random(),
@@ -98,7 +104,8 @@ class VehicleSeeder extends Seeder
                 "placa"=>'P032639',
                 "motor"=>'Z 20 LEL',
                 "year"=>'2009',
-                "color"=> 'rosado'
+                "color"=> 'rosado',
+                "user_id" => 5
             ],
             [
                 "car_type_id" => $carTypes->random(),
@@ -110,7 +117,6 @@ class VehicleSeeder extends Seeder
                 "color"=> 'morado'
             ],
         ];
-
 
         Vehicle::factory(count($vehicle))
             ->sequence(fn($sqn) => $vehicle[$sqn->index])

@@ -29,20 +29,20 @@ class ClientRepairshopSeeder extends Seeder
 
         $clientRepairshop =[
            [
-               'user_id' => $users->random(),
+               'user_id' => 3,
                'repairshops_id' => 1
            ],
             [
-                'user_id' => $users->random(),
+                'user_id' => 4,
                 'repairshops_id' => 1
             ],
             [
-                'user_id' => $users->random(),
+                'user_id' => 5,
                 'repairshops_id' => 1
             ],
             [
-                'user_id' => $users->random(),
-                'repairshops_id' => $repairshops->random()
+                'user_id' => 8,
+                'repairshops_id' => 1
             ],
             [
                 'user_id' => $users->random(),

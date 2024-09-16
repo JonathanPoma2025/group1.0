@@ -21,18 +21,24 @@ class Vehicle extends Model
         'id',
     ];
 
-public function brand()
-{
-    return $this->belongsTo(Brand::class);
-}
+    public function brand()
+    {
+        return $this->belongsTo(Brand::class);
+    }
 
-public function carType()
-{
-    return $this->belongsTo(CarType::class);
-}
+    public function carType()
+    {
+        return $this->belongsTo(CarType::class);
+    }
 
-public function user()
+    public function user()
     {
         return $this->belongsTo(User::class);
     }
+
+    public function maintenances()
+    {
+        return $this->hasMany(Maintenance::class);
+    }
 }
+

@@ -13,12 +13,51 @@ class DetailMaintenanceSeeder extends Seeder
      */
     public function run(): void
     {
-        //
-        $DetailMaintenance =[
-
-            //
-
+        $detailMaintenance =[
+            [
+                'title' => 'Aceite de motor',
+                'detail' => 'Cambiar aceite de motor y filtro',
+                'maintenance_id' => 1,
+            ],
+            [
+                'title' => 'Filtro de aire',
+                'detail' => 'Limpier filtro de aire',
+                'maintenance_id' => 1,
+            ],
+            [
+                'title' => 'Brake Fluid',
+                'detail' => 'Change brake fluid',
+                'maintenance_id' => 1,
+            ],
+            [
+                'title' => 'Spark Plugs',
+                'detail' => 'Change spark plugs',
+                'maintenance_id' => 1,
+            ],
+            [
+                'title' => 'Engine Oil',
+                'detail' => 'Change engine oil and filter',
+                'maintenance_id' => 1,
+            ],
+            [
+                'title' => 'Air Filter',
+                'detail' => 'Change air filter',
+                'maintenance_id' => 1,
+            ],
+            [
+                'title' => 'Brake Fluid',
+                'detail' => 'Change brake fluid',
+                'maintenance_id' => 1,
+            ],
+            [
+                'title' => 'Spark Plugs',
+                'detail' => 'Change spark plugs',
+                'maintenance_id' => 1,
+            ],
         ];
-        DetailMaintenance::factory(count($DetailMaintenance))->sequence(fn($sqn) => ['DetailMaintenance' => $DetailMaintenance[$sqn->index]])->create();
+
+        DetailMaintenance::factory(count($detailMaintenance))
+            ->sequence(fn($sqn) => $detailMaintenance[$sqn->index])
+            ->create();
     }
 }

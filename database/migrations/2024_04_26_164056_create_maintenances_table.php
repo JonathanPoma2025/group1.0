@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->date('date');
             $table->integer('time_span')->nullable();
-            $table->date('upcoming_date');
-            $table->foreignIdFor(Type::class)->constrained();
+            $table->date('upcoming_date')->nullable();
+            //$table->foreignIdFor(Type::class)->constrained();
             $table->foreignIdFor(Vehicle::class)->constrained();
             $table->timestamps();
         });

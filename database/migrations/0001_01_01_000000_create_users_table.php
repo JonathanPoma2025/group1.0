@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('password');
+            $table->string('pin')->nullable();
             $table->boolean('is_mechanic')->default(false);
             $table->date('birthday');
             $table->string('cellphone_number');

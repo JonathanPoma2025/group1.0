@@ -9,10 +9,7 @@ class ClientRepairshop extends Model
 {
     use HasFactory;
 
-    protected $fillable = [
-        'name',
-        'email',
-        'vehicle',
-        'last_maintenance',
+    protected $guarded = [
+        'id',
     ];
 }

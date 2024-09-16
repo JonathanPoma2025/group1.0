@@ -18,13 +18,18 @@ class ClientController extends Controller
     {
         $validated = $request->validate([
             'email' => 'required|email|max:255|exists:users',
+            'pin' => 'required|max:4',
         ]);
 
-        $data['user_id'] = User::where('email', $validated['email'])->first()->id;
-        $data['repairshop_id'] = Auth::user()->repairshop->id;
+        $user = User::where('email', $validated['email'])->first();
 
-        if(ClientRepairshop::create($data)) {
-            return redirect()->route('clients.index');
+        $data['user_id'] = $user->id;
+        $data['repairshops_id'] = Auth::user()->repairshop->id;
+
+        if ($validated['pin'] == $user->pin) {
+            if(ClientRepairshop::create($data)) {
+                return redirect()->route('clients.index');
+            }
         }
 
         return back()->withErrors([]);

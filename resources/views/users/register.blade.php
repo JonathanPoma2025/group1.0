@@ -16,7 +16,7 @@
                 <x-input  id="password" name="password" type="password">Contraseña</x-input>
                 <x-primary-button class="bg-ourblack bg-opacity text-white">Registrarse</x-primary-button>
             </form>
-            <p class="text-white mt-4 text-center">¿Ya tienes cuenta? <a class="underline">Inicia sesión</a></p>
+            <p class="text-white mt-4 text-center">¿Ya tienes cuenta? <a class="underline" href="{{ route('login') }}">Inicia sesión</a></p>
         </div>
     </div>
 </x-layout>
