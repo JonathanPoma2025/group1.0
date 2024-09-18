@@ -23,7 +23,7 @@
 
                     <x-input type="text" name="placa" id="placa">Placa</x-input>
                     <x-input type="text" name="color" id="color">Color</x-input>
-                    <x-input type="text" name="motor" id="motor">Numero de Motor</x-input>
+                    <x-input type="text" name="motor" id="motor">Número de Motor</x-input>
                 </div>
 
                 <div class="text-center">

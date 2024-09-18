@@ -6,7 +6,7 @@
                 <p class="font-ubuntu text-center text-xl mt-2">TrackMate</p>
                 <article class="align-baseline text-center">
                     <h1 class="text-xl font-bold mt-6">Bienvenido/a</h1>
-                    <p class="mt-6">Somos una App cuyo propósito es ayudar con el mantenimiento y gestión automotríz de tu vehículo, contribuyendo al cuidado de el.</p>
+                    <p class="mt-6">Somos una App cuyo propósito es ayudar con el mantenimiento y gestión automotriz de tu vehículo contribuyendo al cuidado de él</p>
 
                     <x-primary-button class="mt-16 mb-6 w-40 mx-auto">
                         <a href="{{ route('register') }}">Registrarse</a>

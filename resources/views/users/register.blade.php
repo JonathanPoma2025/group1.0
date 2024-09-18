@@ -2,7 +2,7 @@
     <div class="flex flex-col items-center">
         <div class="bg-ourblack bg-opacity-30 drop-shadow-2xl rounded-2xl py-10 px-8 md:px-10 shadow-2xl w-full my-14 md:mx-16">
             <img src="{{ asset('images/logo 2.png') }}" alt="" class="mx-auto w-28">
-            <h1 class="my-4 text-center text-white">Registrate en
+            <h1 class="my-4 text-center text-white">Regístrate en
                 <p class="font-ubuntu text-2xl">
                     TrackMate
                 </p>
