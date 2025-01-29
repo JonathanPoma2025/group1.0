@@ -1,4 +1,4 @@
-<x-layoutbg1 title="update">
+<x-layout title="update">
 
     <div class="flex flex-col items-center scroll-full mb-[172px]">
         <div
@@ -33,5 +33,5 @@
     </div>
 
     <x-navigationbarcliente></x-navigationbarcliente>
-</x-layoutbg1>
+</x-layout>
 
