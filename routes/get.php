@@ -87,3 +87,9 @@ Route::get('/maintenance/index', function () {
         'maintenances' => Auth::user()->load('repairshop.clients', 'repairshop.clients.cars', 'repairshop.clients.cars.maintenances')
     ]);
 })->name('clients.maintenances');
+
+Route::get('/test.navbar/index', function () {
+    return view('navbar');
+});
+
+
