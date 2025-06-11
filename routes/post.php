@@ -20,5 +20,4 @@ Route::get('repairshops/clients/{email}', [ClientController::class, 'show'])->na
 
 
 Route::post('users/{$id}/edit', [RepairshopController::class, 'update']);
-
 Route::post('users/{$id}/edit', [RepairshopController::class, 'delete']);

@@ -4,20 +4,20 @@ namespace App\Http\Controllers;
 
 use App\Models\CarType;
 use App\Models\User;
-use Illuminate\Http\Request;
 use App\Models\Vehicle;
-use Illuminate\Support\Facades\Auth;
 use App\Models\Brand;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 
 class VehicleController extends Controller
 {
    public function create()
     {
-        $brands = Brand::all();
-        $car_types = CarType::all();
-
-        return view('cars.create', compact('brands', 'car_types'));
+        return view('cars.create', [
+            'brands' => Brand::all(),
+            'car_types' => CarType::all(),
+        ]);
     }
 
     public function store(Request $request)
